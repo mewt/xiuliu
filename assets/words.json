@@ -1,0 +1,302 @@
+[
+  {
+    "simplified": "你好",
+    "traditional": "你好",
+    "pinyin": "nǐ hǎo",
+    "meaning": "hello",
+    "example": "你好！",
+    "example_traditional": "你好！",
+    "example_pinyin": "Nǐ hǎo!",
+    "translation": "Hello!"
+  },
+  {
+    "simplified": "谢谢",
+    "traditional": "謝謝",
+    "pinyin": "xièxie",
+    "meaning": "thank you",
+    "example": "谢谢你！",
+    "example_traditional": "謝謝你！",
+    "example_pinyin": "Xièxie nǐ!",
+    "translation": "Thank you!"
+  },
+  {
+    "simplified": "我",
+    "traditional": "我",
+    "pinyin": "wǒ",
+    "meaning": "I; me",
+    "example": "我是学生。",
+    "example_traditional": "我是學生。",
+    "example_pinyin": "Wǒ shì xuésheng.",
+    "translation": "I am a student."
+  },
+  {
+    "simplified": "你",
+    "traditional": "你",
+    "pinyin": "nǐ",
+    "meaning": "you",
+    "example": "你好吗？",
+    "example_traditional": "你好嗎？",
+    "example_pinyin": "Nǐ hǎo ma?",
+    "translation": "How are you?"
+  },
+  {
+    "simplified": "好",
+    "traditional": "好",
+    "pinyin": "hǎo",
+    "meaning": "good; well",
+    "example": "今天天气很好。",
+    "example_traditional": "今天天氣很好。",
+    "example_pinyin": "Jīntiān tiānqì hěn hǎo.",
+    "translation": "The weather is nice today."
+  },
+  {
+    "simplified": "是",
+    "traditional": "是",
+    "pinyin": "shì",
+    "meaning": "to be",
+    "example": "这是我的书。",
+    "example_traditional": "這是我的書。",
+    "example_pinyin": "Zhè shì wǒ de shū.",
+    "translation": "This is my book."
+  },
+  {
+    "simplified": "不",
+    "traditional": "不",
+    "pinyin": "bù",
+    "meaning": "not; no",
+    "example": "我不喝咖啡。",
+    "example_traditional": "我不喝咖啡。",
+    "example_pinyin": "Wǒ bù hē kāfēi.",
+    "translation": "I do not drink coffee."
+  },
+  {
+    "simplified": "有",
+    "traditional": "有",
+    "pinyin": "yǒu",
+    "meaning": "to have; there is",
+    "example": "我有一本书。",
+    "example_traditional": "我有一本書。",
+    "example_pinyin": "Wǒ yǒu yì běn shū.",
+    "translation": "I have a book."
+  },
+  {
+    "simplified": "人",
+    "traditional": "人",
+    "pinyin": "rén",
+    "meaning": "person; people",
+    "example": "这里有很多人。",
+    "example_traditional": "這裡有很多人。",
+    "example_pinyin": "Zhèlǐ yǒu hěn duō rén.",
+    "translation": "There are many people here."
+  },
+  {
+    "simplified": "家",
+    "traditional": "家",
+    "pinyin": "jiā",
+    "meaning": "home; family",
+    "example": "我回家。",
+    "example_traditional": "我回家。",
+    "example_pinyin": "Wǒ huí jiā.",
+    "translation": "I am going home."
+  },
+  {
+    "simplified": "水",
+    "traditional": "水",
+    "pinyin": "shuǐ",
+    "meaning": "water",
+    "example": "我想喝水。",
+    "example_traditional": "我想喝水。",
+    "example_pinyin": "Wǒ xiǎng hē shuǐ.",
+    "translation": "I would like some water."
+  },
+  {
+    "simplified": "茶",
+    "traditional": "茶",
+    "pinyin": "chá",
+    "meaning": "tea",
+    "example": "我喜欢喝茶。",
+    "example_traditional": "我喜歡喝茶。",
+    "example_pinyin": "Wǒ xǐhuan hē chá.",
+    "translation": "I like drinking tea."
+  },
+  {
+    "simplified": "吃",
+    "traditional": "吃",
+    "pinyin": "chī",
+    "meaning": "to eat",
+    "example": "我们吃饭吧。",
+    "example_traditional": "我們吃飯吧。",
+    "example_pinyin": "Wǒmen chī fàn ba.",
+    "translation": "Let’s eat."
+  },
+  {
+    "simplified": "喝",
+    "traditional": "喝",
+    "pinyin": "hē",
+    "meaning": "to drink",
+    "example": "你喝茶吗？",
+    "example_traditional": "你喝茶嗎？",
+    "example_pinyin": "Nǐ hē chá ma?",
+    "translation": "Do you drink tea?"
+  },
+  {
+    "simplified": "去",
+    "traditional": "去",
+    "pinyin": "qù",
+    "meaning": "to go",
+    "example": "我去学校。",
+    "example_traditional": "我去學校。",
+    "example_pinyin": "Wǒ qù xuéxiào.",
+    "translation": "I am going to school."
+  },
+  {
+    "simplified": "来",
+    "traditional": "來",
+    "pinyin": "lái",
+    "meaning": "to come",
+    "example": "请进来。",
+    "example_traditional": "請進來。",
+    "example_pinyin": "Qǐng jìn lái.",
+    "translation": "Please come in."
+  },
+  {
+    "simplified": "看",
+    "traditional": "看",
+    "pinyin": "kàn",
+    "meaning": "to look; to watch; to read",
+    "example": "我喜欢看书。",
+    "example_traditional": "我喜歡看書。",
+    "example_pinyin": "Wǒ xǐhuan kàn shū.",
+    "translation": "I like reading books."
+  },
+  {
+    "simplified": "听",
+    "traditional": "聽",
+    "pinyin": "tīng",
+    "meaning": "to listen",
+    "example": "我在听音乐。",
+    "example_traditional": "我在聽音樂。",
+    "example_pinyin": "Wǒ zài tīng yīnyuè.",
+    "translation": "I am listening to music."
+  },
+  {
+    "simplified": "说",
+    "traditional": "說",
+    "pinyin": "shuō",
+    "meaning": "to speak; to say",
+    "example": "我会说中文。",
+    "example_traditional": "我會說中文。",
+    "example_pinyin": "Wǒ huì shuō Zhōngwén.",
+    "translation": "I can speak Chinese."
+  },
+  {
+    "simplified": "学",
+    "traditional": "學",
+    "pinyin": "xué",
+    "meaning": "to study; to learn",
+    "example": "我想学中文。",
+    "example_traditional": "我想學中文。",
+    "example_pinyin": "Wǒ xiǎng xué Zhōngwén.",
+    "translation": "I want to learn Chinese."
+  },
+  {
+    "simplified": "书",
+    "traditional": "書",
+    "pinyin": "shū",
+    "meaning": "book",
+    "example": "这本书很好。",
+    "example_traditional": "這本書很好。",
+    "example_pinyin": "Zhè běn shū hěn hǎo.",
+    "translation": "This book is very good."
+  },
+  {
+    "simplified": "朋友",
+    "traditional": "朋友",
+    "pinyin": "péngyou",
+    "meaning": "friend",
+    "example": "他是我的朋友。",
+    "example_traditional": "他是我的朋友。",
+    "example_pinyin": "Tā shì wǒ de péngyou.",
+    "translation": "He is my friend."
+  },
+  {
+    "simplified": "喜欢",
+    "traditional": "喜歡",
+    "pinyin": "xǐhuan",
+    "meaning": "to like",
+    "example": "我喜欢这里。",
+    "example_traditional": "我喜歡這裡。",
+    "example_pinyin": "Wǒ xǐhuan zhèlǐ.",
+    "translation": "I like it here."
+  },
+  {
+    "simplified": "今天",
+    "traditional": "今天",
+    "pinyin": "jīntiān",
+    "meaning": "today",
+    "example": "今天我很忙。",
+    "example_traditional": "今天我很忙。",
+    "example_pinyin": "Jīntiān wǒ hěn máng.",
+    "translation": "I am busy today."
+  },
+  {
+    "simplified": "明天",
+    "traditional": "明天",
+    "pinyin": "míngtiān",
+    "meaning": "tomorrow",
+    "example": "明天见！",
+    "example_traditional": "明天見！",
+    "example_pinyin": "Míngtiān jiàn!",
+    "translation": "See you tomorrow!"
+  },
+  {
+    "simplified": "大",
+    "traditional": "大",
+    "pinyin": "dà",
+    "meaning": "big; large",
+    "example": "这个房间很大。",
+    "example_traditional": "這個房間很大。",
+    "example_pinyin": "Zhège fángjiān hěn dà.",
+    "translation": "This room is very big."
+  },
+  {
+    "simplified": "小",
+    "traditional": "小",
+    "pinyin": "xiǎo",
+    "meaning": "small; little",
+    "example": "这只猫很小。",
+    "example_traditional": "這隻貓很小。",
+    "example_pinyin": "Zhè zhī māo hěn xiǎo.",
+    "translation": "This cat is very small."
+  },
+  {
+    "simplified": "多少",
+    "traditional": "多少",
+    "pinyin": "duōshao",
+    "meaning": "how much; how many",
+    "example": "这个多少钱？",
+    "example_traditional": "這個多少錢？",
+    "example_pinyin": "Zhège duōshao qián?",
+    "translation": "How much is this?"
+  },
+  {
+    "simplified": "请",
+    "traditional": "請",
+    "pinyin": "qǐng",
+    "meaning": "please; to invite",
+    "example": "请坐。",
+    "example_traditional": "請坐。",
+    "example_pinyin": "Qǐng zuò.",
+    "translation": "Please sit down."
+  },
+  {
+    "simplified": "再见",
+    "traditional": "再見",
+    "pinyin": "zàijiàn",
+    "meaning": "goodbye",
+    "example": "再见，明天见！",
+    "example_traditional": "再見，明天見！",
+    "example_pinyin": "Zàijiàn, míngtiān jiàn!",
+    "translation": "Goodbye, see you tomorrow!"
+  }
+]

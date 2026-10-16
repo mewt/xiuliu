@@ -1,0 +1,26 @@
+[package]
+name = "xiuliu"
+version = "0.2.0"
+edition = "2024"
+description = "A small daily Mandarin learning app for your terminal"
+authors = ["Agung Sukariman <agung@smartsalarypro.com>"]
+license = "MIT AND CC-BY-SA-4.0"
+readme = "README.md"
+repository = "https://github.com/mewt/xiuliu"
+homepage = "https://github.com/mewt/xiuliu"
+keywords = ["chinese", "mandarin", "learning", "cli", "ratatui"]
+categories = ["command-line-utilities"]
+include = ["src/**", "tests/**", "assets/**", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE", ".env.example"]
+
+[[bin]]
+name = "xiuliu"
+path = "src/main.rs"
+
+[dependencies]
+base64 = "0.22.1"
+chrono = { version = "0.4.45", features = ["serde"] }
+crossterm = "0.28.1"
+ratatui = "0.29.0"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+ureq = "2.12.1"
