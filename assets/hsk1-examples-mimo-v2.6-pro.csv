@@ -1,0 +1,350 @@
+simplified,traditional,pinyin,meaning,level,frequency,example,example_traditional,example_pinyin,translation,example_source,review_status
+的,的,de,of; ~'s (possessive particle); (used after an attribute); (used to form a nominal expression),1,1,我的妈妈是老师。,我的媽媽是老師。,Wǒ de māma shì lǎoshī.,My mom is a teacher.,mimo-v2.6-pro,needs_review
+了,了,le,"(completed action marker); (modal particle indicating change of state, situation now); (modal particle intensifying preceding clause)",1,3,我昨天去了学校。,我昨天去了學校。,Wǒ zuótiān qù le xuéxiào.,I went to school yesterday.,mimo-v2.6-pro,needs_review
+我,我,wǒ,I; me; my,1,3,我是学生。,我是學生。,Wǒ shì xuésheng.,I am a student.,curated,needs_review
+是,是,shì,to be (followed by substantives only); correct; right; true; (respectful acknowledgement of a command) very well,1,4,这是我的书。,這是我的書。,Zhè shì wǒ de shū.,This is my book.,curated,needs_review
+你,你,nǐ,"you (informal, as opposed to courteous 您)",1,5,你好吗？,你好嗎？,Nǐ hǎo ma?,How are you?,curated,needs_review
+在,在,zài,to exist; to be alive; (of sb or sth) to be (located) at; (used before a verb to indicate an action in progress),1,5,我的朋友在北京。,我的朋友在北京。,Wǒ de péngyou zài Běijīng.,My friend is in Beijing.,mimo-v2.6-pro,needs_review
+不,不,bù,no; not so; (bound form) not; un-,1,9,我不喝咖啡。,我不喝咖啡。,Wǒ bù hē kāfēi.,I do not drink coffee.,curated,needs_review
+有,有,yǒu,to have; there is; (bound form) having; with; -ful; -ed; -al (as in 意 intentional),1,9,我有一本书。,我有一本書。,Wǒ yǒu yì běn shū.,I have a book.,curated,needs_review
+他,他,tā,he; him (used for either sex when the sex is unknown or unimportant); (used before sb's name for emphasis); (used as a meaningless mock object),1,10,他是我的同学。,他是我的同學。,Tā shì wǒ de tóngxué.,He is my classmate.,mimo-v2.6-pro,needs_review
+这,這,zhè,"(pronoun) this; these; (bound form) this; the (followed by a noun); (bound form) this; these (followed by a classifier) (in this sense, commonly pr. [zhèi], esp. in Beijing)",1,11,这是一本书。,這是一本書。,Zhè shì yì běn shū.,This is a book.,mimo-v2.6-pro,needs_review
+就,就,jiù,(after a suppositional clause) in that case; then; (after a clause of action) as soon as; immediately after; (same as 是) merely; nothing else but; simply; just; precisely; exactly,1,15,我一回家就吃饭。,我一回家就吃飯。,Wǒ yì huí jiā jiù chīfàn.,I eat as soon as I get home.,mimo-v2.6-pro,needs_review
+个,個,gě,used in 自个儿,1,19,我喜欢自个儿看书。,我喜歡自個兒看書。,Wǒ xǐhuan zìgěr kàn shū.,I like reading by myself.,mimo-v2.6-pro,needs_review
+人,人,rén,person; people,1,19,这里有很多人。,這裡有很多人。,Zhèlǐ yǒu hěn duō rén.,There are many people here.,curated,needs_review
+和,咊,hé,old variant of 和,1,19,我和朋友一起吃饭。,我咊朋友一起吃飯。,Wǒ hé péngyou yìqǐ chīfàn.,I eat together with my friend.,mimo-v2.6-pro,needs_review
+我们,我們,wǒ men,we; us; ourselves,1,19,我们都是学生。,我們都是學生。,Wǒmen dōu shì xuésheng.,We are all students.,mimo-v2.6-pro,needs_review
+要,要,yāo,(bound form) to demand; to coerce,1,19,老师要求我们每天读书。,老師要求我們每天讀書。,Lǎoshī yāoqiú wǒmen měitiān dú shū.,The teacher requires us to read every day.,mimo-v2.6-pro,needs_review
+说,說,shuì,to persuade,1,19,我会说中文。,我會說中文。,Wǒ huì shuō Zhōngwén.,I can speak Chinese.,curated,needs_review
+好,好,hǎo,good; appropriate; proper; all right!,1,20,今天天气很好。,今天天氣很好。,Jīntiān tiānqì hěn hǎo.,The weather is nice today.,curated,needs_review
+一,一,yī,one; single; a (article),1,21,今天是第一天。,今天是第一天。,Jīntiān shì dì yī tiān.,Today is the first day.,mimo-v2.6-pro,needs_review
+也,也,yě,(adverb) also; both ... and ... (before predicates only); (literary) particle having functions similar to 啊,1,23,我也是学生。,我也是學生。,Wǒ yě shì xuéshēng.,I am also a student.,mimo-v2.6-pro,needs_review
+会,會,huì,can; to have the skill; to know how to; to be likely to; to be sure to; to meet; to get together,1,23,我会说汉语。,我會說漢語。,Wǒ huì shuō Hànyǔ.,I can speak Chinese.,mimo-v2.6-pro,needs_review
+都,都,dōu,all; both; entirely; (used for emphasis) even; already,1,25,我们都是学生。,我們都是學生。,Wǒmen dōu shì xuéshēng.,We are all students.,mimo-v2.6-pro,needs_review
+对,對,duì,right; correct; towards; at; for; concerning; regarding,1,28,你说得对。,你說得對。,Nǐ shuō de duì.,You are right.,mimo-v2.6-pro,needs_review
+上,上,shǎng,used in 上声,1,29,汉语的上声很难。,漢語的上聲很難。,Hànyǔ de shǎngshēng hěn nán.,The third tone in Chinese is hard.,mimo-v2.6-pro,needs_review
+到,到,dào,to reach; to arrive; to leave for; to go to; to (a place); until (a time); up to (a point),1,29,我们到学校了。,我們到學校了。,Wǒmen dào xuéxiào le.,We have arrived at school.,mimo-v2.6-pro,needs_review
+来,來,lái,"to come; (used as a substitute for a more specific verb); hither (directional complement for motion toward the speaker, as in 回来)",1,31,请进来。,請進來。,Qǐng jìn lái.,Please come in.,curated,needs_review
+很,很,hěn,(adverb of degree); quite; very,1,35,今天很热。,今天很熱。,Jīntiān hěn rè.,It is very hot today.,mimo-v2.6-pro,needs_review
+还,還,hái,still; still in progress; still more,1,37,他还在学校。,他還在學校。,Tā hái zài xuéxiào.,He is still at school.,mimo-v2.6-pro,needs_review
+去,去,qù,to go; to go to (a place); (of a time etc) last,1,38,我去学校。,我去學校。,Wǒ qù xuéxiào.,I am going to school.,curated,needs_review
+她,她,tā,she,1,38,她是我姐姐。,她是我姐姐。,Tā shì wǒ jiějie.,She is my older sister.,mimo-v2.6-pro,needs_review
+着,著,zhāo,(chess) move; trick; all right!,1,38,这着棋很好。,這著棋很好。,Zhè zhāo qí hěn hǎo.,This chess move is a good one.,mimo-v2.6-pro,needs_review
+想,想,xiǎng,to think (about); to think of; to devise; to think (that); to believe (that),1,44,我想我的妈妈。,我想我的媽媽。,Wǒ xiǎng wǒ de mā ma.,I think about my mom.,mimo-v2.6-pro,needs_review
+没有,沒有,méi yǒu,haven't; hasn't; doesn't exist,1,46,我家没有车。,我家沒有車。,Wǒ jiā méi yǒu chē.,My family doesn't have a car.,mimo-v2.6-pro,needs_review
+给,給,gěi,to; for; for the benefit of,1,46,这本书是给你的。,這本書是給你的。,Zhè běn shū shì gěi nǐ de.,This book is for you.,mimo-v2.6-pro,needs_review
+能,能,néng,can; to be able to; might possibly,1,46,我能说中文。,我能說中文。,Wǒ néng shuō zhōng wén.,I can speak Chinese.,mimo-v2.6-pro,needs_review
+那,那,nǎ,variant of 哪,1,48,你去那里？,你去那裡？,Nǐ qù nǎ lǐ?,Where are you going?,mimo-v2.6-pro,needs_review
+他们,他們,tā men,they,1,49,他们是我的朋友。,他們是我的朋友。,Tā men shì wǒ de péng you.,They are my friends.,mimo-v2.6-pro,needs_review
+看,看,kān,to look after; to take care of; to watch,1,52,我喜欢看书。,我喜歡看書。,Wǒ xǐhuan kàn shū.,I like reading books.,curated,needs_review
+做,做,zuò,to make; to produce; to write; to compose; to do; to engage in; to hold (a party etc),1,53,妈妈在做饭。,媽媽在做飯。,Mā ma zài zuò fàn.,Mom is cooking.,mimo-v2.6-pro,needs_review
+什么,什麼,shén me,what?; something; anything,1,55,你想吃什么？,你想吃什麼？,Nǐ xiǎng chī shén me?,What do you want to eat?,mimo-v2.6-pro,needs_review
+吧,吧,bā,"bar (loanword) (serving drinks, or providing Internet access etc); to puff (on a pipe etc); (onom.) bang",1,58,我常去网吧。,我常去網吧。,Wǒ cháng qù wǎng bā.,I often go to the internet café.,mimo-v2.6-pro,needs_review
+点,點,diǎn,point; dot; drop,1,58,纸上有两个点。,紙上有兩個點。,Zhǐ shàng yǒu liǎng ge diǎn.,There are two dots on the paper.,mimo-v2.6-pro,needs_review
+过,過,guò,to cross; to go over; to pass (time),1,60,我们过马路。,我們過馬路。,Wǒmen guò mǎlù.,We cross the road.,mimo-v2.6-pro,needs_review
+没,沒,méi,(negative prefix for verbs) have not; not,1,63,我没去学校。,我沒去學校。,Wǒ méi qù xuéxiào.,I didn't go to school.,mimo-v2.6-pro,needs_review
+大,大,dà,big; large; great; older (than another person); eldest (as in 姐),1,66,这个房间很大。,這個房間很大。,Zhège fángjiān hěn dà.,This room is very big.,curated,needs_review
+下,下,xià,down; downwards; below,1,70,书在桌子下。,書在桌子下。,Shū zài zhuōzi xià.,The book is under the table.,mimo-v2.6-pro,needs_review
+从,从,cóng,variant of 从,1,70,我从北京来。,我从北京來。,Wǒ cóng Běijīng lái.,I come from Beijing.,mimo-v2.6-pro,needs_review
+中,中,zhōng,within; among; in; middle; center; while (doing sth); during,1,71,我们在学校中学中文。,我們在學校中學中文。,Wǒmen zài xuéxiào zhōng xué Zhōngwén.,We learn Chinese at school.,mimo-v2.6-pro,needs_review
+里,裏,lǐ,variant of 里,1,75,我在家里看书。,我在家裏看書。,Wǒ zài jiā lǐ kàn shū.,I read books at home.,mimo-v2.6-pro,needs_review
+真,真,zhēn,really; truly; indeed,1,76,这个苹果真好吃。,這個蘋果真好吃。,Zhège píngguǒ zhēn hǎochī.,This apple is really tasty.,mimo-v2.6-pro,needs_review
+现在,現在,xiàn zài,now; at present; at the moment,1,77,我现在在家。,我現在在家。,Wǒ xiànzài zài jiā.,I am at home right now.,mimo-v2.6-pro,needs_review
+年,年,nián,year,1,79,我在北京住了两年。,我在北京住了兩年。,Wǒ zài Běijīng zhù le liǎng nián.,I lived in Beijing for two years.,mimo-v2.6-pro,needs_review
+用,用,yòng,to use; to employ; to have to,1,79,我用筷子吃饭。,我用筷子吃飯。,Wǒ yòng kuàizi chīfàn.,I eat with chopsticks.,mimo-v2.6-pro,needs_review
+多,多,duō,many; much; too many; in excess; (after a numeral) ... odd,1,80,我有很多书。,我有很多書。,Wǒ yǒu hěn duō shū.,I have a lot of books.,mimo-v2.6-pro,needs_review
+两,兩,liǎng,two; both; some,1,81,我有两个哥哥。,我有兩個哥哥。,Wǒ yǒu liǎng gè gēge.,I have two older brothers.,mimo-v2.6-pro,needs_review
+吗,嗎,má,(coll.) what?,1,83,你在干吗？,你在幹嗎？,Nǐ zài gànmá?,What are you doing?,mimo-v2.6-pro,needs_review
+天,天,tiān,day; sky; heaven,1,83,我每天六点起床。,我每天六點起床。,Wǒ měitiān liù diǎn qǐchuáng.,I get up at six every day.,mimo-v2.6-pro,needs_review
+等,等,děng,class; rank; grade,1,83,我们坐的是二等座。,我們坐的是二等座。,Wǒmen zuò de shì èr děng zuò.,We are sitting in second class.,mimo-v2.6-pro,needs_review
+出,出,chū,to go out; to come out; to occur,1,85,他出门了。,他出門了。,Tā chūmén le.,He has gone out.,mimo-v2.6-pro,needs_review
+太,太,tài,highest; greatest; too (much),1,87,今天太热了。,今天太熱了。,Jīntiān tài rè le.,It is too hot today.,mimo-v2.6-pro,needs_review
+最,㝡,zuì,variant of 最,1,89,他是我最好的朋友。,他是我㝡好的朋友。,Tā shì wǒ zuì hǎo de péngyou.,He is my best friend.,mimo-v2.6-pro,needs_review
+再,再,zài,"again; once more; re-; second; another; then (after sth, and not until then)",1,91,请再说一遍。,請再說一遍。,Qǐng zài shuō yí biàn.,Please say it once more.,mimo-v2.6-pro,needs_review
+呢,呢,ne,"particle indicating that a previously asked question is to be applied to the preceding word (""What about ...?"", ""And ...?""); particle for inquiring about location (""Where is ...?""); particle signaling a pause, to emphasize the preceding words and allow the listener time to take them on board (""ok?"", ""are you with me?"")",1,96,我喝茶，你呢？,我喝茶，你呢？,"Wǒ hē chá, nǐ ne?",I drink tea — what about you?,mimo-v2.6-pro,needs_review
+次,次,cì,"next in sequence; second; the second (day, time etc)",1,99,下次我们一起去吧。,下次我們一起去吧。,Xià cì wǒ men yì qǐ qù ba.,Let's go together next time.,mimo-v2.6-pro,needs_review
+小,小,xiǎo,small; tiny; few,1,100,这只猫很小。,這隻貓很小。,Zhè zhī māo hěn xiǎo.,This cat is very small.,curated,needs_review
+知道,知道,zhī dào,to know; to become aware of; also pr. [zhī dao],1,105,你知道他的名字吗？,你知道他的名字嗎？,Nǐ zhī dào tā de míng zi ma?,Do you know his name?,mimo-v2.6-pro,needs_review
+时候,時候,shí hou,time; length of time; moment,1,107,你什么时候回家？,你什麼時候回家？,Nǐ shén me shí hou huí jiā?,When are you going home?,mimo-v2.6-pro,needs_review
+走,走,zǒu,to walk; to go; to run,1,109,我们走回家吧。,我們走回家吧。,Wǒ men zǒu huí jiā ba.,Let's walk home.,mimo-v2.6-pro,needs_review
+工作,工作,gōng zuò,to work; (of a machine) to operate; job,1,111,我在学校工作。,我在學校工作。,Wǒ zài xué xiào gōng zuò.,I work at a school.,mimo-v2.6-pro,needs_review
+事,事,shì,matter; thing; item,1,113,今天我有很多事。,今天我有很多事。,Jīn tiān wǒ yǒu hěn duō shì.,I have a lot of things to do today.,mimo-v2.6-pro,needs_review
+后,后,hòu,empress; queen; (archaic) monarch,1,115,她是王后。,她是王后。,Tā shì wáng hòu.,She is the queen.,mimo-v2.6-pro,needs_review
+家,傢,jiā,used in 家伙 and 家俱,1,124,我回家。,我回家。,Wǒ huí jiā.,I am going home.,curated,needs_review
+你们,你們,nǐ men,you (plural),1,127,你们是学生吗？,你們是學生嗎？,Nǐ men shì xué shēng ma?,Are you all students?,mimo-v2.6-pro,needs_review
+前,前,qián,front; forward; ahead,1,127,请往前走。,請往前走。,Qǐng wǎng qián zǒu.,Please walk forward.,mimo-v2.6-pro,needs_review
+时间,時間,shí jiān,time; period,1,127,今天我有时间。,今天我有時間。,Jīntiān wǒ yǒu shíjiān.,Today I have time.,mimo-v2.6-pro,needs_review
+怎么,怎麼,zěn me,how?; what?; why?,1,128,你怎么去学校？,你怎麼去學校？,Nǐ zěnme qù xuéxiào?,How do you get to school?,mimo-v2.6-pro,needs_review
+爱,愛,ài,to love; to be fond of; to like; affection; to be inclined (to do sth); to tend to (happen),1,130,我爱妈妈。,我愛媽媽。,Wǒ ài māma.,I love my mom.,mimo-v2.6-pro,needs_review
+地,地,de,"-ly; structural particle: used before a verb or adjective, linking it to preceding modifying adverbial adjunct",1,132,他慢慢地说。,他慢慢地說。,Tā mànmàn de shuō.,He speaks slowly.,mimo-v2.6-pro,needs_review
+这些,這些,zhè xiē,these,1,132,这些书是我的。,這些書是我的。,Zhèxiē shū shì wǒ de.,These books are mine.,mimo-v2.6-pro,needs_review
+跟,跟,gēn,heel; to follow closely; to go with,1,135,我跟朋友去。,我跟朋友去。,Wǒ gēn péngyou qù.,I'm going with a friend.,mimo-v2.6-pro,needs_review
+喜欢,喜歡,xǐ huan,to like; to be fond of,1,139,我喜欢这里。,我喜歡這裡。,Wǒ xǐhuan zhèlǐ.,I like it here.,curated,needs_review
+吃,吃,chī,to eat; to consume; to eat at (a cafeteria etc); to eradicate; to destroy,1,142,我们吃饭吧。,我們吃飯吧。,Wǒmen chī fàn ba.,Let’s eat.,curated,needs_review
+谁,誰,shéi,who; also pr. [shuí],1,142,他是谁？,他是誰？,Tā shì shéi?,Who is he?,mimo-v2.6-pro,needs_review
+新,新,xīn,new; newly; meso- (chemistry),1,150,这是新书。,這是新書。,Zhè shì xīn shū.,This is a new book.,mimo-v2.6-pro,needs_review
+找,找,zhǎo,to try to find; to look for; to call on sb,1,152,我在找我的书。,我在找我的書。,Wǒ zài zhǎo wǒ de shū.,I'm looking for my book.,mimo-v2.6-pro,needs_review
+快,快,kuài,rapid; quick; speed,1,153,他跑得很快。,他跑得很快。,Tā pǎo de hěn kuài.,He runs very fast.,mimo-v2.6-pro,needs_review
+打,打,dá,dozen (loanword),1,153,妈妈买了一打鸡蛋。,媽媽買了一打雞蛋。,Māma mǎi le yī dá jīdàn.,Mom bought a dozen eggs.,mimo-v2.6-pro,needs_review
+还有,還有,hái yǒu,furthermore; in addition; still,1,153,我有苹果，还有香蕉。,我有蘋果，還有香蕉。,"Wǒ yǒu píngguǒ, hái yǒu xiāngjiāo.","I have apples, and bananas too.",mimo-v2.6-pro,needs_review
+今天,今天,jīn tiān,today; at the present; now,1,155,今天我很忙。,今天我很忙。,Jīntiān wǒ hěn máng.,I am busy today.,curated,needs_review
+比,比,bī,euphemistic variant of 屄,1,155,我不写「屄」，只写「比」。,我不寫「屄」，只寫「比」。,"Wǒ bù xiě ""bī"", zhǐ xiě ""bī"".","I don't write 屄, I only write 比.",mimo-v2.6-pro,needs_review
+话,話,huà,dialect; language; spoken words,1,157,他的话我听不懂。,他的話我聽不懂。,Tā de huà wǒ tīng bù dǒng.,I can't understand what he says.,mimo-v2.6-pro,needs_review
+还是,還是,hái shi,still (as before); had better; unexpectedly,1,160,我还是喜欢喝茶。,我還是喜歡喝茶。,Wǒ hái shi xǐhuan hē chá.,I still like drinking tea.,mimo-v2.6-pro,needs_review
+月,月,yuè,moon; month; monthly,1,161,下个月我去北京。,下個月我去北京。,Xià ge yuè wǒ qù Běijīng.,Next month I'm going to Beijing.,mimo-v2.6-pro,needs_review
+觉得,覺得,jué de,to think that ...; to feel that ...; to feel (uncomfortable etc),1,161,我觉得这个菜很好吃。,我覺得這個菜很好吃。,Wǒ jué de zhège cài hěn hǎochī.,I think this dish is delicious.,mimo-v2.6-pro,needs_review
+看到,看到,kàn dào,to see,1,169,我看到他了。,我看到他了。,Wǒ kàn dào tā le.,I saw him.,mimo-v2.6-pro,needs_review
+一起,一起,yī qǐ,in the same place; together; with,1,172,我们一起去学校。,我們一起去學校。,Wǒmen yī qǐ qù xuéxiào.,We go to school together.,mimo-v2.6-pro,needs_review
+起来,起來,qǐ lai,to stand up; to get up; also pr. [qǐ lái],1,172,他早上六点起来。,他早上六點起來。,Tā zǎoshang liù diǎn qǐ lai.,He gets up at six in the morning.,mimo-v2.6-pro,needs_review
+起,起,qǐ,to rise; to raise; to get up,1,174,我每天六点起床。,我每天六點起床。,Wǒ měitiān liù diǎn qǐchuáng.,I get up at six every day.,mimo-v2.6-pro,needs_review
+几,几,jī,small table,1,178,小狗在茶几下面。,小狗在茶几下面。,Xiǎo gǒu zài chájī xiàmiàn.,The puppy is under the small tea table.,mimo-v2.6-pro,needs_review
+见,見,jiàn,to see; to meet; to appear (to be sth),1,178,我明天见你。,我明天見你。,Wǒ míngtiān jiàn nǐ.,I'll see you tomorrow.,mimo-v2.6-pro,needs_review
+车,車,chē,car; vehicle; machine,1,186,我们坐车去学校。,我們坐車去學校。,Wǒmen zuò chē qù xuéxiào.,We're going to school by car.,mimo-v2.6-pro,needs_review
+一些,一些,yī xiē,some; a few; a little,1,187,我买了一些水果。,我買了一些水果。,Wǒ mǎi le yī xiē shuǐguǒ.,I bought some fruit.,mimo-v2.6-pro,needs_review
+找到,找到,zhǎo dào,to find,1,188,我找到了我的书。,我找到了我的書。,Wǒ zhǎo dào le wǒ de shū.,I found my book.,mimo-v2.6-pro,needs_review
+听,聽,tīng,to listen,1,190,我在听音乐。,我在聽音樂。,Wǒ zài tīng yīnyuè.,I am listening to music.,curated,needs_review
+手,手,shǒu,hand; (formal) to hold; person engaged in certain types of work,1,190,我的手很冷。,我的手很冷。,Wǒ de shǒu hěn lěng.,My hands are cold.,mimo-v2.6-pro,needs_review
+非常,非常,fēi cháng,very; really; unusual; extraordinary,1,194,今天非常热。,今天非常熱。,Jīntiān fēicháng rè.,It's very hot today.,mimo-v2.6-pro,needs_review
+开,開,kāi,"to open (transitive or intransitive); (of ships, vehicles, troops etc) to start; to turn on; to put in operation; to operate; to run",1,195,请开门。,請開門。,Qǐng kāi mén.,Please open the door.,mimo-v2.6-pro,needs_review
+叫,叫,jiào,to shout; to call; to order,1,200,他在门口叫我。,他在門口叫我。,Tā zài ménkǒu jiào wǒ.,He's calling me from the doorway.,mimo-v2.6-pro,needs_review
+孩子,孩子,hái zi,child,1,207,孩子在喝水。,孩子在喝水。,Hái zi zài hē shuǐ.,The child is drinking water.,mimo-v2.6-pro,needs_review
+这里,這裏,zhè lǐ,variant of 这里,1,209,我住在这里。,我住在這裏。,Wǒ zhù zài zhè lǐ.,I live here.,mimo-v2.6-pro,needs_review
+别,別,bié,to leave; to part (from); (literary) to differentiate; to distinguish; (bound form) other; another; different,1,214,朋友要走了，我和他告别。,朋友要走了，我和他告別。,"Péng you yào zǒu le, wǒ hé tā gào bié.","My friend is leaving, and I am saying goodbye to him.",mimo-v2.6-pro,needs_review
+请,請,qǐng,to ask; to invite; please (do sth),1,216,请坐。,請坐。,Qǐng zuò.,Please sit down.,curated,needs_review
+钱,錢,qián,"coin; money; unit of weight, one tenth of a tael 两",1,218,我的钱在桌子上。,我的錢在桌子上。,Wǒ de qián zài zhuō zi shàng.,My money is on the table.,mimo-v2.6-pro,needs_review
+本,本,běn,root; stem; origin,1,222,不要忘本。,不要忘本。,Bú yào wàng běn.,Don't forget your roots.,mimo-v2.6-pro,needs_review
+回,回,huí,to circle; to go back; to turn around,1,225,我要回家。,我要回家。,Wǒ yào huí jiā.,I want to go back home.,mimo-v2.6-pro,needs_review
+东西,東西,dōng xī,east and west,1,226,东西两边都是山。,東西兩邊都是山。,Dōng xī liǎng biān dōu shì shān.,There are mountains on both the east and west sides.,mimo-v2.6-pro,needs_review
+三,三,sān,three; 3,1,233,他有三本书。,他有三本書。,Tā yǒu sān běn shū.,He has three books.,mimo-v2.6-pro,needs_review
+一样,一樣,yī yàng,same; like; equal to,1,235,我们的书一样。,我們的書一樣。,Wǒ men de shū yí yàng.,Our books are the same.,mimo-v2.6-pro,needs_review
+买,買,mǎi,to buy; to purchase,1,240,我要买水。,我要買水。,Wǒ yào mǎi shuǐ.,I want to buy water.,mimo-v2.6-pro,needs_review
+重要,重要,zhòng yào,important; significant; major,1,240,这件事很重要。,這件事很重要。,Zhè jiàn shì hěn zhòng yào.,This matter is very important.,mimo-v2.6-pro,needs_review
+问,問,wèn,to ask; to inquire,1,246,我想问你一件事。,我想問你一件事。,Wǒ xiǎng wèn nǐ yí jiàn shì.,I want to ask you about something.,mimo-v2.6-pro,needs_review
+告诉,告訴,gào sù,to press charges; to file a complaint,1,252,他去法院告诉。,他去法院告訴。,Tā qù fǎ yuàn gào sù.,He went to court to file a complaint.,mimo-v2.6-pro,needs_review
+出来,出來,chū lái,to come out; to appear; to arise,1,254,他们从家里出来。,他們從家裡出來。,Tā men cóng jiā lǐ chū lái.,They came out of the house.,mimo-v2.6-pro,needs_review
+地方,地方,dì fāng,region; regional (away from the central administration); local,1,254,他们来自不同的地方。,他們來自不同的地方。,Tā men lái zì bù tóng de dì fāng.,They come from different regions.,mimo-v2.6-pro,needs_review
+最后,最後,zuì hòu,final; last; finally,1,261,我最后一个走。,我最後一個走。,Wǒ zuì hòu yí ge zǒu.,I was the last one to leave.,mimo-v2.6-pro,needs_review
+岁,嵗,suì,"variant of 岁, year; years old",1,266,他今年五岁。,他今年五嵗。,Tā jīn nián wǔ suì.,He is five years old this year.,mimo-v2.6-pro,needs_review
+老,老,lǎo,prefix used before the surname of a person or a numeral indicating the order of birth of the children in a family or to indicate affection or familiarity; old (of people); venerable (person),1,266,老王是我的朋友。,老王是我的朋友。,Lǎo Wáng shì wǒ de péng you.,Lao Wang is my friend.,mimo-v2.6-pro,needs_review
+行,行,háng,row; line; commercial firm,1,272,第一行是你的名字。,第一行是你的名字。,Dì yī háng shì nǐ de míng zi.,The first line is your name.,mimo-v2.6-pro,needs_review
+号,號,háo,roar; cry,1,278,那孩子在大声号。,那孩子在大聲號。,Nà hái zi zài dà shēng háo.,That child is wailing loudly.,mimo-v2.6-pro,needs_review
+住,住,zhù,to live; to dwell; to stay,1,280,我住在北京。,我住在北京。,Wǒ zhù zài Běijīng.,I live in Beijing.,mimo-v2.6-pro,needs_review
+放,放,fàng,to put; to place; to release,1,280,请把书放在桌子上。,請把書放在桌子上。,Qǐng bǎ shū fàng zài zhuōzi shàng.,Please put the book on the table.,mimo-v2.6-pro,needs_review
+朋友,朋友,péng you,friend,1,280,他是我的朋友。,他是我的朋友。,Tā shì wǒ de péngyou.,He is my friend.,curated,needs_review
+拿,㧱,ná,old variant of 拿,1,287,我拿了一本书。,我㧱了一本書。,Wǒ ná le yī běn shū.,I took a book.,mimo-v2.6-pro,needs_review
+高,高,gāo,high; tall; above average,1,290,这棵树很高。,這棵樹很高。,Zhè kē shù hěn gāo.,This tree is very tall.,mimo-v2.6-pro,needs_review
+正,正,zhēng,first month of the lunar year,1,294,今年正月我很忙。,今年正月我很忙。,Jīn nián zhēng yuè wǒ hěn máng.,I was very busy in the first month of the lunar year this year.,mimo-v2.6-pro,needs_review
+先,先,xiān,early; prior; former,1,306,你先吃吧。,你先吃吧。,Nǐ xiān chī ba.,You eat first.,mimo-v2.6-pro,needs_review
+得到,得到,dé dào,to get; to obtain; to receive,1,308,我得到了一本书。,我得到了一本書。,Wǒ dé dào le yī běn shū.,I got a book.,mimo-v2.6-pro,needs_review
+那些,那些,nà xiē,those,1,326,那些书是我的。,那些書是我的。,Nà xiē shū shì wǒ de.,Those books are mine.,mimo-v2.6-pro,needs_review
+准备,準備,zhǔn bèi,preparation; to prepare; to intend,1,333,我准备去睡觉。,我準備去睡覺。,Wǒ zhǔn bèi qù shuì jiào.,I'm getting ready to go to sleep.,mimo-v2.6-pro,needs_review
+水,水,shuǐ,water; river; liquid,1,335,我想喝水。,我想喝水。,Wǒ xiǎng hē shuǐ.,I would like some water.,curated,needs_review
+进,進,jìn,to go forward; to advance; to go in,1,338,请进！,請進！,Qǐng jìn!,Come in!,mimo-v2.6-pro,needs_review
+写,寫,xiě,to write,1,352,请写你的名字。,請寫你的名字。,Qǐng xiě nǐ de míngzi.,Please write your name.,mimo-v2.6-pro,needs_review
+国家,國家,guó jiā,country; nation; state,1,356,我的国家很大。,我的國家很大。,Wǒ de guójiā hěn dà.,My country is very big.,mimo-v2.6-pro,needs_review
+您,您,nín,"you (courteous, as opposed to informal 你)",1,357,请问，您叫什么名字？,請問，您叫什麼名字？,"Qǐngwèn, nín jiào shénme míngzi?","Excuse me, what is your name?",mimo-v2.6-pro,needs_review
+电话,電話,diàn huà,telephone; phone call; phone number,1,359,明天我给你打电话。,明天我給你打電話。,Míngtiān wǒ gěi nǐ dǎ diànhuà.,I will call you tomorrow.,mimo-v2.6-pro,needs_review
+女,女,nǚ,female; woman; daughter,1,368,我有一个女儿。,我有一個女兒。,Wǒ yǒu yí ge nǚ'ér.,I have a daughter.,mimo-v2.6-pro,needs_review
+送,送,sòng,to send; to deliver; to transmit; to give (as a present); to see (sb) off,1,370,他送我一个苹果。,他送我一個蘋果。,Tā sòng wǒ yí ge píngguǒ.,He gave me an apple.,mimo-v2.6-pro,needs_review
+分,分,fēn,to divide; to separate; to distribute; to allocate; to distinguish (good and bad),1,372,我们来分苹果吧。,我們來分蘋果吧。,Wǒmen lái fēn píngguǒ ba.,Let's divide up the apples.,mimo-v2.6-pro,needs_review
+笑,咲,xiào,old variant of 笑,1,382,他笑了。,他咲了。,Tā xiào le.,He laughed.,mimo-v2.6-pro,needs_review
+女人,女人,nǚ rén,woman,1,383,那个女人是我妈妈。,那個女人是我媽媽。,Nàge nǚrén shì wǒ māma.,That woman is my mother.,mimo-v2.6-pro,needs_review
+小时,小時,xiǎo shí,hour,1,389,我每天睡八个小时。,我每天睡八個小時。,Wǒ měitiān shuì bā ge xiǎoshí.,I sleep eight hours every day.,mimo-v2.6-pro,needs_review
+有些,有些,yǒu xiē,some; somewhat,1,394,有些学生没有来。,有些學生沒有來。,Yǒuxiē xuésheng méiyǒu lái.,Some students didn't come.,mimo-v2.6-pro,needs_review
+帮,幇,bāng,old variant of 帮,1,395,他帮我买水。,他幇我買水。,Tā bāng wǒ mǎi shuǐ.,He helps me buy water.,mimo-v2.6-pro,needs_review
+日,日,rì,"sun; day; date, day of the month",1,395,今天是五月一日。,今天是五月一日。,Jīntiān shì wǔyuè yī rì.,Today is May first.,mimo-v2.6-pro,needs_review
+别人,別人,bié ren,other people; others; other person,1,397,这是别人的书。,這是別人的書。,Zhè shì biéren de shū.,This is someone else's book.,mimo-v2.6-pro,needs_review
+站,站,zhàn,station; to stand; to halt,1,399,车站在哪里？,車站在哪裡？,Chēzhàn zài nǎlǐ?,Where is the station?,mimo-v2.6-pro,needs_review
+路,路,lù,road; journey; route,1,409,这条路很长。,這條路很長。,Zhè tiáo lù hěn cháng.,This road is very long.,mimo-v2.6-pro,needs_review
+男人,男人,nán rén,a man; a male; men,1,415,那个男人是我爸爸。,那個男人是我爸爸。,Nàge nánrén shì wǒ bàba.,That man is my dad.,mimo-v2.6-pro,needs_review
+正在,正在,zhèng zài,just at (that time); right in (that place); right in the middle of (doing sth),1,420,我正在吃饭。,我正在吃飯。,Wǒ zhèngzài chīfàn.,I'm eating right now.,mimo-v2.6-pro,needs_review
+门,門,mén,gate; door; gateway,1,422,请开门。,請開門。,Qǐng kāi mén.,Please open the door.,mimo-v2.6-pro,needs_review
+喝,喝,hē,to drink; variant of 嗬,1,428,你喝茶吗？,你喝茶嗎？,Nǐ hē chá ma?,Do you drink tea?,curated,needs_review
+学校,學校,xué xiào,school,1,430,我们学校有很多学生。,我們學校有很多學生。,Wǒmen xuéxiào yǒu hěn duō xuésheng.,Our school has many students.,mimo-v2.6-pro,needs_review
+穿,穿,chuān,to wear; to put on; to dress,1,430,我今天穿白衣服。,我今天穿白衣服。,Wǒ jīntiān chuān bái yīfu.,I am wearing white clothes today.,mimo-v2.6-pro,needs_review
+坐,坐,zuò,"to sit; to take a seat; to take (a bus, airplane etc)",1,435,请坐在这里。,請坐在這裡。,Qǐng zuò zài zhèlǐ.,Please sit here.,mimo-v2.6-pro,needs_review
+花,花,huā,flower; blossom; fancy pattern,1,435,妈妈买了一朵花。,媽媽買了一朵花。,Māma mǎi le yì duǒ huā.,Mom bought a flower.,mimo-v2.6-pro,needs_review
+早,早,zǎo,early; morning; Good morning!,1,445,早上我去学校。,早上我去學校。,Zǎoshang wǒ qù xuéxiào.,I go to school in the morning.,mimo-v2.6-pro,needs_review
+们,們,men,"plural marker for pronouns, and nouns referring to individuals",1,457,我们是学生。,我們是學生。,Wǒmen shì xuéshēng.,We are students.,mimo-v2.6-pro,needs_review
+身上,身上,shēn shang,on the body; at hand; among,1,460,我身上有十块钱。,我身上有十塊錢。,Wǒ shēn shang yǒu shí kuài qián.,I have ten yuan on me.,mimo-v2.6-pro,needs_review
+干,乹,gān,old variant of 干,1,463,衣服干了。,衣服乹了。,Yīfu gān le.,The clothes are dry.,mimo-v2.6-pro,needs_review
+认识,認識,rèn shi,to know; to recognize; to be familiar with,1,463,我认识她。,我認識她。,Wǒ rèn shi tā.,I know her.,mimo-v2.6-pro,needs_review
+睡,睡,shuì,to sleep; to lie down,1,464,我十点睡。,我十點睡。,Wǒ shí diǎn shuì.,I go to sleep at ten o'clock.,mimo-v2.6-pro,needs_review
+明天,明天,míng tiān,tomorrow,1,469,明天见！,明天見！,Míngtiān jiàn!,See you tomorrow!,curated,needs_review
+回来,回來,huí lai,to return; to come back,1,480,我晚上回来。,我晚上回來。,Wǒ wǎnshang huí lai.,I will come back in the evening.,mimo-v2.6-pro,needs_review
+四,四,sì,four; 4,1,481,我家里有四个人。,我家裡有四個人。,Wǒ jiā lǐ yǒu sì ge rén.,There are four people in my family.,mimo-v2.6-pro,needs_review
+块,塊,kuài,"lump; chunk; piece; classifier for pieces of cloth, cake, soap etc; (coll.) classifier for money and currency units",1,483,这个面包五块。,這個麵包五塊。,Zhè ge miàn bāo wǔ kuài.,This bread is five yuan.,mimo-v2.6-pro,needs_review
+外,外,wài,outside; in addition; foreign,1,489,外面在下雨。,外面在下雨。,Wài miàn zài xià yǔ.,It's raining outside.,mimo-v2.6-pro,needs_review
+晚上,晚上,wǎn shang,evening; night; in the evening,1,502,晚上我们一起吃饭。,晚上我們一起吃飯。,Wǎn shang wǒ men yì qǐ chī fàn.,In the evening we eat dinner together.,mimo-v2.6-pro,needs_review
+妈,媽,mā,ma; mom; mother,1,517,妈，我回来了。,媽，我回來了。,"Mā, wǒ huí lai le.","Mom, I'm back.",mimo-v2.6-pro,needs_review
+球,球,qiú,ball; sphere; globe,1,518,这个球很大。,這個球很大。,Zhè ge qiú hěn dà.,This ball is very big.,mimo-v2.6-pro,needs_review
+谢谢,謝謝,xiè xie,to thank; thanks; thank you,1,520,谢谢你！,謝謝你！,Xièxie nǐ!,Thank you!,curated,needs_review
+学,學,xué,to learn; to study; to imitate,1,524,我想学中文。,我想學中文。,Wǒ xiǎng xué Zhōngwén.,I want to learn Chinese.,curated,needs_review
+多少,多少,duō shǎo,number; amount; somewhat,1,526,这个多少钱？,這個多少錢？,Zhège duōshao qián?,How much is this?,curated,needs_review
+妈妈,媽媽,mā ma,mama; mommy; mother,1,527,妈妈做的饭很好吃。,媽媽做的飯很好吃。,Mā ma zuò de fàn hěn hǎo chī.,The food Mom cooks is delicious.,mimo-v2.6-pro,needs_review
+第二,第二,dì èr,second; number two; next,1,527,他是第二个来的。,他是第二個來的。,Tā shì dì èr ge lái de.,He was the second one to arrive.,mimo-v2.6-pro,needs_review
+错,錯,cuò,mistake; wrong; bad,1,531,对不起，我错了。,對不起，我錯了。,"Duì bu qǐ, wǒ cuò le.","Sorry, I was wrong.",mimo-v2.6-pro,needs_review
+少,少,shǎo,few; less; to lack,1,538,水太少了。,水太少了。,Shuǐ tài shǎo le.,There's too little water.,mimo-v2.6-pro,needs_review
+别的,別的,bié de,else; other,1,543,我不要这个，我要别的。,我不要這個，我要別的。,"Wǒ bù yào zhè ge, wǒ yào bié de.",I don't want this one — I want a different one.,mimo-v2.6-pro,needs_review
+难,難,nán,difficult (to...); problem; difficulty,1,544,中文很难。,中文很難。,Zhōng wén hěn nán.,Chinese is difficult.,mimo-v2.6-pro,needs_review
+电影,電影,diàn yǐng,movie; film,1,546,我喜欢中国电影。,我喜歡中國電影。,Wǒ xǐ huan Zhōng guó diàn yǐng.,I like Chinese movies.,mimo-v2.6-pro,needs_review
+间,間,jiān,between; among; within a definite time or space,1,546,六点到七点之间我在家。,六點到七點之間我在家。,Liù diǎn dào qī diǎn zhī jiān wǒ zài jiā.,I'm at home between six and seven.,mimo-v2.6-pro,needs_review
+哪,哪,nǎ,how; which,1,547,你是哪国人？,你是哪國人？,Nǐ shì nǎ guó rén?,Which country are you from?,mimo-v2.6-pro,needs_review
+跑,跑,páo,(of an animal) to paw (the ground),1,553,小马在跑地。,小馬在跑地。,Xiǎo mǎ zài páo dì.,The little horse is pawing the ground.,mimo-v2.6-pro,needs_review
+回家,回家,huí jiā,to return home,1,554,我下午回家。,我下午回家。,Wǒ xià wǔ huí jiā.,I'll go home in the afternoon.,mimo-v2.6-pro,needs_review
+昨天,昨天,zuó tiān,yesterday,1,557,昨天下雨了。,昨天下雨了。,Zuó tiān xià yǔ le.,It rained yesterday.,mimo-v2.6-pro,needs_review
+晚,晚,wǎn,evening; night; late,1,558,今天我起得很晚。,今天我起得很晚。,Jīn tiān wǒ qǐ de hěn wǎn.,I got up very late today.,mimo-v2.6-pro,needs_review
+书,書,shū,book; letter; document,1,560,这本书很好。,這本書很好。,Zhè běn shū hěn hǎo.,This book is very good.,curated,needs_review
+五,五,wǔ,five; 5,1,563,我有五本书。,我有五本書。,Wǒ yǒu wǔ běn shū.,I have five books.,mimo-v2.6-pro,needs_review
+先生,先生,xiān sheng,teacher; gentleman; sir; mister (Mr.); husband,1,586,王先生是我的老师。,王先生是我的老師。,Wáng xiān sheng shì wǒ de lǎo shī.,Mr. Wang is my teacher.,mimo-v2.6-pro,needs_review
+男,男,nán,"male; Baron, lowest of five orders of nobility 位",1,587,他是男的，我是女的。,他是男的，我是女的。,"Tā shì nán de, wǒ shì nǚ de.","He is male, and I am female.",mimo-v2.6-pro,needs_review
+动,動,dòng,(of sth) to move; to set in movement; to displace,1,588,请不要动这个杯子。,請不要動這個杯子。,Qǐng bú yào dòng zhè ge bēi zi.,Please don't move this cup.,mimo-v2.6-pro,needs_review
+医院,醫院,yī yuàn,hospital,1,608,我妈妈在医院工作。,我媽媽在醫院工作。,Wǒ mā ma zài yī yuàn gōng zuò.,My mother works at a hospital.,mimo-v2.6-pro,needs_review
+重,重,chóng,to repeat; repetition; again,1,608,我没听懂，请重说一次。,我沒聽懂，請重說一次。,"Wǒ méi tīng dǒng, qǐng chóng shuō yí cì.",I didn't understand; please say it again.,mimo-v2.6-pro,needs_review
+真的,真的,zhēn de,"really, truly, indeed",1,622,这本书真的很好看。,這本書真的很好看。,Zhè běn shū zhēn de hěn hǎo kàn.,This book is really good.,mimo-v2.6-pro,needs_review
+子,子,zǐ,son; child; seed,1,627,他的儿子是学生。,他的兒子是學生。,Tā de ér zi shì xué sheng.,His son is a student.,mimo-v2.6-pro,needs_review
+远,遠,yuǎn,far; distant; remote,1,635,我家离学校很远。,我家離學校很遠。,Wǒ jiā lí xué xiào hěn yuǎn.,My home is far from the school.,mimo-v2.6-pro,needs_review
+口,口,kǒu,"mouth; classifier for things with mouths (people, domestic animals, cannons, wells etc); classifier for bites or mouthfuls",1,637,他喝了三口水。,他喝了三口水。,Tā hē le sān kǒu shuǐ.,He drank three mouthfuls of water.,mimo-v2.6-pro,needs_review
+学生,學生,xué sheng,student; schoolchild,1,651,我的妹妹也是学生。,我的妹妹也是學生。,Wǒ de mèi mei yě shì xué sheng.,My younger sister is also a student.,mimo-v2.6-pro,needs_review
+二,二,èr,two; 2; (Beijing dialect) stupid,1,664,我二点见你。,我二點見你。,Wǒ èr diǎn jiàn nǐ.,I'll see you at two o'clock.,mimo-v2.6-pro,needs_review
+儿子,兒子,ér zi,son,1,665,他的儿子叫小明。,他的兒子叫小明。,Tā de ér zi jiào Xiǎo Míng.,His son is called Xiaoming.,mimo-v2.6-pro,needs_review
+明白,明白,míng bai,clear; obvious; unequivocal,1,676,他说得很明白。,他說得很明白。,Tā shuō de hěn míng bai.,He said it very clearly.,mimo-v2.6-pro,needs_review
+杯,杯,bēi,"cup; trophy cup; classifier for certain containers of liquids: glass, cup",1,684,我想喝一杯水。,我想喝一杯水。,Wǒ xiǎng hē yì bēi shuǐ.,I want to drink a glass of water.,mimo-v2.6-pro,needs_review
+记得,記得,jì de,to remember,1,699,我记得你的名字。,我記得你的名字。,Wǒ jì de nǐ de míng zi.,I remember your name.,mimo-v2.6-pro,needs_review
+歌,歌,gē,song; to sing,1,702,她在唱一首歌。,她在唱一首歌。,Tā zài chàng yì shǒu gē.,She is singing a song.,mimo-v2.6-pro,needs_review
+半,半,bàn,half; semi-; incomplete,1,727,现在是六点半。,現在是六點半。,Xiàn zài shì liù diǎn bàn.,It's half past six now.,mimo-v2.6-pro,needs_review
+中国,中國,Zhōng guó,China,1,729,我住在中国。,我住在中國。,Wǒ zhù zài Zhōng guó.,I live in China.,mimo-v2.6-pro,needs_review
+身体,身體,shēn tǐ,the body; one's health; in person,1,731,他的身体很好。,他的身體很好。,Tā de shēn tǐ hěn hǎo.,His health is very good.,mimo-v2.6-pro,needs_review
+元,元,yuán,currency unit (esp. Chinese yuan); first; original,1,744,这本书十元。,這本書十元。,Zhè běn shū shí yuán.,This book is ten yuan.,mimo-v2.6-pro,needs_review
+哪里,哪裏,nǎ lǐ,where?; somewhere; anywhere,1,750,你的书在哪里？,你的書在哪裏？,Nǐ de shū zài nǎ lǐ?,Where is your book?,mimo-v2.6-pro,needs_review
+包,包,bāo,to cover; to wrap; to hold,1,755,我会包饺子。,我會包餃子。,Wǒ huì bāo jiǎozi.,I know how to wrap dumplings.,mimo-v2.6-pro,needs_review
+楼,樓,lóu,house with more than 1 story; storied building; floor,1,765,我们住在六楼。,我們住在六樓。,Wǒmen zhù zài liù lóu.,We live on the sixth floor.,mimo-v2.6-pro,needs_review
+那里,那裏,nà li,there; that place,1,770,我的书在那里。,我的書在那裏。,Wǒ de shū zài nà li.,My book is over there.,mimo-v2.6-pro,needs_review
+介绍,介紹,jiè shào,to introduce (sb to sb); to give a presentation; to present (sb for a job etc),1,779,我给你介绍我的朋友。,我給你介紹我的朋友。,Wǒ gěi nǐ jiè shào wǒ de péngyou.,Let me introduce my friend to you.,mimo-v2.6-pro,needs_review
+电视,電視,diàn shì,television; TV,1,779,爸爸在看电视。,爸爸在看電視。,Bàba zài kàn diàn shì.,Dad is watching TV.,mimo-v2.6-pro,needs_review
+飞,飛,fēi,to fly,1,779,小鸟在天上飞。,小鳥在天上飛。,Xiǎo niǎo zài tiān shàng fēi.,The little bird is flying in the sky.,mimo-v2.6-pro,needs_review
+下午,下午,xià wǔ,afternoon; p.m.,1,782,我下午去买东西。,我下午去買東西。,Wǒ xià wǔ qù mǎi dōngxi.,I'm going shopping this afternoon.,mimo-v2.6-pro,needs_review
+出去,出去,chū qù,to go out,1,784,我们出去吃饭吧。,我們出去吃飯吧。,Wǒmen chū qù chīfàn ba.,Let's go out to eat.,mimo-v2.6-pro,needs_review
+学习,學習,xué xí,to learn; to study,1,789,我每天学习中文。,我每天學習中文。,Wǒ měitiān xué xí zhōngwén.,I study Chinese every day.,mimo-v2.6-pro,needs_review
+老师,老師,lǎo shī,teacher,1,799,我的老师是中国人。,我的老師是中國人。,Wǒ de lǎo shī shì Zhōng guó rén.,My teacher is Chinese.,mimo-v2.6-pro,needs_review
+六,六,liù,six; 6,1,802,我们家有六个人。,我們家有六個人。,Wǒ men jiā yǒu liù ge rén.,There are six people in my family.,mimo-v2.6-pro,needs_review
+唱,唱,chàng,to sing; to call loudly; to chant,1,813,她喜欢唱歌。,她喜歡唱歌。,Tā xǐ huan chàng gē.,She likes to sing.,mimo-v2.6-pro,needs_review
+大学,大學,dà xué,university; college,1,814,我在大学工作。,我在大學工作。,Wǒ zài dà xué gōng zuò.,I work at a university.,mimo-v2.6-pro,needs_review
+医生,醫生,yī shēng,doctor,1,827,她的妈妈是医生。,她的媽媽是醫生。,Tā de mā ma shì yī shēng.,Her mother is a doctor.,mimo-v2.6-pro,needs_review
+病,病,bìng,illness; disease; to fall ill,1,827,昨天他病了。,昨天他病了。,Zuó tiān tā bìng le.,He fell ill yesterday.,mimo-v2.6-pro,needs_review
+名字,名字,míng zi,name (of a person or thing),1,829,我妹妹的名字叫小红。,我妹妹的名字叫小紅。,Wǒ mèi mei de míng zi jiào Xiǎo Hóng.,My younger sister's name is Xiaohong.,mimo-v2.6-pro,needs_review
+她们,她們,tā men,they; them (for females),1,836,她们都是我的同学。,她們都是我的同學。,Tā men dōu shì wǒ de tóng xué.,They are all my classmates.,mimo-v2.6-pro,needs_review
+马上,馬上,mǎ shàng,at once; right away; immediately,1,847,你等一下，我马上来。,你等一下，我馬上來。,"Nǐ děng yí xià, wǒ mǎ shàng lái.","Wait a moment, I'll be right there.",mimo-v2.6-pro,needs_review
+今年,今年,jīn nián,this year,1,851,今年我想去中国。,今年我想去中國。,Jīn nián wǒ xiǎng qù Zhōng guó.,This year I want to go to China.,mimo-v2.6-pro,needs_review
+手机,手機,shǒu jī,cell phone; mobile phone,1,857,我的手机在桌子上。,我的手機在桌子上。,Wǒ de shǒu jī zài zhuō zi shàng.,My cell phone is on the table.,mimo-v2.6-pro,needs_review
+忙,忙,máng,busy; hurriedly; to hurry,1,859,我今天很忙。,我今天很忙。,Wǒ jīn tiān hěn máng.,I'm very busy today.,mimo-v2.6-pro,needs_review
+十,十,shí,ten; 10,1,865,现在是十点。,現在是十點。,Xiàn zài shì shí diǎn.,It's ten o'clock now.,mimo-v2.6-pro,needs_review
+看见,看見,kàn jiàn,to see; to catch sight of,1,870,我看见小明了。,我看見小明了。,Wǒ kàn jiàn Xiǎo Míng le.,I saw Xiao Ming.,mimo-v2.6-pro,needs_review
+听到,聽到,tīng dào,to hear,1,877,我听到了音乐。,我聽到了音樂。,Wǒ tīng dào le yīn yuè.,I heard music.,mimo-v2.6-pro,needs_review
+女儿,女兒,nǚ ér,daughter,1,879,她的女儿今年六岁。,她的女兒今年六歲。,Tā de nǚ ér jīn nián liù suì.,Her daughter is six years old this year.,mimo-v2.6-pro,needs_review
+说话,說話,shuō huà,to speak; to say; to talk,1,880,我喜欢说话。,我喜歡說話。,Wǒ xǐ huan shuō huà.,I like to talk.,mimo-v2.6-pro,needs_review
+汽车,汽車,qì chē,car; automobile; bus,1,898,汽车很快。,汽車很快。,Qì chē hěn kuài.,The car is fast.,mimo-v2.6-pro,needs_review
+爸爸,爸爸,bà ba,(coll.) father; dad,1,908,我爸爸是老师。,我爸爸是老師。,Wǒ bà ba shì lǎo shī.,My dad is a teacher.,mimo-v2.6-pro,needs_review
+字,字,zì,letter; symbol; character,1,913,这个字很难。,這個字很難。,Zhè ge zì hěn nán.,This character is hard.,mimo-v2.6-pro,needs_review
+高兴,高興,gāo xìng,happy; glad; willing (to do sth),1,920,今天我很高兴。,今天我很高興。,Jīn tiān wǒ hěn gāo xìng.,I'm very happy today.,mimo-v2.6-pro,needs_review
+白,白,bái,white; snowy; pure,1,930,我的书包是白的。,我的書包是白的。,Wǒ de shū bāo shì bái de.,My schoolbag is white.,mimo-v2.6-pro,needs_review
+去年,去年,qù nián,last year,1,933,去年我去上海了。,去年我去上海了。,Qù nián wǒ qù Shàng hǎi le.,Last year I went to Shanghai.,mimo-v2.6-pro,needs_review
+热,熱,rè,to warm up; to heat up; hot (of weather),1,938,今天天气很热。,今天天氣很熱。,Jīn tiān tiān qì hěn rè.,The weather is very hot today.,mimo-v2.6-pro,needs_review
+试,試,shì,to test; to try; experiment,1,938,我想试一下这件衣服。,我想試一下這件衣服。,Wǒ xiǎng shì yí xià zhè jiàn yī fu.,I'd like to try on this piece of clothing.,mimo-v2.6-pro,needs_review
+来到,來到,lái dào,to arrive; to come,1,943,我们来到了中国。,我們來到了中國。,Wǒ men lái dào le Zhōng guó.,We arrived in China.,mimo-v2.6-pro,needs_review
+睡觉,睡覺,shuì jiào,to go to bed; to sleep,1,944,我十点睡觉。,我十點睡覺。,Wǒ shí diǎn shuì jiào.,I go to bed at ten o'clock.,mimo-v2.6-pro,needs_review
+电脑,電腦,diàn nǎo,computer,1,946,我的电脑在桌子上。,我的電腦在桌子上。,Wǒ de diàn nǎo zài zhuō zi shàng.,My computer is on the desk.,mimo-v2.6-pro,needs_review
+票,票,piào,ticket; ballot; banknote,1,956,我买了两张票。,我買了兩張票。,Wǒ mǎi le liǎng zhāng piào.,I bought two tickets.,mimo-v2.6-pro,needs_review
+西,西,xī,west,1,958,我家在学校的西边。,我家在學校的西邊。,Wǒ jiā zài xué xiào de xī biān.,My house is to the west of the school.,mimo-v2.6-pro,needs_review
+床,床,chuáng,bed; couch; classifier for beds,1,961,我的床上有一本书。,我的床上有一本書。,Wǒ de chuáng shàng yǒu yì běn shū.,There is a book on my bed.,mimo-v2.6-pro,needs_review
+回到,回到,huí dào,to return to,1,962,我晚上回到家。,我晚上回到家。,Wǒ wǎn shang huí dào jiā.,I return home in the evening.,mimo-v2.6-pro,needs_review
+第,第,dì,"(prefix indicating ordinal number, as in 六 ""sixth""); (literary) grades in which successful candidates in the imperial examinations were placed; (old) residence of a high official",1,962,我是第二个学生。,我是第二個學生。,Wǒ shì dì èr ge xué shēng.,I am the second student.,mimo-v2.6-pro,needs_review
+差,差,chā,difference; discrepancy; (math.) difference (amount remaining after a subtraction); (literary) a little; somewhat; slightly,1,968,七和三的差是四。,七和三的差是四。,Qī hé sān de chā shì sì.,The difference between seven and three is four.,mimo-v2.6-pro,needs_review
+家里,家裡,jiā lǐ,home,1,973,家里有一只猫。,家裡有一隻貓。,Jiā lǐ yǒu yì zhī māo.,There is a cat at home.,mimo-v2.6-pro,needs_review
+教,教,jiāo,to teach,1,988,妈妈教我中文。,媽媽教我中文。,Mā ma jiāo wǒ Zhōng wén.,Mom teaches me Chinese.,mimo-v2.6-pro,needs_review
+不用,不用,bù yòng,need not,1,1013,你不用去。,你不用去。,Nǐ bù yòng qù.,You don't need to go.,mimo-v2.6-pro,needs_review
+读,讀,dòu,comma; phrase marked by pause,1,1013,他写了一个读。,他寫了一個讀。,Tā xiě le yí ge dòu.,He wrote a comma.,mimo-v2.6-pro,needs_review
+忘,忘,wàng,to forget; to overlook; to neglect,1,1015,我忘带书了。,我忘帶書了。,Wǒ wàng dài shū le.,I forgot to bring the book.,mimo-v2.6-pro,needs_review
+认真,認真,rèn zhēn,conscientious; earnest; serious,1,1020,他学习很认真。,他學習很認真。,Tā xué xí hěn rèn zhēn.,He studies very conscientiously.,mimo-v2.6-pro,needs_review
+冷,冷,lěng,cold,1,1027,今天很冷。,今天很冷。,Jīntiān hěn lěng.,It's very cold today.,mimo-v2.6-pro,needs_review
+房子,房子,fáng zi,house; building (single- or two-story); apartment,1,1027,我的房子不大。,我的房子不大。,Wǒ de fáng zi bù dà.,My house isn't big.,mimo-v2.6-pro,needs_review
+电,電,diàn,lightning; electricity; electric (bound form),1,1027,家里没有电。,家裡沒有電。,Jiā lǐ méi yǒu diàn.,There's no electricity in the house.,mimo-v2.6-pro,needs_review
+山,山,shān,mountain; hill; (coll.) small bundle of straw for silkworms to spin cocoons on,1,1030,那座山很高。,那座山很高。,Nà zuò shān hěn gāo.,That mountain is very tall.,mimo-v2.6-pro,needs_review
+常,常,cháng,always; ever; often,1,1057,我常喝茶。,我常喝茶。,Wǒ cháng hē chá.,I often drink tea.,mimo-v2.6-pro,needs_review
+飞机,飛機,fēi jī,airplane,1,1067,我们坐飞机去上海。,我們坐飛機去上海。,Wǒ men zuò fēi jī qù Shànghǎi.,We're taking a plane to Shanghai.,mimo-v2.6-pro,needs_review
+早上,早上,zǎo shang,early morning,1,1092,我早上七点起床。,我早上七點起床。,Wǒ zǎo shang qī diǎn qǐ chuáng.,I get up at seven in the morning.,mimo-v2.6-pro,needs_review
+回答,回答,huí dá,to reply; to answer; reply; answer,1,1100,请回答我的问题。,請回答我的問題。,Qǐng huí dá wǒ de wèn tí.,Please answer my question.,mimo-v2.6-pro,needs_review
+记,記,jì,to record; to note; to memorize,1,1123,我每天记生词。,我每天記生詞。,Wǒ měi tiān jì shēng cí.,I memorize new words every day.,mimo-v2.6-pro,needs_review
+关,關,guān,"mountain pass; to close; to shut; to turn off; to confine; to lock (sb) up; to shut (sb in a room, a bird in a cage etc)",1,1129,请关灯。,請關燈。,Qǐng guān dēng.,Please turn off the light.,mimo-v2.6-pro,needs_review
+哥,哥,gē,elder brother,1,1132,我哥是老师。,我哥是老師。,Wǒ gē shì lǎo shī.,My older brother is a teacher.,mimo-v2.6-pro,needs_review
+爸,爸,bà,father; dad; pa,1,1142,我爸在家。,我爸在家。,Wǒ bà zài jiā.,My dad is at home.,mimo-v2.6-pro,needs_review
+风,風,fēng,wind; news; style,1,1150,今天风很大。,今天風很大。,Jīn tiān fēng hěn dà.,The wind is very strong today.,mimo-v2.6-pro,needs_review
+回去,回去,huí qu,to return; to go back,1,1160,我五点回去。,我五點回去。,Wǒ wǔ diǎn huí qù.,I will go back at five o'clock.,mimo-v2.6-pro,needs_review
+累,累,lěi,to accumulate; to involve or implicate (Taiwan pr. [lèi]); continuous,1,1197,他累了很多钱。,他累了很多錢。,Tā lěi le hěn duō qián.,He has accumulated a lot of money.,mimo-v2.6-pro,needs_review
+打开,打開,dǎ kāi,to open; to show (a ticket); to turn on,1,1199,请打开门。,請打開門。,Qǐng dǎ kāi mén.,Please open the door.,mimo-v2.6-pro,needs_review
+病人,病人,bìng rén,sick person; patient; invalid,1,1209,病人想喝水。,病人想喝水。,Bìng rén xiǎng hē shuǐ.,The patient wants to drink water.,mimo-v2.6-pro,needs_review
+肉,肉,ròu,meat; flesh; pulp (of a fruit),1,1215,我喜欢吃肉。,我喜歡吃肉。,Wǒ xǐ huan chī ròu.,I like eating meat.,mimo-v2.6-pro,needs_review
+打电话,打電話,dǎ diàn huà,to make a telephone call,1,1218,我给妈妈打电话。,我給媽媽打電話。,Wǒ gěi mā ma dǎ diàn huà.,I am calling my mom.,mimo-v2.6-pro,needs_review
+休息,休息,xiū xi,rest; to rest,1,1225,我今天在家休息。,我今天在家休息。,Wǒ jīn tiān zài jiā xiū xi.,I am resting at home today.,mimo-v2.6-pro,needs_review
+班,班,bān,team; class; grade; (military) squad; work shift,1,1238,我们班有二十个学生。,我們班有二十個學生。,Wǒ men bān yǒu èr shí ge xué sheng.,Our class has twenty students.,mimo-v2.6-pro,needs_review
+坏,壞,huài,bad; spoiled; broken,1,1239,我的手机坏了。,我的手機壞了。,Wǒ de shǒu jī huài le.,My phone is broken.,mimo-v2.6-pro,needs_review
+一边,一邊,yī biān,one side; either side; on the one hand,1,1241,商店在路的一边。,商店在路的一邊。,Shāng diàn zài lù de yī biān.,The shop is on one side of the road.,mimo-v2.6-pro,needs_review
+洗,洗,xǐ,to wash; to bathe; to develop (photographs); to shuffle (cards etc),1,1298,我每天早上洗脸。,我每天早上洗臉。,Wǒ měi tiān zǎo shang xǐ liǎn.,I wash my face every morning.,mimo-v2.6-pro,needs_review
+有的,有的,yǒu de,(there are) some (who are...); some (exist),1,1300,有的学生喜欢音乐。,有的學生喜歡音樂。,Yǒu de xué sheng xǐ huan yīn yuè.,Some students like music.,mimo-v2.6-pro,needs_review
+毛,毛,máo,hair; feather; down,1,1319,这只猫的毛是白色的。,這隻貓的毛是白色的。,Zhè zhī māo de máo shì bái sè de.,This cat's fur is white.,mimo-v2.6-pro,needs_review
+忘记,忘記,wàng jì,to forget,1,1335,我忘记他的名字了。,我忘記他的名字了。,Wǒ wàng jì tā de míng zi le.,I forgot his name.,mimo-v2.6-pro,needs_review
+房间,房間,fáng jiān,room,1,1357,我的房间很小。,我的房間很小。,Wǒ de fáng jiān hěn xiǎo.,My room is very small.,mimo-v2.6-pro,needs_review
+八,八,bā,eight; 8,1,1362,我有八本书。,我有八本書。,Wǒ yǒu bā běn shū.,I have eight books.,mimo-v2.6-pro,needs_review
+左,左,zuǒ,left; the Left (politics); east,1,1382,图书馆在左边。,圖書館在左邊。,Tú shū guǎn zài zuǒ biān.,The library is on the left.,mimo-v2.6-pro,needs_review
+吃饭,吃飯,chī fàn,to have a meal; to eat; to make a living,1,1415,我们在家吃饭。,我們在家吃飯。,Wǒ men zài jiā chī fàn.,We eat at home.,mimo-v2.6-pro,needs_review
+动作,動作,dòng zuò,movement; motion; action; to act; to move,1,1418,他的动作很快。,他的動作很快。,Tā de dòng zuò hěn kuài.,His movements are quick.,mimo-v2.6-pro,needs_review
+七,七,qī,seven; 7,1,1419,我七点起床。,我七點起床。,Wǒ qī diǎn qǐ chuáng.,I get up at seven o'clock.,mimo-v2.6-pro,needs_review
+菜,菜,cài,dish (type of food); vegetable; cuisine,1,1448,这个菜很好吃。,這個菜很好吃。,Zhè ge cài hěn hǎo chī.,This dish is very tasty.,mimo-v2.6-pro,needs_review
+衣服,衣服,yī fu,clothes,1,1472,我的衣服在椅子上。,我的衣服在椅子上。,Wǒ de yī fu zài yǐ zi shàng.,My clothes are on the chair.,mimo-v2.6-pro,needs_review
+饿,餓,è,to be hungry; hungry; to starve (sb),1,1477,我很饿。,我很餓。,Wǒ hěn è.,I am very hungry.,mimo-v2.6-pro,needs_review
+右,右,yòu,(bound form) right; right-hand side; (bound form) (politics) right of center; (bound form) (old) west,1,1481,学校在右边。,學校在右邊。,Xué xiào zài yòu bian.,The school is on the right.,mimo-v2.6-pro,needs_review
+树,樹,shù,tree; to cultivate; to set up,1,1481,这棵树很大。,這棵樹很大。,Zhè kē shù hěn dà.,This tree is very big.,mimo-v2.6-pro,needs_review
+上班,上班,shàng bān,to go to work; to be on duty; to start work,1,1495,我爸爸每天上班。,我爸爸每天上班。,Wǒ bà ba měi tiān shàng bān.,My dad goes to work every day.,mimo-v2.6-pro,needs_review
+生日,生日,shēng rì,birthday,1,1506,今天是我的生日。,今天是我的生日。,Jīn tiān shì wǒ de shēng rì.,Today is my birthday.,mimo-v2.6-pro,needs_review
+东,東,dōng,east; host (i.e. sitting on east side of guest); landlord,1,1509,我家在东边。,我家在東邊。,Wǒ jiā zài dōng biān.,My home is in the east.,mimo-v2.6-pro,needs_review
+姐姐,姐姐,jiě jie,older sister,1,1513,我姐姐在北京工作。,我姐姐在北京工作。,Wǒ jiě jie zài Běijīng gōngzuò.,My older sister works in Beijing.,mimo-v2.6-pro,needs_review
+课,課,kè,subject; course; class,1,1517,今天有中文课。,今天有中文課。,Jīntiān yǒu Zhōngwén kè.,There is a Chinese class today.,mimo-v2.6-pro,needs_review
+国,國,guó,country; nation; state; (bound form) national,1,1527,这个国家有很多人。,這個國家有很多人。,Zhè ge guójiā yǒu hěn duō rén.,This country has a lot of people.,mimo-v2.6-pro,needs_review
+饭,飯,fàn,cooked rice; meal; (loanword) fan,1,1529,我们一起吃饭。,我們一起吃飯。,Wǒmen yīqǐ chī fàn.,We eat together.,mimo-v2.6-pro,needs_review
+一半,一半,yī bàn,half,1,1554,这个苹果我吃了一半。,這個蘋果我吃了一半。,Zhè ge píngguǒ wǒ chī le yī bàn.,I ate half of this apple.,mimo-v2.6-pro,needs_review
+家人,家人,jiā rén,family member; (old) servant,1,1562,我的家人住在一起。,我的家人住在一起。,Wǒ de jiā rén zhù zài yīqǐ.,My family members live together.,mimo-v2.6-pro,needs_review
+有时,有時,yǒu shí,sometimes; now and then,1,1568,有时我很忙。,有時我很忙。,Yǒu shí wǒ hěn máng.,Sometimes I am very busy.,mimo-v2.6-pro,needs_review
+小姐,小姐,xiǎo jie,young lady; miss; (slang) prostitute,1,1575,王小姐是我的老师。,王小姐是我的老師。,Wáng xiǎo jie shì wǒ de lǎoshī.,Miss Wang is my teacher.,mimo-v2.6-pro,needs_review
+对不起,對不起,duì bu qǐ,I'm sorry; excuse me; I beg your pardon; to let (sb) down; to disappoint,1,1577,对不起，我不知道。,對不起，我不知道。,"Duì bu qǐ, wǒ bù zhīdào.","Sorry, I don't know.",mimo-v2.6-pro,needs_review
+进去,進去,jìn qù,to go in,1,1624,我们进去吧。,我們進去吧。,Wǒ men jìn qù ba.,Let's go in.,mimo-v2.6-pro,needs_review
+哥哥,哥哥,gē ge,older brother,1,1655,我哥哥是老师。,我哥哥是老師。,Wǒ gē ge shì lǎo shī.,My older brother is a teacher.,mimo-v2.6-pro,needs_review
+没什么,沒什麼,méi shén me,nothing; it doesn't matter; it's nothing,1,1659,没什么，我很好。,沒什麼，我很好。,"Méi shén me, wǒ hěn hǎo.","It's nothing, I'm fine.",mimo-v2.6-pro,needs_review
+路上,路上,lù shang,on the road; on a journey; road surface,1,1669,路上有很多车。,路上有很多車。,Lù shang yǒu hěn duō chē.,There are a lot of cars on the road.,mimo-v2.6-pro,needs_review
+天气,天氣,tiān qì,weather,1,1675,今天天气很好。,今天天氣很好。,Jīn tiān tiān qì hěn hǎo.,The weather is very good today.,mimo-v2.6-pro,needs_review
+最好,最好,zuì hǎo,best; (you) had better (do what we suggest),1,1704,你最好今天去。,你最好今天去。,Nǐ zuì hǎo jīn tiān qù.,You'd better go today.,mimo-v2.6-pro,needs_review
+南,南,nán,south,1,1709,从学校往南走。,從學校往南走。,Cóng xué xiào wǎng nán zǒu.,Walk south from the school.,mimo-v2.6-pro,needs_review
+考试,考試,kǎo shì,to take an exam; exam,1,1718,我们明天考试。,我們明天考試。,Wǒ men míng tiān kǎo shì.,We have an exam tomorrow.,mimo-v2.6-pro,needs_review
+有时候,有時候,yǒu shí hou,sometimes,1,1725,我有时候去那个公园。,我有時候去那個公園。,Wǒ yǒu shí hou qù nà ge gōng yuán.,Sometimes I go to that park.,mimo-v2.6-pro,needs_review
+慢,慢,màn,slow,1,1770,他走路很慢。,他走路很慢。,Tā zǒu lù hěn màn.,He walks very slowly.,mimo-v2.6-pro,needs_review
+旁边,旁邊,páng biān,side; adjacent place,1,1815,他坐在我旁边。,他坐在我旁邊。,Tā zuò zài wǒ páng biān.,He sits next to me.,mimo-v2.6-pro,needs_review
+同学,同學,tóng xué,to study at the same school; fellow student; classmate,1,1828,我们是同学，也是朋友。,我們是同學，也是朋友。,"Wǒ men shì tóng xué, yě shì péng yǒu.",We're classmates and friends too.,mimo-v2.6-pro,needs_review
+北,北,běi,north; (classical) to be defeated,1,1835,学校在我家北边。,學校在我家北邊。,Xué xiào zài wǒ jiā běi biān.,The school is to the north of my house.,mimo-v2.6-pro,needs_review
+帮忙,幫忙,bāng máng,to help; to lend a hand; to do a favor,1,1860,我来帮忙吧。,我來幫忙吧。,Wǒ lái bāng máng ba.,Let me help.,mimo-v2.6-pro,needs_review
+进来,進來,jìn lái,to come in,1,1870,外面冷，快进来。,外面冷，快進來。,"Wài miàn lěng, kuài jìn lái.",It's cold outside — come on in.,mimo-v2.6-pro,needs_review
+见面,見面,jiàn miàn,to meet; to see each other,1,1876,我们明天在学校见面。,我們明天在學校見面。,Wǒ men míng tiān zài xué xiào jiàn miàn.,We're meeting at school tomorrow.,mimo-v2.6-pro,needs_review
+好看,好看,hǎo kàn,"good-looking; nice-looking; good (of a movie, book, TV show etc)",1,1877,这部电影很好看。,這部電影很好看。,Zhè bù diàn yǐng hěn hǎo kàn.,This movie is really good.,mimo-v2.6-pro,needs_review
+中间,中間,zhōng jiān,the middle; the inside; in the middle; within; between; among; during; in the meantime,1,1889,他坐在两个人中间。,他坐在兩個人中間。,Tā zuò zài liǎng ge rén zhōng jiān.,He is sitting between two people.,mimo-v2.6-pro,needs_review
+女生,女生,nǚ shēng,schoolgirl; female student; girl,1,1894,那个女生是我的朋友。,那個女生是我的朋友。,Nà ge nǚ shēng shì wǒ de péng yǒu.,That girl is my friend.,mimo-v2.6-pro,needs_review
+茶,茶,chá,tea; tea plant,1,1910,我喜欢喝茶。,我喜歡喝茶。,Wǒ xǐhuan hē chá.,I like drinking tea.,curated,needs_review
+地点,地點,dì diǎn,place; site; location,1,1921,见面的地点是学校。,見面的地點是學校。,Jiàn miàn de dì diǎn shì xué xiào.,The meeting place is the school.,mimo-v2.6-pro,needs_review
+雨,雨,yǔ,rain,1,1929,外面在下雨。,外面在下雨。,Wài miàn zài xià yǔ.,It is raining outside.,mimo-v2.6-pro,needs_review
+星期,星期,xīng qī,week; day of the week; Sunday,1,1956,下星期我去北京。,下星期我去北京。,Xià xīng qī wǒ qù Běi jīng.,I am going to Beijing next week.,mimo-v2.6-pro,needs_review
+车上,車上,chē shàng,Car,1,1997,妈妈在车上等我。,媽媽在車上等我。,Mā ma zài chē shàng děng wǒ.,Mom is waiting for me in the car.,mimo-v2.6-pro,needs_review
+考,攷,kǎo,to beat; to hit; variant of 考,1,2030,他用手考了一下门。,他用手攷了一下門。,Tā yòng shǒu kǎo le yī xià mén.,He hit the door with his hand.,mimo-v2.6-pro,needs_review
+九,九,jiǔ,nine; 9,1,2040,我有九本书。,我有九本書。,Wǒ yǒu jiǔ běn shū.,I have nine books.,mimo-v2.6-pro,needs_review
+妹妹,妹妹,mèi mei,younger sister; young woman,1,2093,我妹妹六岁了。,我妹妹六歲了。,Wǒ mèi mei liù suì le.,My younger sister is six years old.,mimo-v2.6-pro,needs_review
+生气,生氣,shēng qì,to get angry; to take offense; angry,1,2113,他生气了。,他生氣了。,Tā shēng qì le.,He got angry.,mimo-v2.6-pro,needs_review
+地上,地上,dì shang,on the ground; on the floor,1,2185,书在地上。,書在地上。,Shū zài dì shang.,The book is on the floor.,mimo-v2.6-pro,needs_review
+上午,上午,shàng wǔ,morning,1,2188,上午我有课。,上午我有課。,Shàng wǔ wǒ yǒu kè.,I have class in the morning.,mimo-v2.6-pro,needs_review
+一会儿,一會兒,yī huì r,a moment; a while; in a moment,1,2207,请等一会儿。,請等一會兒。,Qǐng děng yī huì r.,Please wait a moment.,mimo-v2.6-pro,needs_review
+再见,再見,zài jiàn,goodbye; see you again later,1,2487,再见，明天见！,再見，明天見！,"Zàijiàn, míngtiān jiàn!","Goodbye, see you tomorrow!",curated,needs_review

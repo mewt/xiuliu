@@ -114,22 +114,21 @@ impl Progress {
             .or_insert_with(|| starter[index].simplified.clone());
         Ok(progress)
     }
-    fn validate(&self, today: NaiveDate, words: &[Word]) -> io::Result<()> {
-        let ids: BTreeSet<&str> = words.iter().map(|w| w.simplified.as_str()).collect();
+    fn validate(&self, today: NaiveDate, _words: &[Word]) -> io::Result<()> {
         let valid_date = |d: NaiveDate| d >= self.started_on && d <= today;
         if self.version != 2
             || self.started_on > today
             || self
                 .daily
                 .iter()
-                .any(|(d, id)| !valid_date(*d) || !ids.contains(id.as_str()))
+                .any(|(d, id)| !valid_date(*d) || id.is_empty())
             || self.days.iter().any(|(d, day)| {
                 !valid_date(*d)
-                    || day.words.iter().any(|id| !ids.contains(id.as_str()))
+                    || day.words.iter().any(String::is_empty)
                     || day.xp > day.words.len() as u64 * 20
             })
             || self.learned.iter().any(|(id, m)| {
-                !ids.contains(id.as_str())
+                id.is_empty()
                     || !valid_date(m.first_learned)
                     || !valid_date(m.last_practiced)
                     || m.first_learned > m.last_practiced
@@ -149,8 +148,12 @@ impl Progress {
             .position(|w| !self.learned.contains_key(&w.simplified))
     }
     pub fn today_word(&mut self, today: NaiveDate, words: &[Word]) -> Option<usize> {
-        if let Some(id) = self.daily.get(&today) {
-            return words.iter().position(|w| &w.simplified == id);
+        if let Some(index) = self
+            .daily
+            .get(&today)
+            .and_then(|id| words.iter().position(|word| &word.simplified == id))
+        {
+            return Some(index);
         }
         let index = self.next_word(words)?;
         self.daily.insert(today, words[index].simplified.clone());
@@ -176,6 +179,12 @@ impl Progress {
     }
     pub fn due_count(&self, today: NaiveDate) -> usize {
         self.learned.values().filter(|m| m.due_on <= today).count()
+    }
+    pub fn active_learned_count(&self, words: &[Word]) -> usize {
+        words
+            .iter()
+            .filter(|word| self.learned.contains_key(&word.simplified))
+            .count()
     }
     pub fn xp(&self) -> u64 {
         self.days.values().map(|d| d.xp).sum()
@@ -244,9 +253,19 @@ mod tests {
         let words = course::bundled();
         let mut p = Progress::new(date("2024-02-28"));
         assert_eq!(p.today_word(date("2024-02-28"), &words), Some(0));
-        p.complete("你好", date("2024-02-28"));
+        p.complete("你", date("2024-02-28"));
         assert_eq!(p.today_word(date("2024-02-28"), &words), Some(0));
         assert_eq!(p.today_word(date("2024-03-05"), &words), Some(1));
+    }
+    #[test]
+    fn inactive_old_course_assignment_moves_to_the_hsk1_course() {
+        let words = course::bundled();
+        let today = date("2026-10-18");
+        let mut progress = Progress::new(today);
+        progress.daily.insert(today, "功效".into());
+        let index = progress.today_word(today, &words).unwrap();
+        assert_eq!(words[index].simplified, "你");
+        assert_eq!(progress.daily[&today], "你");
     }
     #[test]
     fn rewards_are_idempotent_and_reviews_space_out() {

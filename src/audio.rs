@@ -1,10 +1,8 @@
 use crate::mimo;
 use std::{
-    fs,
     io::{self, Write},
     path::PathBuf,
     process::{Child, Command, Stdio},
-    sync::atomic::{AtomicU64, Ordering},
     time::Duration,
 };
 
@@ -23,7 +21,6 @@ pub struct Audio {
     notice: String,
     mimo: Option<mimo::Worker>,
     pending: Option<(u64, String, bool)>,
-    temporary: Option<PathBuf>,
 }
 
 fn choose_voice(list: &str, traditional: bool) -> Option<String> {
@@ -83,7 +80,6 @@ impl Audio {
             notice: String::new(),
             mimo: None,
             pending: None,
-            temporary: None,
         }
     }
     pub fn with_mimo(mut self, config: mimo::Config) -> io::Result<Self> {
@@ -104,7 +100,6 @@ impl Audio {
             notice: String::new(),
             mimo: None,
             pending: None,
-            temporary: None,
         }
     }
     pub fn status(&self) -> &str {
@@ -140,12 +135,6 @@ impl Audio {
         if let Some(mut child) = self.child.take() {
             let _ = child.kill();
             let _ = child.wait();
-        }
-        self.remove_temporary();
-    }
-    fn remove_temporary(&mut self) {
-        if let Some(path) = self.temporary.take() {
-            let _ = fs::remove_file(path);
         }
     }
     pub fn message(&mut self, message: &str) {
@@ -193,24 +182,8 @@ impl Audio {
             "MiMo unavailable; no offline Mandarin voice is ready.".into()
         };
     }
-    fn play_wav(&mut self, bytes: &[u8]) -> io::Result<()> {
-        static NEXT: AtomicU64 = AtomicU64::new(0);
-        let path = std::env::temp_dir().join(format!(
-            "xiuliu-audio-{}-{}.wav",
-            std::process::id(),
-            NEXT.fetch_add(1, Ordering::Relaxed)
-        ));
-        let mut options = fs::OpenOptions::new();
-        options.write(true).create_new(true);
-        #[cfg(unix)]
-        {
-            use std::os::unix::fs::OpenOptionsExt;
-            options.mode(0o600);
-        }
-        let mut file = options.open(&path)?;
-        self.temporary = Some(path.clone());
-        file.write_all(bytes)?;
-        drop(file);
+    // Play a saved clip in place; the file is kept for reuse, never deleted.
+    fn play_file(&mut self, path: &PathBuf) -> io::Result<()> {
         self.child = Some(
             Command::new("/usr/bin/afplay")
                 .arg(path)
@@ -259,11 +232,8 @@ impl Audio {
             let (_, text, slow) = self.pending.take().unwrap();
             self.notice.clear();
             match reply.audio {
-                Ok(bytes) if self.play_wav(&bytes).is_ok() => {}
-                _ => {
-                    self.remove_temporary();
-                    self.fallback(&text, slow);
-                }
+                Ok(path) if self.play_file(&path).is_ok() => {}
+                _ => self.fallback(&text, slow),
             }
         }
     }
@@ -273,7 +243,6 @@ impl Audio {
             match child.try_wait() {
                 Ok(Some(status)) => {
                     self.child = None;
-                    self.remove_temporary();
                     if !status.success() {
                         self.notice = "Audio failed. Check your system voice and output.".into();
                     }
@@ -301,7 +270,6 @@ impl Audio {
             }));
         };
         let result = child.wait();
-        self.remove_temporary();
         if result?.success() {
             Ok(())
         } else {

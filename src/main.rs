@@ -18,7 +18,7 @@ use std::{
 
 const HELP: &str = "xiuliu — one Mandarin word a day
 
-Usage: xiuliu [today|learn|review|stats|update|speak|analytics] [--traditional] [--data-dir PATH]
+Usage: xiuliu [today|learn|review|stats|speak|analytics] [--traditional] [--data-dir PATH]
 
   (no command)   Open the interactive app; print today's word when piped
   today          Print today's word, pinyin, and example
@@ -30,8 +30,6 @@ Usage: xiuliu [today|learn|review|stats|update|speak|analytics] [--traditional] 
   --mute         Start the interactive app silently
   --tts PROVIDER Speech provider: local (default) or mimo (uses .env)
   --voice VOICE  MiMo voice: female, male, bingtang, moli, suda, baihua
-  update         Download the full free HSK course; keep saved progress
-  --from PATH    With update, import a downloaded complete.json file
   --traditional  Display traditional Chinese characters
   --data-dir     Store progress in a custom directory
   -h, --help     Show this help
@@ -44,7 +42,6 @@ struct Options {
     command: Option<String>,
     traditional: bool,
     data_dir: Option<PathBuf>,
-    from: Option<PathBuf>,
     help: bool,
     muted: bool,
     slow: bool,
@@ -79,14 +76,6 @@ fn options() -> io::Result<Options> {
                     _ => return Err(io::Error::other("--tts requires local or mimo")),
                 };
             }
-            Some("--from") => {
-                options.from = Some(
-                    args.next()
-                        .filter(|p| !p.is_empty())
-                        .ok_or_else(|| io::Error::other("--from requires a path"))?
-                        .into(),
-                );
-            }
             Some("--data-dir") => {
                 let path = args
                     .next()
@@ -94,10 +83,9 @@ fn options() -> io::Result<Options> {
                     .ok_or_else(|| io::Error::other("--data-dir requires a path"))?;
                 options.data_dir = Some(path.into());
             }
-            Some(
-                command @ ("today" | "learn" | "review" | "stats" | "update" | "speak"
-                | "analytics"),
-            ) if options.command.is_none() => {
+            Some(command @ ("today" | "learn" | "review" | "stats" | "speak" | "analytics"))
+                if options.command.is_none() =>
+            {
                 options.command = Some(command.to_owned());
             }
             _ => {
@@ -112,9 +100,6 @@ fn options() -> io::Result<Options> {
         return Err(io::Error::other(
             "--voice requires --tts mimo; local speech uses your system voice.",
         ));
-    }
-    if options.from.is_some() && options.command.as_deref() != Some("update") {
-        return Err(io::Error::other("--from is only available with update"));
     }
     if (options.slow || options.sentence) && options.command.as_deref() != Some("speak") {
         return Err(io::Error::other(
@@ -140,13 +125,12 @@ fn default_data_dir() -> io::Result<PathBuf> {
         .ok_or_else(|| io::Error::other("Cannot locate a home directory. Use --data-dir PATH."))
 }
 
-fn speech(options: &Options) -> io::Result<audio::Audio> {
+fn speech(options: &Options, directory: &Path) -> io::Result<audio::Audio> {
     let audio = audio::Audio::new(options.traditional, options.muted);
     if options.mimo && (!options.muted || options.command.as_deref() != Some("speak")) {
-        audio.with_mimo(mimo::Config::load(
-            Path::new(".env"),
-            options.voice.as_deref(),
-        )?)
+        let config = mimo::Config::load(Path::new(".env"), options.voice.as_deref())?
+            .with_cache_dir(directory.join("audio"));
+        audio.with_mimo(config)
     } else {
         Ok(audio)
     }
@@ -175,12 +159,14 @@ impl Drop for SessionLock {
     }
 }
 
-fn print_word(word: &Word, index: usize, count: usize, traditional: bool, done: bool) {
+fn print_word(word: &Word, index: usize, traditional: bool, done: bool) {
     println!(
-        "\n  一天一词 · ONE DAY, ONE WORD\n  {} · Lesson {}/{}{}\n",
+        "\n  一天一词 · HSK 1\n  {} · Lesson {}/{} · Word {}/{}{}\n",
         Local::now().date_naive(),
-        index + 1,
-        count,
+        course::chapter(index),
+        course::chapter_count(),
+        course::chapter_progress(index).0,
+        course::chapter_progress(index).1,
         if done { " · Learned ✓" } else { "" }
     );
     println!(
@@ -207,7 +193,6 @@ fn show_today(words: &[Word], index: Option<usize>, traditional: bool, progress:
         print_word(
             &words[index],
             index,
-            words.len(),
             traditional,
             progress.learned.contains_key(&words[index].simplified),
         );
@@ -235,23 +220,6 @@ fn run() -> io::Result<()> {
     let _lock = SessionLock::acquire(&directory)?;
     let path = directory.join("progress.json");
     let words = course::load(&directory)?;
-    if options.command.as_deref() == Some("update") {
-        let (total, added) = if let Some(source) = options.from {
-            use std::io::Read;
-            let mut bytes = Vec::new();
-            fs::File::open(source)?
-                .take(20_000_001)
-                .read_to_end(&mut bytes)?;
-            course::install_download(&directory, words, &bytes)?
-        } else {
-            println!("Downloading free HSK vocabulary…");
-            course::update(&directory, words)?
-        };
-        println!(
-            "Ready: {total} words, {added} added. Your progress is preserved. Lessons work offline."
-        );
-        return Ok(());
-    }
     let today = Local::now().date_naive();
     let mut progress = Progress::load(&path, today, &words)?;
     if options.command.as_deref() == Some("analytics") {
@@ -262,7 +230,7 @@ fn run() -> io::Result<()> {
                 &path,
                 options.traditional,
                 false,
-                speech(&options)?,
+                speech(&options, &directory)?,
                 true,
             );
         }
@@ -301,7 +269,7 @@ fn run() -> io::Result<()> {
             if text.is_empty() {
                 return Err(io::Error::other("This word has no example sentence yet."));
             }
-            let mut audio = speech(&options)?;
+            let mut audio = speech(&options, &directory)?;
             let pinyin = if options.sentence {
                 &word.example_pinyin
             } else {
@@ -312,7 +280,7 @@ fn run() -> io::Result<()> {
         }
         Some("stats") => println!(
             "{} / {} words learned\n{} XP\n{}-day streak\n{} study days\n{} words due for review\nStarted: {}\nProgress: {}",
-            progress.learned.len(),
+            progress.active_learned_count(&words),
             words.len(),
             progress.xp(),
             progress.streak(today),
@@ -328,7 +296,7 @@ fn run() -> io::Result<()> {
             &path,
             options.traditional,
             options.command.as_deref() == Some("review"),
-            speech(&options)?,
+            speech(&options, &directory)?,
             false,
         )?,
     }

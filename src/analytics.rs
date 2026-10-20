@@ -1,5 +1,5 @@
 use crate::{
-    course::Word,
+    course::{self, Word},
     progress::Progress,
     ui::{BG, GOLD, GREEN, MUTED, PANEL, PURPLE, WHITE},
 };
@@ -165,10 +165,10 @@ fn heatmap_start(today: NaiveDate, requested: NaiveDate, capacity: usize) -> (Na
 }
 fn shade(xp: u64) -> Color {
     match xp {
-        0 => Color::Rgb(45, 58, 71),
-        1..=19 => Color::Rgb(52, 88, 65),
-        20..=39 => Color::Rgb(74, 127, 74),
-        40..=79 => Color::Rgb(116, 181, 81),
+        0 => Color::Rgb(30, 40, 54),
+        1..=19 => Color::Rgb(46, 84, 60),
+        20..=39 => Color::Rgb(70, 128, 72),
+        40..=79 => Color::Rgb(104, 180, 82),
         _ => GREEN,
     }
 }
@@ -422,47 +422,43 @@ fn vocabulary(
         frame,
         Rect::new(inner.x + 1, inner.y, inner.width.saturating_sub(2), 2),
         format!(
-            "{} / {} words learned · {} new in selected period\nHSK progress across your installed course",
-            progress.learned.len(),
+            "{} / {} HSK 1 words learned · {} new in selected period\nProgress by textbook lesson",
+            progress.active_learned_count(words),
             words.len(),
             summary.new_words
         ),
         WHITE,
     );
-    let row_step = if inner.height >= 16 { 2 } else { 1 };
-    for level in 1..=7 {
-        let total = words.iter().filter(|w| w.level == level).count();
-        let learned = words
+    for chapter in 1..=course::chapter_count() {
+        let chapter_words = &words[course::chapter_range(chapter)];
+        let learned = chapter_words
             .iter()
-            .filter(|w| w.level == level && progress.learned.contains_key(&w.simplified))
+            .filter(|word| progress.learned.contains_key(&word.simplified))
             .count();
-        let new = words
+        let new = chapter_words
             .iter()
-            .filter(|w| {
-                w.level == level
-                    && progress.learned.get(&w.simplified).is_some_and(|m| {
-                        m.first_learned >= summary.start && m.first_learned <= today
+            .filter(|word| {
+                progress
+                    .learned
+                    .get(&word.simplified)
+                    .is_some_and(|memory| {
+                        memory.first_learned >= summary.start && memory.first_learned <= today
                     })
             })
             .count();
-        let y = inner.y + 3 + (level as u16 - 1) * row_step;
+        let y = inner.y + 3 + (chapter as u16 - 1);
         if y >= inner.bottom() {
             break;
         }
-        let label = if level == 7 {
-            "HSK 7–9".to_owned()
-        } else {
-            format!("HSK {level}")
-        };
         frame.render_widget(
             Gauge::default()
                 .gauge_style(Style::default().fg(GREEN).bg(PANEL))
-                .ratio(if total == 0 {
-                    0.0
-                } else {
-                    learned as f64 / total as f64
-                })
-                .label(format!("{label}   {learned}/{total}   +{new} this period")),
+                .ratio(learned as f64 / chapter_words.len() as f64)
+                .label(format!(
+                    "Lesson {chapter} · {}   {learned}/{}   +{new}",
+                    course::chapter_title(chapter),
+                    chapter_words.len()
+                )),
             Rect::new(inner.x + 1, y, inner.width.saturating_sub(2), 1),
         );
     }

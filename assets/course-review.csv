@@ -1,0 +1,167 @@
+lesson_id,lesson_number,lesson_title,lesson_position,course_position,simplified,traditional,pinyin,meaning,level,frequency,example,example_traditional,example_pinyin,translation,review_status,source
+lesson-01,1,你好,1,1,你,你,nǐ,you,1,0,你好吗？,你好嗎？,Nǐ hǎo ma?,How are you?,complete,words.json
+lesson-01,1,你好,2,2,好,好,hǎo,good; well,1,0,今天天气很好。,今天天氣很好。,Jīntiān tiānqì hěn hǎo.,The weather is nice today.,complete,words.json
+lesson-01,1,你好,3,3,您,您,nín,"you (courteous, as opposed to informal 你)",1,357,,,,,missing_example,hsk.json
+lesson-01,1,你好,4,4,你们,你們,nǐ men,you (plural),1,127,,,,,missing_example,hsk.json
+lesson-01,1,你好,5,5,对不起,對不起,duì bu qǐ,I'm sorry; excuse me; I beg your pardon; to let (sb) down; to disappoint,1,1577,,,,,missing_example,hsk.json
+lesson-01,1,你好,6,6,没关系,沒關係,méi guān xi,it doesn't matter,1,3541,,,,,missing_example,hsk.json
+lesson-02,2,谢谢你,1,7,谢谢,謝謝,xièxie,thank you,1,0,谢谢你！,謝謝你！,Xièxie nǐ!,Thank you!,complete,words.json
+lesson-02,2,谢谢你,2,8,不,不,bù,not; no,1,0,我不喝咖啡。,我不喝咖啡。,Wǒ bù hē kāfēi.,I do not drink coffee.,complete,words.json
+lesson-02,2,谢谢你,3,9,不客气,不客氣,bù kè qi,you're welcome; don't mention it; impolite,1,16723,,,,,missing_example,hsk.json
+lesson-02,2,谢谢你,4,10,再见,再見,zàijiàn,goodbye,1,0,再见，明天见！,再見，明天見！,"Zàijiàn, míngtiān jiàn!","Goodbye, see you tomorrow!",complete,words.json
+lesson-03,3,你叫什么名字,1,11,叫,叫,jiào,to shout; to call; to order,1,200,,,,,missing_example,hsk.json
+lesson-03,3,你叫什么名字,2,12,什么,什麼,shén me,what?; something; anything,1,55,,,,,missing_example,hsk.json
+lesson-03,3,你叫什么名字,3,13,名字,名字,míng zi,name (of a person or thing),1,829,,,,,missing_example,hsk.json
+lesson-03,3,你叫什么名字,4,14,我,我,wǒ,I; me,1,0,我是学生。,我是學生。,Wǒ shì xuésheng.,I am a student.,complete,words.json
+lesson-03,3,你叫什么名字,5,15,是,是,shì,to be,1,0,这是我的书。,這是我的書。,Zhè shì wǒ de shū.,This is my book.,complete,words.json
+lesson-03,3,你叫什么名字,6,16,老师,老師,lǎo shī,teacher,1,799,,,,,missing_example,hsk.json
+lesson-03,3,你叫什么名字,7,17,吗,嗎,má,(coll.) what?,1,83,,,,,missing_example,hsk.json
+lesson-03,3,你叫什么名字,8,18,学生,學生,xué sheng,student; schoolchild,1,651,,,,,missing_example,hsk.json
+lesson-03,3,你叫什么名字,9,19,人,人,rén,person; people,1,0,这里有很多人。,這裡有很多人。,Zhèlǐ yǒu hěn duō rén.,There are many people here.,complete,words.json
+lesson-03,3,你叫什么名字,10,20,中国,中國,Zhōng guó,China,1,729,,,,,missing_example,hsk.json
+lesson-03,3,你叫什么名字,11,21,美国,美國,Měiguó,United States,1,0,,,,,missing_example,textbook-words.json
+lesson-04,4,她是我的汉语老师,1,22,她,她,tā,she,1,38,,,,,missing_example,hsk.json
+lesson-04,4,她是我的汉语老师,2,23,谁,誰,shéi,who; also pr. [shuí],1,142,,,,,missing_example,hsk.json
+lesson-04,4,她是我的汉语老师,3,24,的,的,de,of; ~'s (possessive particle); (used after an attribute); (used to form a nominal expression),1,1,这是我的书。,這是我的書。,Zhè shì wǒ de shū.,This is my book.,complete,hsk.json+examples.json
+lesson-04,4,她是我的汉语老师,4,25,汉语,漢語,Hàn yǔ,Chinese language,1,13422,,,,,missing_example,hsk.json
+lesson-04,4,她是我的汉语老师,5,26,哪,哪,nǎ,how; which,1,547,,,,,missing_example,hsk.json
+lesson-04,4,她是我的汉语老师,6,27,国,國,guó,country; nation; state; (bound form) national,1,1527,,,,,missing_example,hsk.json
+lesson-04,4,她是我的汉语老师,7,28,呢,呢,ne,"particle indicating that a previously asked question is to be applied to the preceding word (""What about ...?"", ""And ...?""); particle for inquiring about location (""Where is ...?""); particle signaling a pause, to emphasize the preceding words and allow the listener time to take them on board (""ok?"", ""are you with me?"")",1,96,,,,,missing_example,hsk.json
+lesson-04,4,她是我的汉语老师,8,29,他,他,tā,he; him (used for either sex when the sex is unknown or unimportant); (used before sb's name for emphasis); (used as a meaningless mock object),1,10,,,,,missing_example,hsk.json
+lesson-04,4,她是我的汉语老师,9,30,同学,同學,tóng xué,to study at the same school; fellow student; classmate,1,1828,,,,,missing_example,hsk.json
+lesson-04,4,她是我的汉语老师,10,31,朋友,朋友,péngyou,friend,1,0,他是我的朋友。,他是我的朋友。,Tā shì wǒ de péngyou.,He is my friend.,complete,words.json
+lesson-05,5,她女儿今年二十岁,1,32,家,家,jiā,home; family,1,0,我回家。,我回家。,Wǒ huí jiā.,I am going home.,complete,words.json
+lesson-05,5,她女儿今年二十岁,2,33,有,有,yǒu,to have; there is,1,0,我有一本书。,我有一本書。,Wǒ yǒu yì běn shū.,I have a book.,complete,words.json
+lesson-05,5,她女儿今年二十岁,3,34,口,口,kǒu,"mouth; classifier for things with mouths (people, domestic animals, cannons, wells etc); classifier for bites or mouthfuls",1,637,,,,,missing_example,hsk.json
+lesson-05,5,她女儿今年二十岁,4,35,女儿,女兒,nǚ ér,daughter,1,879,,,,,missing_example,hsk.json
+lesson-05,5,她女儿今年二十岁,5,36,几,几,jī,small table,1,178,,,,,missing_example,hsk.json
+lesson-05,5,她女儿今年二十岁,6,37,岁,嵗,suì,"variant of 岁, year; years old",1,266,,,,,missing_example,hsk.json
+lesson-05,5,她女儿今年二十岁,7,38,了,了,le,"(completed action marker); (modal particle indicating change of state, situation now); (modal particle intensifying preceding clause)",1,3,,,,,missing_example,hsk.json
+lesson-05,5,她女儿今年二十岁,8,39,今年,今年,jīn nián,this year,1,851,,,,,missing_example,hsk.json
+lesson-05,5,她女儿今年二十岁,9,40,多,多,duō,many; much; too many; in excess; (after a numeral) ... odd,1,80,,,,,missing_example,hsk.json
+lesson-05,5,她女儿今年二十岁,10,41,大,大,dà,big; large,1,0,这个房间很大。,這個房間很大。,Zhège fángjiān hěn dà.,This room is very big.,complete,words.json
+lesson-06,6,我会说汉语,1,42,会,會,huì,can; to have the skill; to know how to; to be likely to; to be sure to; to meet; to get together,1,23,,,,,missing_example,hsk.json
+lesson-06,6,我会说汉语,2,43,说,說,shuō,to speak; to say,1,0,我会说中文。,我會說中文。,Wǒ huì shuō Zhōngwén.,I can speak Chinese.,complete,words.json
+lesson-06,6,我会说汉语,3,44,妈妈,媽媽,mā ma,mama; mommy; mother,1,527,,,,,missing_example,hsk.json
+lesson-06,6,我会说汉语,4,45,菜,菜,cài,dish (type of food); vegetable; cuisine,1,1448,,,,,missing_example,hsk.json
+lesson-06,6,我会说汉语,5,46,很,很,hěn,(adverb of degree); quite; very,1,35,,,,,missing_example,hsk.json
+lesson-06,6,我会说汉语,6,47,好吃,好吃,hǎo chī,tasty; delicious,1,2484,,,,,missing_example,hsk.json
+lesson-06,6,我会说汉语,7,48,做,做,zuò,to make; to produce; to write; to compose; to do; to engage in; to hold (a party etc),1,53,,,,,missing_example,hsk.json
+lesson-06,6,我会说汉语,8,49,写,寫,xiě,to write,1,352,,,,,missing_example,hsk.json
+lesson-06,6,我会说汉语,9,50,汉字,漢字,hàn zì,Chinese character; Japanese: kanji; Korean: hanja,1,19725,,,,,missing_example,hsk.json
+lesson-06,6,我会说汉语,10,51,字,字,zì,letter; symbol; character,1,913,,,,,missing_example,hsk.json
+lesson-06,6,我会说汉语,11,52,怎么,怎麼,zěn me,how?; what?; why?,1,128,,,,,missing_example,hsk.json
+lesson-06,6,我会说汉语,12,53,读,讀,dòu,comma; phrase marked by pause,1,1013,,,,,missing_example,hsk.json
+lesson-07,7,今天几号,1,54,请,請,qǐng,please; to invite,1,0,请坐。,請坐。,Qǐng zuò.,Please sit down.,complete,words.json
+lesson-07,7,今天几号,2,55,问,問,wèn,to ask; to inquire,1,246,,,,,missing_example,hsk.json
+lesson-07,7,今天几号,3,56,今天,今天,jīntiān,today,1,0,今天我很忙。,今天我很忙。,Jīntiān wǒ hěn máng.,I am busy today.,complete,words.json
+lesson-07,7,今天几号,4,57,号,號,hào,day of the month; number,1,0,,,,,missing_example,textbook-words.json
+lesson-07,7,今天几号,5,58,月,月,yuè,moon; month; monthly,1,161,,,,,missing_example,hsk.json
+lesson-07,7,今天几号,6,59,星期,星期,xīng qī,week; day of the week; Sunday,1,1956,,,,,missing_example,hsk.json
+lesson-07,7,今天几号,7,60,昨天,昨天,zuó tiān,yesterday,1,557,,,,,missing_example,hsk.json
+lesson-07,7,今天几号,8,61,明天,明天,míngtiān,tomorrow,1,0,明天见！,明天見！,Míngtiān jiàn!,See you tomorrow!,complete,words.json
+lesson-07,7,今天几号,9,62,去,去,qù,to go,1,0,我去学校。,我去學校。,Wǒ qù xuéxiào.,I am going to school.,complete,words.json
+lesson-07,7,今天几号,10,63,学校,學校,xué xiào,school,1,430,,,,,missing_example,hsk.json
+lesson-07,7,今天几号,11,64,看,看,kàn,to look; to watch; to read,1,0,我喜欢看书。,我喜歡看書。,Wǒ xǐhuan kàn shū.,I like reading books.,complete,words.json
+lesson-07,7,今天几号,12,65,书,書,shū,book,1,0,这本书很好。,這本書很好。,Zhè běn shū hěn hǎo.,This book is very good.,complete,words.json
+lesson-08,8,我想喝茶,1,66,想,想,xiǎng,to think (about); to think of; to devise; to think (that); to believe (that),1,44,,,,,missing_example,hsk.json
+lesson-08,8,我想喝茶,2,67,喝,喝,hē,to drink,1,0,你喝茶吗？,你喝茶嗎？,Nǐ hē chá ma?,Do you drink tea?,complete,words.json
+lesson-08,8,我想喝茶,3,68,茶,茶,chá,tea,1,0,我喜欢喝茶。,我喜歡喝茶。,Wǒ xǐhuan hē chá.,I like drinking tea.,complete,words.json
+lesson-08,8,我想喝茶,4,69,吃,吃,chī,to eat,1,0,我们吃饭吧。,我們吃飯吧。,Wǒmen chī fàn ba.,Let’s eat.,complete,words.json
+lesson-08,8,我想喝茶,5,70,米饭,米飯,mǐ fàn,(cooked) rice,1,10194,,,,,missing_example,hsk.json
+lesson-08,8,我想喝茶,6,71,下午,下午,xià wǔ,afternoon; p.m.,1,782,,,,,missing_example,hsk.json
+lesson-08,8,我想喝茶,7,72,商店,商店,shāng diàn,store; shop,1,3479,,,,,missing_example,hsk.json
+lesson-08,8,我想喝茶,8,73,买,買,mǎi,to buy; to purchase,1,240,,,,,missing_example,hsk.json
+lesson-08,8,我想喝茶,9,74,个,個,gě,used in 自个儿,1,19,,,,,missing_example,hsk.json
+lesson-08,8,我想喝茶,10,75,杯子,杯子,bēi zi,cup; glass,1,6162,,,,,missing_example,hsk.json
+lesson-08,8,我想喝茶,11,76,这,這,zhè,"(pronoun) this; these; (bound form) this; the (followed by a noun); (bound form) this; these (followed by a classifier) (in this sense, commonly pr. [zhèi], esp. in Beijing)",1,11,,,,,missing_example,hsk.json
+lesson-08,8,我想喝茶,12,77,多少,多少,duōshao,how much; how many,1,0,这个多少钱？,這個多少錢？,Zhège duōshao qián?,How much is this?,complete,words.json
+lesson-08,8,我想喝茶,13,78,钱,錢,qián,"coin; money; unit of weight, one tenth of a tael 两",1,218,,,,,missing_example,hsk.json
+lesson-08,8,我想喝茶,14,79,块,塊,kuài,"lump; chunk; piece; classifier for pieces of cloth, cake, soap etc; (coll.) classifier for money and currency units",1,483,,,,,missing_example,hsk.json
+lesson-08,8,我想喝茶,15,80,那,那,nǎ,variant of 哪,1,48,,,,,missing_example,hsk.json
+lesson-09,9,你儿子在哪儿工作,1,81,小,小,xiǎo,small; little,1,0,这只猫很小。,這隻貓很小。,Zhè zhī māo hěn xiǎo.,This cat is very small.,complete,words.json
+lesson-09,9,你儿子在哪儿工作,2,82,猫,貓,māo,cat,1,0,,,,,missing_example,textbook-words.json
+lesson-09,9,你儿子在哪儿工作,3,83,在,在,zài,to exist; to be alive; (of sb or sth) to be (located) at; (used before a verb to indicate an action in progress),1,5,我在家。,我在家。,Wǒ zài jiā.,I am at home.,complete,hsk.json+examples.json
+lesson-09,9,你儿子在哪儿工作,4,84,那儿,那兒,nà r,there,1,3421,,,,,missing_example,hsk.json
+lesson-09,9,你儿子在哪儿工作,5,85,狗,狗,gǒu,dog,1,0,,,,,missing_example,textbook-words.json
+lesson-09,9,你儿子在哪儿工作,6,86,椅子,椅子,yǐzi,chair,1,0,,,,,missing_example,textbook-words.json
+lesson-09,9,你儿子在哪儿工作,7,87,下面,下面,xiàmiàn,under; below,1,0,,,,,missing_example,textbook-words.json
+lesson-09,9,你儿子在哪儿工作,8,88,哪儿,哪兒,nǎ r,where?; wherever; anywhere; somewhere; (used in rhetorical questions) how can ...?; how could ...?,1,2534,,,,,missing_example,hsk.json
+lesson-09,9,你儿子在哪儿工作,9,89,工作,工作,gōng zuò,to work; (of a machine) to operate; job,1,111,,,,,missing_example,hsk.json
+lesson-09,9,你儿子在哪儿工作,10,90,儿子,兒子,ér zi,son,1,665,,,,,missing_example,hsk.json
+lesson-09,9,你儿子在哪儿工作,11,91,医院,醫院,yī yuàn,hospital,1,608,,,,,missing_example,hsk.json
+lesson-09,9,你儿子在哪儿工作,12,92,医生,醫生,yī shēng,doctor,1,827,,,,,missing_example,hsk.json
+lesson-09,9,你儿子在哪儿工作,13,93,爸爸,爸爸,bà ba,(coll.) father; dad,1,908,,,,,missing_example,hsk.json
+lesson-10,10,桌子上有一个电脑,1,94,桌子,桌子,zhuō zi,table; desk,1,3639,,,,,missing_example,hsk.json
+lesson-10,10,桌子上有一个电脑,2,95,上,上,shàng,on; above,1,0,,,,,missing_example,textbook-words.json
+lesson-10,10,桌子上有一个电脑,3,96,电脑,電腦,diàn nǎo,computer,1,946,,,,,missing_example,hsk.json
+lesson-10,10,桌子上有一个电脑,4,97,和,咊,hé,old variant of 和,1,19,,,,,missing_example,hsk.json
+lesson-10,10,桌子上有一个电脑,5,98,本,本,běn,root; stem; origin,1,222,,,,,missing_example,hsk.json
+lesson-10,10,桌子上有一个电脑,6,99,里,裡,lǐ,inside; in,1,0,,,,,missing_example,textbook-words.json
+lesson-10,10,桌子上有一个电脑,7,100,前面,前面,qiánmiàn,in front; ahead,1,0,,,,,missing_example,textbook-words.json
+lesson-10,10,桌子上有一个电脑,8,101,后面,後面,hòumiàn,behind; at the back,1,0,,,,,missing_example,textbook-words.json
+lesson-10,10,桌子上有一个电脑,9,102,这儿,這兒,zhè r,here,1,2522,,,,,missing_example,hsk.json
+lesson-10,10,桌子上有一个电脑,10,103,没有,沒有,méi yǒu,haven't; hasn't; doesn't exist,1,46,,,,,missing_example,hsk.json
+lesson-10,10,桌子上有一个电脑,11,104,能,能,néng,can; to be able to; might possibly,1,46,,,,,missing_example,hsk.json
+lesson-10,10,桌子上有一个电脑,12,105,坐,坐,zuò,"to sit; to take a seat; to take (a bus, airplane etc)",1,435,,,,,missing_example,hsk.json
+lesson-11,11,现在几点,1,106,现在,現在,xiàn zài,now; at present; at the moment,1,77,,,,,missing_example,hsk.json
+lesson-11,11,现在几点,2,107,点,點,diǎn,point; dot; drop,1,58,,,,,missing_example,hsk.json
+lesson-11,11,现在几点,3,108,分,分,fēn,to divide; to separate; to distribute; to allocate; to distinguish (good and bad),1,372,,,,,missing_example,hsk.json
+lesson-11,11,现在几点,4,109,中午,中午,zhōng wǔ,noon; midday,1,2600,,,,,missing_example,hsk.json
+lesson-11,11,现在几点,5,110,吃饭,吃飯,chī fàn,to have a meal; to eat; to make a living,1,1415,,,,,missing_example,hsk.json
+lesson-11,11,现在几点,6,111,时候,時候,shí hou,time; length of time; moment,1,107,,,,,missing_example,hsk.json
+lesson-11,11,现在几点,7,112,回,回,huí,to circle; to go back; to turn around,1,225,,,,,missing_example,hsk.json
+lesson-11,11,现在几点,8,113,我们,我們,wǒ men,we; us; ourselves,1,19,,,,,missing_example,hsk.json
+lesson-11,11,现在几点,9,114,电影,電影,diàn yǐng,movie; film,1,546,,,,,missing_example,hsk.json
+lesson-11,11,现在几点,10,115,住,住,zhù,to live; to dwell; to stay,1,280,,,,,missing_example,hsk.json
+lesson-11,11,现在几点,11,116,前,前,qián,front; forward; ahead,1,127,,,,,missing_example,hsk.json
+lesson-11,11,现在几点,12,117,北京,北京,Běi jīng,"Beijing, capital of the People's Republic of China",1,4799,,,,,missing_example,hsk.json
+lesson-12,12,明天天气怎么样,1,118,天气,天氣,tiān qì,weather,1,1675,,,,,missing_example,hsk.json
+lesson-12,12,明天天气怎么样,2,119,怎么样,怎麼樣,zěnmeyàng,how; how about,1,0,,,,,missing_example,textbook-words.json
+lesson-12,12,明天天气怎么样,3,120,太,太,tài,highest; greatest; too (much),1,87,,,,,missing_example,hsk.json
+lesson-12,12,明天天气怎么样,4,121,热,熱,rè,to warm up; to heat up; hot (of weather),1,938,,,,,missing_example,hsk.json
+lesson-12,12,明天天气怎么样,5,122,冷,冷,lěng,cold,1,1027,,,,,missing_example,hsk.json
+lesson-12,12,明天天气怎么样,6,123,下雨,下雨,xià yǔ,to rain,1,5648,,,,,missing_example,hsk.json
+lesson-12,12,明天天气怎么样,7,124,小姐,小姐,xiǎo jie,young lady; miss; (slang) prostitute,1,1575,,,,,missing_example,hsk.json
+lesson-12,12,明天天气怎么样,8,125,来,來,lái,to come,1,0,请进来。,請進來。,Qǐng jìn lái.,Please come in.,complete,words.json
+lesson-12,12,明天天气怎么样,9,126,身体,身體,shēn tǐ,the body; one's health; in person,1,731,,,,,missing_example,hsk.json
+lesson-12,12,明天天气怎么样,10,127,爱,愛,ài,to love; to be fond of; to like; affection; to be inclined (to do sth); to tend to (happen),1,130,,,,,missing_example,hsk.json
+lesson-12,12,明天天气怎么样,11,128,些,些,xiē,some; a few,1,0,,,,,missing_example,textbook-words.json
+lesson-12,12,明天天气怎么样,12,129,水果,水果,shuǐ guǒ,fruit,1,3271,,,,,missing_example,hsk.json
+lesson-12,12,明天天气怎么样,13,130,水,水,shuǐ,water,1,0,我想喝水。,我想喝水。,Wǒ xiǎng hē shuǐ.,I would like some water.,complete,words.json
+lesson-13,13,他在学做中国菜呢,1,131,喂,喂,wèi,hello (on the phone),1,0,,,,,missing_example,textbook-words.json
+lesson-13,13,他在学做中国菜呢,2,132,也,也,yě,(adverb) also; both ... and ... (before predicates only); (literary) particle having functions similar to 啊,1,23,,,,,missing_example,hsk.json
+lesson-13,13,他在学做中国菜呢,3,133,学习,學習,xué xí,to learn; to study,1,789,,,,,missing_example,hsk.json
+lesson-13,13,他在学做中国菜呢,4,134,上午,上午,shàng wǔ,morning,1,2188,,,,,missing_example,hsk.json
+lesson-13,13,他在学做中国菜呢,5,135,睡觉,睡覺,shuì jiào,to go to bed; to sleep,1,944,,,,,missing_example,hsk.json
+lesson-13,13,他在学做中国菜呢,6,136,电视,電視,diàn shì,television; TV,1,779,,,,,missing_example,hsk.json
+lesson-13,13,他在学做中国菜呢,7,137,喜欢,喜歡,xǐhuan,to like,1,0,我喜欢这里。,我喜歡這裡。,Wǒ xǐhuan zhèlǐ.,I like it here.,complete,words.json
+lesson-13,13,他在学做中国菜呢,8,138,给,給,gěi,to; for; for the benefit of,1,46,,,,,missing_example,hsk.json
+lesson-13,13,他在学做中国菜呢,9,139,打电话,打電話,dǎ diàn huà,to make a telephone call,1,1218,,,,,missing_example,hsk.json
+lesson-13,13,他在学做中国菜呢,10,140,吧,吧,bā,"bar (loanword) (serving drinks, or providing Internet access etc); to puff (on a pipe etc); (onom.) bang",1,58,,,,,missing_example,hsk.json
+lesson-14,14,她买了不少衣服,1,141,东西,東西,dōng xī,east and west,1,226,,,,,missing_example,hsk.json
+lesson-14,14,她买了不少衣服,2,142,一点儿,一點兒,yī diǎn r,erhua variant of 一点; a bit; a little bit; (used in negative expressions) (not) the least bit,1,6921,,,,,missing_example,hsk.json
+lesson-14,14,她买了不少衣服,3,143,苹果,蘋果,píngguǒ,apple,1,0,,,,,missing_example,textbook-words.json
+lesson-14,14,她买了不少衣服,4,144,看见,看見,kàn jiàn,to see; to catch sight of,1,870,,,,,missing_example,hsk.json
+lesson-14,14,她买了不少衣服,5,145,先生,先生,xiān sheng,teacher; gentleman; sir; mister (Mr.); husband,1,586,,,,,missing_example,hsk.json
+lesson-14,14,她买了不少衣服,6,146,开,開,kāi,"to open (transitive or intransitive); (of ships, vehicles, troops etc) to start; to turn on; to put in operation; to operate; to run",1,195,,,,,missing_example,hsk.json
+lesson-14,14,她买了不少衣服,7,147,车,車,chē,car; vehicle; machine,1,186,,,,,missing_example,hsk.json
+lesson-14,14,她买了不少衣服,8,148,回来,回來,huí lai,to return; to come back,1,480,,,,,missing_example,hsk.json
+lesson-14,14,她买了不少衣服,9,149,分钟,分鐘,fēnzhōng,minute,1,0,,,,,missing_example,textbook-words.json
+lesson-14,14,她买了不少衣服,10,150,后,后,hòu,empress; queen; (archaic) monarch,1,115,,,,,missing_example,hsk.json
+lesson-14,14,她买了不少衣服,11,151,衣服,衣服,yī fu,clothes,1,1472,,,,,missing_example,hsk.json
+lesson-14,14,她买了不少衣服,12,152,漂亮,漂亮,piàoliang,pretty; beautiful,1,0,,,,,missing_example,textbook-words.json
+lesson-14,14,她买了不少衣服,13,153,啊,啊,a,sentence-final particle; ah,1,0,,,,,missing_example,textbook-words.json
+lesson-14,14,她买了不少衣服,14,154,少,少,shǎo,few; less; to lack,1,538,,,,,missing_example,hsk.json
+lesson-14,14,她买了不少衣服,15,155,不少,不少,bù shǎo,quite a few; many,1,0,,,,,missing_example,textbook-words.json
+lesson-14,14,她买了不少衣服,16,156,这些,這些,zhè xiē,these,1,132,,,,,missing_example,hsk.json
+lesson-14,14,她买了不少衣服,17,157,都,都,dōu,all; both; entirely; (used for emphasis) even; already,1,25,,,,,missing_example,hsk.json
+lesson-15,15,我是坐飞机来的,1,158,认识,認識,rèn shi,to know; to recognize; to be familiar with,1,463,,,,,missing_example,hsk.json
+lesson-15,15,我是坐飞机来的,2,159,年,年,nián,year,1,79,,,,,missing_example,hsk.json
+lesson-15,15,我是坐飞机来的,3,160,大学,大學,dà xué,university; college,1,814,,,,,missing_example,hsk.json
+lesson-15,15,我是坐飞机来的,4,161,饭店,飯店,fàn diàn,restaurant; hotel,1,3998,,,,,missing_example,hsk.json
+lesson-15,15,我是坐飞机来的,5,162,出租车,出租車,chūzūchē,taxi,1,0,,,,,missing_example,textbook-words.json
+lesson-15,15,我是坐飞机来的,6,163,一起,一起,yī qǐ,in the same place; together; with,1,172,,,,,missing_example,hsk.json
+lesson-15,15,我是坐飞机来的,7,164,高兴,高興,gāo xìng,happy; glad; willing (to do sth),1,920,,,,,missing_example,hsk.json
+lesson-15,15,我是坐飞机来的,8,165,听,聽,tīng,to listen,1,0,我在听音乐。,我在聽音樂。,Wǒ zài tīng yīnyuè.,I am listening to music.,complete,words.json
+lesson-15,15,我是坐飞机来的,9,166,飞机,飛機,fēi jī,airplane,1,1067,,,,,missing_example,hsk.json

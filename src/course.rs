@@ -1,15 +1,12 @@
 use serde::{Deserialize, Serialize};
-use std::{
-    collections::BTreeMap,
-    fs,
-    io::{self, Read},
-    path::Path,
-    time::Duration,
-};
+use std::{collections::BTreeMap, io, ops::Range, path::Path};
 
-pub const SOURCE: &str =
-    "https://raw.githubusercontent.com/drkameleon/complete-hsk-vocabulary/main/complete.json";
-const MAX_DOWNLOAD: u64 = 20_000_000;
+#[derive(Clone, Debug, Deserialize)]
+struct Chapter {
+    id: String,
+    title: String,
+    words: Vec<String>,
+}
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct Word {
@@ -52,30 +49,97 @@ impl Word {
 pub fn starter() -> Vec<Word> {
     serde_json::from_str(include_str!("../assets/words.json")).expect("valid starter course")
 }
-pub fn bundled() -> Vec<Word> {
-    let extra: Vec<Word> =
-        serde_json::from_str(include_str!("../assets/hsk.json")).expect("valid HSK course");
-    merge(starter(), extra)
+fn chapters() -> Vec<Chapter> {
+    let chapters: Vec<Chapter> =
+        serde_json::from_str(include_str!("../assets/course.json")).expect("valid course manifest");
+    for (index, chapter) in chapters.iter().enumerate() {
+        assert_eq!(chapter.id, format!("lesson-{:02}", index + 1));
+    }
+    chapters
 }
-// Keep existing order and identities. New entries append by level and frequency.
-pub fn merge(mut existing: Vec<Word>, mut incoming: Vec<Word>) -> Vec<Word> {
-    let mut positions: BTreeMap<String, usize> = existing
+pub fn bundled() -> Vec<Word> {
+    let dictionary: Vec<Word> =
+        serde_json::from_str(include_str!("../assets/hsk.json")).expect("valid HSK dictionary");
+    let textbook: Vec<Word> = serde_json::from_str(include_str!("../assets/textbook-words.json"))
+        .expect("valid textbook vocabulary");
+    let mut available: BTreeMap<_, _> = dictionary
+        .into_iter()
+        .map(|word| (word.simplified.clone(), word))
+        .collect();
+    for word in starter().into_iter().chain(textbook) {
+        available.insert(word.simplified.clone(), word);
+    }
+    let words = chapters()
+        .into_iter()
+        .flat_map(|chapter| chapter.words)
+        .map(|id| {
+            available
+                .get(&id)
+                .unwrap_or_else(|| panic!("course word {id} is missing from the dictionary"))
+                .clone()
+        })
+        .collect();
+    add_examples(words)
+}
+pub fn chapter(index: usize) -> usize {
+    chapters()
+        .iter()
+        .scan(0, |end, chapter| {
+            *end += chapter.words.len();
+            Some(*end)
+        })
+        .position(|end| index < end)
+        .map_or_else(chapter_count, |chapter| chapter + 1)
+}
+pub fn chapter_count() -> usize {
+    chapters().len()
+}
+pub fn chapter_progress(index: usize) -> (usize, usize) {
+    let chapters = chapters();
+    let mut start = 0;
+    for chapter in chapters {
+        let end = start + chapter.words.len();
+        if index < end {
+            return (index - start + 1, chapter.words.len());
+        }
+        start = end;
+    }
+    (0, 0)
+}
+pub fn chapter_range(chapter: usize) -> Range<usize> {
+    let chapters = chapters();
+    let start = chapters
+        .iter()
+        .take(chapter.saturating_sub(1))
+        .map(|chapter| chapter.words.len())
+        .sum();
+    let size = chapters
+        .get(chapter.saturating_sub(1))
+        .map_or(0, |chapter| chapter.words.len());
+    start..start + size
+}
+pub fn chapter_title(chapter: usize) -> String {
+    chapters()
+        .get(chapter.saturating_sub(1))
+        .map_or_else(String::new, |chapter| chapter.title.clone())
+}
+fn add_examples(mut words: Vec<Word>) -> Vec<Word> {
+    let examples: Vec<Word> = serde_json::from_str(include_str!("../assets/examples.json"))
+        .expect("valid bundled examples");
+    let positions: BTreeMap<_, _> = words
         .iter()
         .enumerate()
-        .map(|(i, w)| (w.simplified.clone(), i))
+        .map(|(index, word)| (word.simplified.clone(), index))
         .collect();
-    incoming.sort_by_key(|w| (w.level, w.frequency, w.simplified.clone()));
-    for word in incoming {
-        if let Some(&i) = positions.get(&word.simplified) {
-            if existing[i].example.is_empty() {
-                existing[i] = word;
-            }
-        } else {
-            positions.insert(word.simplified.clone(), existing.len());
-            existing.push(word);
+    for example in examples {
+        if let Some(&index) = positions.get(&example.simplified) {
+            words[index].example = example.example;
+            words[index].example_traditional = example.example_traditional;
+            words[index].example_pinyin = example.example_pinyin;
+            words[index].translation = example.translation;
         }
     }
-    existing
+    words
 }
 fn validate(words: &[Word]) -> io::Result<()> {
     let mut seen = std::collections::BTreeSet::new();
@@ -101,175 +165,53 @@ fn validate(words: &[Word]) -> io::Result<()> {
     }
     Ok(())
 }
-pub fn load(directory: &Path) -> io::Result<Vec<Word>> {
-    match fs::read(directory.join("vocabulary.json")) {
-        Ok(bytes) => {
-            let cached: Vec<Word> = serde_json::from_slice(&bytes).map_err(io::Error::other)?;
-            validate(&cached)?;
-            // Cached updates take precedence over the older bundled snapshot.
-            Ok(merge(bundled(), cached))
-        }
-        Err(e) if e.kind() == io::ErrorKind::NotFound => Ok(bundled()),
-        Err(e) => Err(e),
-    }
-}
-#[derive(Deserialize)]
-struct Entry {
-    simplified: String,
-    level: Vec<String>,
-    #[serde(default)]
-    frequency: Option<u32>,
-    forms: Vec<Form>,
-}
-#[derive(Deserialize)]
-struct Form {
-    traditional: String,
-    transcriptions: Transcriptions,
-    meanings: Vec<String>,
-}
-#[derive(Deserialize)]
-struct Transcriptions {
-    pinyin: String,
-}
-
-pub fn parse_download(bytes: &[u8]) -> io::Result<Vec<Word>> {
-    let entries: Vec<Entry> = serde_json::from_slice(bytes).map_err(io::Error::other)?;
-    let mut words = Vec::new();
-    for entry in entries {
-        let level = entry
-            .level
-            .iter()
-            .filter_map(|l| l.strip_prefix("new-").and_then(|n| n.parse::<u8>().ok()))
-            .min()
-            .or_else(|| {
-                entry
-                    .level
-                    .iter()
-                    .filter_map(|l| l.strip_prefix("old-").and_then(|n| n.parse::<u8>().ok()))
-                    .min()
-            });
-        let Some(level) = level else {
-            continue;
-        };
-        let form = entry
-            .forms
-            .iter()
-            .find(|f| {
-                !f.meanings.is_empty()
-                    && !f.meanings.iter().all(|m| m.starts_with("surname "))
-                    && f.transcriptions
-                        .pinyin
-                        .chars()
-                        .next()
-                        .is_some_and(char::is_lowercase)
-            })
-            .or_else(|| entry.forms.first());
-        let Some(form) = form else {
-            return Err(io::Error::other("Vocabulary entry has no pronunciation"));
-        };
-        words.push(Word {
-            simplified: entry.simplified,
-            traditional: form.traditional.clone(),
-            pinyin: form.transcriptions.pinyin.clone(),
-            meaning: form
-                .meanings
-                .iter()
-                .take(3)
-                .cloned()
-                .collect::<Vec<_>>()
-                .join("; "),
-            level,
-            frequency: entry.frequency.unwrap_or(u32::MAX),
-            example: String::new(),
-            example_traditional: String::new(),
-            example_pinyin: String::new(),
-            translation: String::new(),
-        });
-    }
+pub fn load(_directory: &Path) -> io::Result<Vec<Word>> {
+    let words = bundled();
     validate(&words)?;
     Ok(words)
-}
-pub fn update(directory: &Path, existing: Vec<Word>) -> io::Result<(usize, usize)> {
-    let agent = ureq::AgentBuilder::new()
-        .timeout(Duration::from_secs(45))
-        .build();
-    let response = agent
-        .get(SOURCE)
-        .set("User-Agent", concat!("xiuliu/", env!("CARGO_PKG_VERSION")))
-        .call()
-        .map_err(|e| {
-            io::Error::other(format!(
-                "Could not download free HSK vocabulary: {e}. Your offline course is unchanged."
-            ))
-        })?;
-    let mut bytes = Vec::new();
-    response
-        .into_reader()
-        .take(MAX_DOWNLOAD + 1)
-        .read_to_end(&mut bytes)?;
-    if bytes.len() as u64 > MAX_DOWNLOAD {
-        return Err(io::Error::other("Vocabulary download exceeded 20 MB"));
-    }
-    install_download(directory, existing, &bytes)
-}
-
-pub fn install_download(
-    directory: &Path,
-    existing: Vec<Word>,
-    bytes: &[u8],
-) -> io::Result<(usize, usize)> {
-    if bytes.len() as u64 > MAX_DOWNLOAD {
-        return Err(io::Error::other("Vocabulary file exceeded 20 MB"));
-    }
-    let incoming = parse_download(bytes)?;
-    if incoming.len() < 1000 {
-        return Err(io::Error::other(
-            "Downloaded course looks incomplete; keeping existing vocabulary",
-        ));
-    }
-    let old_count = existing.len();
-    let merged = merge(existing, incoming);
-    crate::storage::save_json(&directory.join("vocabulary.json"), &merged)?;
-    Ok((merged.len(), merged.len() - old_count))
 }
 #[cfg(test)]
 mod tests {
     use super::*;
     #[test]
-    fn bundled_course_is_complete_and_preserves_starter_order() {
+    fn bundled_course_follows_the_explicit_textbook_lessons() {
         let words = bundled();
         validate(&words).unwrap();
-        assert!(words.len() > 450);
-        assert_eq!(words[0].simplified, "你好");
-        assert_eq!(words[29].simplified, "再见");
+        assert_eq!(words.len(), 166);
+        assert!(words.iter().all(|word| word.level == 1));
+        assert_eq!(chapter_count(), 15);
+        assert_eq!(chapter_title(1), "你好");
+        assert_eq!(chapter_range(1), 0..6);
+        assert_eq!(chapter_range(15), 157..166);
+        assert_eq!(chapter(0), 1);
+        assert_eq!(chapter(5), 1);
+        assert_eq!(chapter(6), 2);
+        assert_eq!(chapter_progress(165), (9, 9));
+        assert_eq!(words[0].simplified, "你");
+        assert_eq!(words[6].simplified, "谢谢");
+        let location = words.iter().find(|word| word.simplified == "在").unwrap();
+        assert_eq!(location.example, "我的朋友在北京。");
+        assert_eq!(location.example_pinyin, "Wǒ de péngyou zài Běijīng.");
+        assert_eq!(location.translation, "My friend is in Beijing.");
+        // Every course word now ships with an example sentence.
+        assert!(words.iter().all(|word| !word.example.is_empty()));
     }
+}
+
+#[cfg(test)]
+mod verify_fixes {
+    use super::*;
     #[test]
-    fn updates_do_not_remove_words_or_change_starter_examples() {
+    fn corrected_words_resolve_to_the_beginner_sense() {
         let words = bundled();
-        let mut incoming = words.clone();
-        incoming.reverse();
-        let merged = merge(words.clone(), incoming);
-        assert_eq!(
-            words.iter().map(|w| &w.simplified).collect::<Vec<_>>(),
-            merged.iter().map(|w| &w.simplified).collect::<Vec<_>>()
-        );
-        assert_eq!(merged[0].example, "你好！");
-        let mut archaic = words
-            .iter()
-            .find(|word| word.simplified == "听")
-            .unwrap()
-            .clone();
-        archaic.pinyin = "yǐn".into();
-        archaic.meaning = "smile (archaic)".into();
-        archaic.example.clear();
-        let merged = merge(words, vec![archaic]);
-        let listening = merged.iter().find(|word| word.simplified == "听").unwrap();
-        assert_eq!(listening.pinyin, "tīng");
-        assert_eq!(listening.meaning, "to listen");
-    }
-    #[test]
-    fn malformed_downloads_are_rejected() {
-        assert!(parse_download(b"not json").is_err());
-        assert!(parse_download(b"[]").is_err());
+        let get = |s: &str| words.iter().find(|w| w.simplified == s).unwrap();
+        assert_eq!(get("读").pinyin, "dú");
+        assert_eq!(get("个").pinyin, "gè");
+        assert_eq!(get("那").pinyin, "nà");
+        assert_eq!(get("吗").pinyin, "ma");
+        assert_eq!(get("吧").pinyin, "ba");
+        assert_eq!(get("几").pinyin, "jǐ");
+        assert!(get("读").meaning.contains("read"));
+        assert!(get("读").example.contains('读'));
     }
 }

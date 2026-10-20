@@ -1,7 +1,7 @@
 use crate::{
     analytics,
     audio::{Audio, Cue},
-    course::Word,
+    course::{self, Word},
     lesson::{Lesson, ROUNDS},
     progress::Progress,
 };
@@ -25,14 +25,14 @@ use std::{
     time::{Duration, SystemTime, UNIX_EPOCH},
 };
 
-pub(super) const BG: Color = Color::Rgb(17, 23, 35);
-pub(super) const PANEL: Color = Color::Rgb(26, 35, 49);
-pub(super) const GREEN: Color = Color::Rgb(167, 231, 88);
-pub(super) const WHITE: Color = Color::Rgb(236, 242, 249);
-pub(super) const MUTED: Color = Color::Rgb(149, 166, 187);
-pub(super) const PURPLE: Color = Color::Rgb(191, 166, 255);
-const RED: Color = Color::Rgb(255, 143, 151);
-pub(super) const GOLD: Color = Color::Rgb(255, 211, 106);
+pub(super) const BG: Color = Color::Rgb(13, 18, 28);
+pub(super) const PANEL: Color = Color::Rgb(22, 30, 43);
+pub(super) const GREEN: Color = Color::Rgb(130, 220, 92);
+pub(super) const WHITE: Color = Color::Rgb(240, 245, 252);
+pub(super) const MUTED: Color = Color::Rgb(140, 158, 182);
+pub(super) const PURPLE: Color = Color::Rgb(167, 139, 250);
+const RED: Color = Color::Rgb(255, 118, 130);
+pub(super) const GOLD: Color = Color::Rgb(255, 199, 92);
 
 #[derive(Clone, Copy, PartialEq)]
 enum Screen {
@@ -373,7 +373,7 @@ impl App<'_> {
             stats[2],
             &format!(
                 "{} / {} WORDS",
-                self.progress.learned.len(),
+                self.progress.active_learned_count(self.words),
                 self.words.len()
             ),
             GREEN,
@@ -393,7 +393,7 @@ impl App<'_> {
             Screen::Complete => self.complete(frame, rows[2]),
             Screen::Retry => self.message(frame, rows[2], "A fresh start?", "Mistakes are part of learning.\nTake another look at the word, then try again.\nYour progress is safe. Your hearts refill for free.", "TRY AGAIN  [Enter]", RED),
             Screen::Empty => self.message(frame, rows[2], "Your collection starts here.", "Finish your first lesson to unlock review.\nA little practice today goes a long way.", "BACK TO YOUR PATH  [Enter]", GREEN),
-            Screen::Finished => self.message(frame, rows[2], "Look how far you have grown!", "You have learned every word in your course.\nPress r to review and keep your memory fresh.\nRun xiuliu update for the latest free vocabulary.", "BACK TO YOUR PATH  [Enter]", GREEN),
+            Screen::Finished => self.message(frame, rows[2], "HSK 1 complete!", "You have learned every word in the HSK 1 course.\nPress r to review and keep your memory fresh.", "BACK TO YOUR PATH  [Enter]", GREEN),
         }
         let footer = match self.screen {
             Screen::Home => "Enter start · r review · g analytics · q quit",
@@ -430,7 +430,8 @@ impl App<'_> {
         ])
         .split(area);
         let next = self.progress.next_word(self.words);
-        let level = next.map_or(1, |i| self.words[i].level);
+        let chapter = next.map_or_else(course::chapter_count, course::chapter);
+        let chapter_count = course::chapter_count();
         let hero_block = panel(" YOUR DAILY PATH ", PURPLE);
         let inner = hero_block.inner(parts[0]);
         frame.render_widget(hero_block, parts[0]);
@@ -438,7 +439,7 @@ impl App<'_> {
         let lines = if content_height < 8 {
             vec![
                 Line::from(Span::styled(
-                    format!("YOUR NEXT STEP / HSK {level}"),
+                    format!("HSK 1  /  LESSON {chapter} OF {chapter_count}"),
                     Style::default().fg(PURPLE),
                 )),
                 Line::from(Span::styled(
@@ -458,7 +459,7 @@ impl App<'_> {
         } else {
             vec![
                 Line::from(Span::styled(
-                    format!("YOUR NEXT STEP  /  HSK {level}"),
+                    format!("HSK 1  /  LESSON {chapter} OF {chapter_count}"),
                     Style::default().fg(PURPLE),
                 )),
                 Line::from(""),
@@ -527,7 +528,7 @@ impl App<'_> {
             parts[1],
         );
         let detail = format!(
-            "HSK {level}  ·  Learn → Meaning → Characters → Pinyin\n{} words ready for review",
+            "HSK 1 · {chapter_count} textbook lessons · Learn → Meaning → Characters → Pinyin\n{} words ready for review",
             self.progress.due_count(today)
         );
         text(frame, parts[2], &detail, MUTED, Alignment::Center);
@@ -547,11 +548,16 @@ impl App<'_> {
     fn study(&self, frame: &mut Frame, area: Rect) {
         let lesson = self.lesson.as_ref().unwrap();
         let word = &self.words[lesson.word];
+        let chapter = course::chapter(lesson.word);
+        let chapter_count = course::chapter_count();
+        let (position, chapter_size) = course::chapter_progress(lesson.word);
         let parts = Layout::vertical([Constraint::Min(9), Constraint::Length(3)]).split(area);
         let mut lines = vec![
             Line::from(""),
             Line::from(Span::styled(
-                format!("MEET YOUR WORD  ·  HSK {}", word.level),
+                format!(
+                    "HSK 1  ·  LESSON {chapter}/{chapter_count}  ·  WORD {position}/{chapter_size}"
+                ),
                 Style::default().fg(PURPLE),
             )),
             Line::from(""),
@@ -592,7 +598,7 @@ impl App<'_> {
         let word = &self.words[lesson.word];
         let parts = Layout::vertical([
             Constraint::Length(1),
-            Constraint::Length(5),
+            Constraint::Length(8),
             Constraint::Min(6),
             Constraint::Length(4),
         ])
@@ -625,14 +631,26 @@ impl App<'_> {
                 word.characters(self.traditional),
             ),
         };
+        // Enlarge the prompt: space the characters out and frame it as a focal card
+        // so the Chinese word reads big (a terminal cannot scale a glyph's font size).
+        let focus = if lesson.round == 1 {
+            prompt.to_string()
+        } else {
+            prompt
+                .chars()
+                .map(|c| c.to_string())
+                .collect::<Vec<_>>()
+                .join(" ")
+        };
         frame.render_widget(
             Paragraph::new(vec![
                 Line::from(""),
-                Line::from(Span::styled(instruction, Style::default().fg(MUTED))),
-                Line::from(Span::styled(prompt, Style::default().fg(WHITE).bold())),
+                Line::from(""),
+                Line::from(Span::styled(focus, Style::default().fg(GREEN).bold())),
             ])
             .alignment(Alignment::Center)
-            .wrap(Wrap { trim: true }),
+            .wrap(Wrap { trim: true })
+            .block(panel(&format!(" {instruction} "), GREEN)),
             parts[1],
         );
         let grid_rows = Layout::vertical([Constraint::Percentage(50), Constraint::Percentage(50)])
@@ -912,7 +930,7 @@ mod tests {
         });
     }
     #[test]
-    fn analytics_navigation_renders_all_levels_and_preserves_history() {
+    fn analytics_navigation_renders_chapters_and_preserves_history() {
         with_app(|app| {
             let today = Local::now().date_naive();
             app.progress.complete(&app.words[0].simplified, today);
@@ -923,7 +941,7 @@ mod tests {
                 let mut terminal = Terminal::new(TestBackend::new(width, height)).unwrap();
                 for key in ['1', '2', '3'] {
                     app.handle(KeyCode::Char(key)).unwrap();
-                    for marker in ["ACTIVITY / XP", "HSK 7–9", "Upcoming:"] {
+                    for marker in ["ACTIVITY / XP", "Lesson 1", "Upcoming:"] {
                         terminal.draw(|f| app.render(f)).unwrap();
                         let rendered = terminal
                             .backend()
@@ -993,13 +1011,13 @@ mod tests {
                             _ => "complete",
                         };
                         let mut svg = format!(
-                            "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"{}\" height=\"{}\"><rect width=\"100%\" height=\"100%\" fill=\"#111723\"/>",
+                            "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"{}\" height=\"{}\"><rect width=\"100%\" height=\"100%\" fill=\"#0d121c\"/>",
                             width * 10,
                             height * 20
                         );
                         let color = |c: Color| match c {
                             Color::Rgb(r, g, b) => format!("#{r:02x}{g:02x}{b:02x}"),
-                            _ => "#ecf2f9".into(),
+                            _ => "#f0f5fc".into(),
                         };
                         let mut foreground = String::new();
                         for y in 0..height {

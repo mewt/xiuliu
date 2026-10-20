@@ -1,14 +1,21 @@
 # Vocabulary sources and attribution
 
-The original 30 example-based lessons are in `words.json`.
+The original 30 example-based entries are in `words.json`. The explicit 15-lesson
+sequence is stored in `course.json`. It follows the vocabulary order and lesson
+grouping of the privately consulted 2014 edition of *HSK Standard Course 1*
+(ISBN 978-7-5619-3709-9), edited by Jiang Liping and published by Beijing Language
+and Culture University Press. No textbook pages, dialogues, exercises, or example
+sentences are distributed with the app. `textbook-words.json` contains independently
+written basic entries needed by that sequence.
 
 `hsk.json` is adapted from **Complete HSK Vocabulary**, maintained by
 Yanis Zafirópulos (Dr.Kameleon) and contributors:
 https://github.com/drkameleon/complete-hsk-vocabulary
 
 A selected 3,312-entry source snapshot was retrieved on 2026-10-16, including
-the full 506-entry new-level-1 list and a selection from higher levels. It is not
-the complete upstream inventory; the update command retrieves that inventory.
+the full 506-entry new-level-1 list and a selection from higher levels. The active
+course selects only entries used by its HSK Standard Course 1 lesson progression;
+other entries remain source data but are not loaded.
 Changes: selected one reading per
 simplified headword (preferring a common non-surname reading), retained up to
 three definitions, retained HSK level and frequency, and converted the fields
@@ -32,6 +39,6 @@ material when redistributing adapted vocabulary data. The application's code
 and third-party vocabulary have separate licensing terms. Other upstream
 contributors and sources are listed in the Complete HSK Vocabulary README.
 
-The `update` command fetches the upstream `complete.json` over HTTPS. It applies
-the same field conversion and saves the resulting vocabulary locally. It does
-not generate definitions or example sentences with AI.
+The course is bundled and works offline. Example sentences in `words.json` and
+`examples.json` are separately curated; the dictionary source does not provide
+them.

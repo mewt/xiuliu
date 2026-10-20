@@ -24,9 +24,7 @@ cargo run --release
 Use a current stable Rust toolchain and a terminal with Chinese font support.
 The interface needs at least **60 × 26** cells; **90 × 32** or larger is recommended.
 
-The app includes **3,313 unique words** in a bundled HSK vocabulary course and works offline immediately.
-Simplified characters are the default; use `cargo run --release -- --traditional`
-for traditional characters.
+The app currently follows the 15-lesson progression of **HSK Standard Course 1**, with 166 unique lesson vocabulary items. It works offline immediately. Simplified characters are the default; use `cargo run --release -- --traditional` for traditional characters.
 
 ## A lesson in a minute
 
@@ -143,33 +141,13 @@ Xiaomi advertises TTS as free for a limited time; check your plan before use.
 See the [MiMo speech documentation](https://mimo.mi.com/docs/en-US/quick-start/usage-guide/audio/speech-synthesis-v2.5)
 and [Token Plan endpoints](https://mimo.mi.com/docs/en-US/tokenplan/Token%20Plan/subscription).
 
-## Free vocabulary updates
+## HSK Standard Course 1 lessons
 
-Vocabulary comes from [Complete HSK Vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary).
-The course includes simplified/traditional forms, pinyin, meanings, and HSK levels.
-The first 30 curated lessons also have example sentences; imported dictionary
-entries do **not** invent examples where the source supplies none.
+The active course follows the vocabulary order and 15-lesson grouping of the 2014 edition of *HSK Standard Course 1*. It contains simplified/traditional forms, pinyin, learner-friendly meanings, and independently authored example sentences where available. The app does not distribute textbook scans, dialogues, exercises, or example sentences.
 
-```sh
-cargo run --release -- update
-```
+Dictionary data is adapted from [Complete HSK Vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary), supplemented with independently written entries needed by the textbook sequence. Lesson IDs and boundaries are explicit rather than computed from a fixed number of words.
 
-This explicitly downloads the upstream JSON over HTTPS and stores the updated
-course locally. It needs internet access only while updating. There are no paid
-API calls or background network requests. Failed downloads or invalid files leave
-existing vocabulary and progress unchanged. Updates retain existing words and
-identify progress by the word itself, so reordering the source cannot reset it.
-
-If you downloaded the upstream `complete.json` yourself:
-
-```sh
-cargo run --release -- update --from /path/to/complete.json
-```
-
-HSK levels guide the learning order. The source's `new-*` levels take precedence;
-`old-*` levels are used for entries lacking a new level. This is a learning course,
-not certification against the latest exam syllabus. Attribution and data licenses
-are in [assets/NOTICE.md](assets/NOTICE.md).
+The previous full-course `update` command is disabled so an update cannot silently add HSK 2–7 words. Existing progress remains stored by word and review history is preserved. Attribution and data licenses are in [assets/NOTICE.md](assets/NOTICE.md).
 
 ## Daily goal, streaks, and review
 
@@ -197,8 +175,8 @@ today). **Esc** returns home.
 
 - **Overview:** activity heatmap colored by earned XP, new words, word practices,
   review practices, active days, goal days, daily average, and streaks.
-- **Words:** your current collection by HSK level, with new words in the selected
-  period. Course totals reflect the vocabulary installed on your machine.
+- **Words:** your current HSK 1 collection by textbook lesson, with new words in the selected
+  period.
 - **Review:** review practices in the selected period, current overdue/due words,
   and scheduled reviews for the next seven days. The forecast excludes today's
   backlog and reflects the current schedule, not a prediction of future activity.
@@ -232,8 +210,7 @@ variables must be absolute paths. `--data-dir PATH` overrides the location.
 The original `1day1word` directory is retained so existing profiles keep their
 learned words, XP, analytics, and downloaded vocabulary after the rename to Xiuliu.
 
-`progress.json` stores learned words, XP, dates, and review schedules;
-`vocabulary.json` stores downloaded updates. Back up both when moving profiles.
+`progress.json` stores learned words, XP, dates, and review schedules. Back it up when moving profiles. Old `vocabulary.json` update caches are ignored by the HSK 1-only course.
 Old 30-word progress migrates automatically, with the original saved as
 `progress.v1.backup.json`. Previously learned words and study dates are preserved.
 

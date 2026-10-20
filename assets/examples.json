@@ -1,0 +1,1662 @@
+[
+  {
+    "simplified": "你",
+    "traditional": "你",
+    "pinyin": "nǐ",
+    "meaning": "you",
+    "example": "你好吗？",
+    "example_traditional": "你好嗎？",
+    "example_pinyin": "Nǐ hǎo ma?",
+    "translation": "How are you?"
+  },
+  {
+    "simplified": "好",
+    "traditional": "好",
+    "pinyin": "hǎo",
+    "meaning": "good; well",
+    "example": "今天天气很好。",
+    "example_traditional": "今天天氣很好。",
+    "example_pinyin": "Jīntiān tiānqì hěn hǎo.",
+    "translation": "The weather is nice today."
+  },
+  {
+    "simplified": "您",
+    "traditional": "您",
+    "pinyin": "nín",
+    "meaning": "you (courteous, as opposed to informal 你)",
+    "example": "请问，您叫什么名字？",
+    "example_traditional": "請問，您叫什麼名字？",
+    "example_pinyin": "Qǐngwèn, nín jiào shénme míngzi?",
+    "translation": "Excuse me, what is your name?"
+  },
+  {
+    "simplified": "你们",
+    "traditional": "你們",
+    "pinyin": "nǐ men",
+    "meaning": "you (plural)",
+    "example": "你们是学生吗？",
+    "example_traditional": "你們是學生嗎？",
+    "example_pinyin": "Nǐ men shì xué shēng ma?",
+    "translation": "Are you all students?"
+  },
+  {
+    "simplified": "对不起",
+    "traditional": "對不起",
+    "pinyin": "duì bu qǐ",
+    "meaning": "I'm sorry; excuse me; I beg your pardon; to let (sb) down; to disappoint",
+    "example": "对不起，我不知道。",
+    "example_traditional": "對不起，我不知道。",
+    "example_pinyin": "Duì bu qǐ, wǒ bù zhīdào.",
+    "translation": "Sorry, I don't know."
+  },
+  {
+    "simplified": "没关系",
+    "traditional": "沒關係",
+    "pinyin": "méi guān xi",
+    "meaning": "it doesn't matter",
+    "example": "没关系，我不生气。",
+    "example_traditional": "沒關係，我不生氣。",
+    "example_pinyin": "Méi guānxi, wǒ bù shēngqì.",
+    "translation": "It doesn't matter, I'm not angry."
+  },
+  {
+    "simplified": "谢谢",
+    "traditional": "謝謝",
+    "pinyin": "xièxie",
+    "meaning": "thank you",
+    "example": "谢谢你！",
+    "example_traditional": "謝謝你！",
+    "example_pinyin": "Xièxie nǐ!",
+    "translation": "Thank you!"
+  },
+  {
+    "simplified": "不",
+    "traditional": "不",
+    "pinyin": "bù",
+    "meaning": "not; no",
+    "example": "我不喝咖啡。",
+    "example_traditional": "我不喝咖啡。",
+    "example_pinyin": "Wǒ bù hē kāfēi.",
+    "translation": "I do not drink coffee."
+  },
+  {
+    "simplified": "不客气",
+    "traditional": "不客氣",
+    "pinyin": "bù kè qi",
+    "meaning": "you're welcome; don't mention it; impolite",
+    "example": "不客气，我们是朋友。",
+    "example_traditional": "不客氣，我們是朋友。",
+    "example_pinyin": "Bù kèqi, wǒmen shì péngyou.",
+    "translation": "You're welcome, we are friends."
+  },
+  {
+    "simplified": "再见",
+    "traditional": "再見",
+    "pinyin": "zàijiàn",
+    "meaning": "goodbye",
+    "example": "再见，明天见！",
+    "example_traditional": "再見，明天見！",
+    "example_pinyin": "Zàijiàn, míngtiān jiàn!",
+    "translation": "Goodbye, see you tomorrow!"
+  },
+  {
+    "simplified": "叫",
+    "traditional": "叫",
+    "pinyin": "jiào",
+    "meaning": "to shout; to call; to order",
+    "example": "他在门口叫我。",
+    "example_traditional": "他在門口叫我。",
+    "example_pinyin": "Tā zài ménkǒu jiào wǒ.",
+    "translation": "He's calling me from the doorway."
+  },
+  {
+    "simplified": "什么",
+    "traditional": "什麼",
+    "pinyin": "shén me",
+    "meaning": "what?; something; anything",
+    "example": "你想吃什么？",
+    "example_traditional": "你想吃什麼？",
+    "example_pinyin": "Nǐ xiǎng chī shén me?",
+    "translation": "What do you want to eat?"
+  },
+  {
+    "simplified": "名字",
+    "traditional": "名字",
+    "pinyin": "míng zi",
+    "meaning": "name (of a person or thing)",
+    "example": "我妹妹的名字叫小红。",
+    "example_traditional": "我妹妹的名字叫小紅。",
+    "example_pinyin": "Wǒ mèi mei de míng zi jiào Xiǎo Hóng.",
+    "translation": "My younger sister's name is Xiaohong."
+  },
+  {
+    "simplified": "我",
+    "traditional": "我",
+    "pinyin": "wǒ",
+    "meaning": "I; me",
+    "example": "我是学生。",
+    "example_traditional": "我是學生。",
+    "example_pinyin": "Wǒ shì xuésheng.",
+    "translation": "I am a student."
+  },
+  {
+    "simplified": "是",
+    "traditional": "是",
+    "pinyin": "shì",
+    "meaning": "to be",
+    "example": "这是我的书。",
+    "example_traditional": "這是我的書。",
+    "example_pinyin": "Zhè shì wǒ de shū.",
+    "translation": "This is my book."
+  },
+  {
+    "simplified": "老师",
+    "traditional": "老師",
+    "pinyin": "lǎo shī",
+    "meaning": "teacher",
+    "example": "我的老师是中国人。",
+    "example_traditional": "我的老師是中國人。",
+    "example_pinyin": "Wǒ de lǎo shī shì Zhōng guó rén.",
+    "translation": "My teacher is Chinese."
+  },
+  {
+    "simplified": "吗",
+    "traditional": "嗎",
+    "pinyin": "ma",
+    "meaning": "(question particle for yes/no questions)",
+    "example": "你是学生吗？",
+    "example_traditional": "你是學生嗎？",
+    "example_pinyin": "Nǐ shì xuésheng ma?",
+    "translation": "Are you a student?"
+  },
+  {
+    "simplified": "学生",
+    "traditional": "學生",
+    "pinyin": "xué sheng",
+    "meaning": "student; schoolchild",
+    "example": "我的妹妹也是学生。",
+    "example_traditional": "我的妹妹也是學生。",
+    "example_pinyin": "Wǒ de mèi mei yě shì xué sheng.",
+    "translation": "My younger sister is also a student."
+  },
+  {
+    "simplified": "人",
+    "traditional": "人",
+    "pinyin": "rén",
+    "meaning": "person; people",
+    "example": "这里有很多人。",
+    "example_traditional": "這裡有很多人。",
+    "example_pinyin": "Zhèlǐ yǒu hěn duō rén.",
+    "translation": "There are many people here."
+  },
+  {
+    "simplified": "中国",
+    "traditional": "中國",
+    "pinyin": "Zhōng guó",
+    "meaning": "China",
+    "example": "我住在中国。",
+    "example_traditional": "我住在中國。",
+    "example_pinyin": "Wǒ zhù zài Zhōng guó.",
+    "translation": "I live in China."
+  },
+  {
+    "simplified": "美国",
+    "traditional": "美國",
+    "pinyin": "Měiguó",
+    "meaning": "United States",
+    "example": "他是美国人。",
+    "example_traditional": "他是美國人。",
+    "example_pinyin": "Tā shì Měiguó rén.",
+    "translation": "He is American."
+  },
+  {
+    "simplified": "她",
+    "traditional": "她",
+    "pinyin": "tā",
+    "meaning": "she",
+    "example": "她是我姐姐。",
+    "example_traditional": "她是我姐姐。",
+    "example_pinyin": "Tā shì wǒ jiějie.",
+    "translation": "She is my older sister."
+  },
+  {
+    "simplified": "谁",
+    "traditional": "誰",
+    "pinyin": "shéi",
+    "meaning": "who; also pr. [shuí]",
+    "example": "他是谁？",
+    "example_traditional": "他是誰？",
+    "example_pinyin": "Tā shì shéi?",
+    "translation": "Who is he?"
+  },
+  {
+    "simplified": "的",
+    "traditional": "的",
+    "pinyin": "de",
+    "meaning": "of; ~'s (possessive particle); (used after an attribute); (used to form a nominal expression)",
+    "example": "我的妈妈是老师。",
+    "example_traditional": "我的媽媽是老師。",
+    "example_pinyin": "Wǒ de māma shì lǎoshī.",
+    "translation": "My mom is a teacher."
+  },
+  {
+    "simplified": "汉语",
+    "traditional": "漢語",
+    "pinyin": "Hàn yǔ",
+    "meaning": "Chinese language",
+    "example": "我在学汉语。",
+    "example_traditional": "我在學漢語。",
+    "example_pinyin": "Wǒ zài xué Hànyǔ.",
+    "translation": "I am learning Chinese."
+  },
+  {
+    "simplified": "哪",
+    "traditional": "哪",
+    "pinyin": "nǎ",
+    "meaning": "how; which",
+    "example": "你是哪国人？",
+    "example_traditional": "你是哪國人？",
+    "example_pinyin": "Nǐ shì nǎ guó rén?",
+    "translation": "Which country are you from?"
+  },
+  {
+    "simplified": "国",
+    "traditional": "國",
+    "pinyin": "guó",
+    "meaning": "country; nation; state; (bound form) national",
+    "example": "这个国家有很多人。",
+    "example_traditional": "這個國家有很多人。",
+    "example_pinyin": "Zhè ge guójiā yǒu hěn duō rén.",
+    "translation": "This country has a lot of people."
+  },
+  {
+    "simplified": "呢",
+    "traditional": "呢",
+    "pinyin": "ne",
+    "meaning": "particle indicating that a previously asked question is to be applied to the preceding word (\"What about ...?\", \"And ...?\"); particle for inquiring about location (\"Where is ...?\"); particle signaling a pause, to emphasize the preceding words and allow the listener time to take them on board (\"ok?\", \"are you with me?\")",
+    "example": "我喝茶，你呢？",
+    "example_traditional": "我喝茶，你呢？",
+    "example_pinyin": "Wǒ hē chá, nǐ ne?",
+    "translation": "I drink tea — what about you?"
+  },
+  {
+    "simplified": "他",
+    "traditional": "他",
+    "pinyin": "tā",
+    "meaning": "he; him (used for either sex when the sex is unknown or unimportant); (used before sb's name for emphasis); (used as a meaningless mock object)",
+    "example": "他是我的同学。",
+    "example_traditional": "他是我的同學。",
+    "example_pinyin": "Tā shì wǒ de tóngxué.",
+    "translation": "He is my classmate."
+  },
+  {
+    "simplified": "同学",
+    "traditional": "同學",
+    "pinyin": "tóng xué",
+    "meaning": "to study at the same school; fellow student; classmate",
+    "example": "我们是同学，也是朋友。",
+    "example_traditional": "我們是同學，也是朋友。",
+    "example_pinyin": "Wǒ men shì tóng xué, yě shì péng yǒu.",
+    "translation": "We're classmates and friends too."
+  },
+  {
+    "simplified": "朋友",
+    "traditional": "朋友",
+    "pinyin": "péngyou",
+    "meaning": "friend",
+    "example": "他是我的朋友。",
+    "example_traditional": "他是我的朋友。",
+    "example_pinyin": "Tā shì wǒ de péngyou.",
+    "translation": "He is my friend."
+  },
+  {
+    "simplified": "家",
+    "traditional": "家",
+    "pinyin": "jiā",
+    "meaning": "home; family",
+    "example": "我回家。",
+    "example_traditional": "我回家。",
+    "example_pinyin": "Wǒ huí jiā.",
+    "translation": "I am going home."
+  },
+  {
+    "simplified": "有",
+    "traditional": "有",
+    "pinyin": "yǒu",
+    "meaning": "to have; there is",
+    "example": "我有一本书。",
+    "example_traditional": "我有一本書。",
+    "example_pinyin": "Wǒ yǒu yì běn shū.",
+    "translation": "I have a book."
+  },
+  {
+    "simplified": "口",
+    "traditional": "口",
+    "pinyin": "kǒu",
+    "meaning": "mouth; classifier for things with mouths (people, domestic animals, cannons, wells etc); classifier for bites or mouthfuls",
+    "example": "他喝了三口水。",
+    "example_traditional": "他喝了三口水。",
+    "example_pinyin": "Tā hē le sān kǒu shuǐ.",
+    "translation": "He drank three mouthfuls of water."
+  },
+  {
+    "simplified": "女儿",
+    "traditional": "女兒",
+    "pinyin": "nǚ ér",
+    "meaning": "daughter",
+    "example": "她的女儿今年六岁。",
+    "example_traditional": "她的女兒今年六歲。",
+    "example_pinyin": "Tā de nǚ ér jīn nián liù suì.",
+    "translation": "Her daughter is six years old this year."
+  },
+  {
+    "simplified": "几",
+    "traditional": "幾",
+    "pinyin": "jǐ",
+    "meaning": "how many; several; a few",
+    "example": "你有几个哥哥？",
+    "example_traditional": "你有幾個哥哥？",
+    "example_pinyin": "Nǐ yǒu jǐ gè gēge?",
+    "translation": "How many older brothers do you have?"
+  },
+  {
+    "simplified": "岁",
+    "traditional": "嵗",
+    "pinyin": "suì",
+    "meaning": "variant of 岁, year; years old",
+    "example": "他今年五岁。",
+    "example_traditional": "他今年五嵗。",
+    "example_pinyin": "Tā jīn nián wǔ suì.",
+    "translation": "He is five years old this year."
+  },
+  {
+    "simplified": "了",
+    "traditional": "了",
+    "pinyin": "le",
+    "meaning": "(completed action marker); (modal particle indicating change of state, situation now); (modal particle intensifying preceding clause)",
+    "example": "我昨天去了学校。",
+    "example_traditional": "我昨天去了學校。",
+    "example_pinyin": "Wǒ zuótiān qù le xuéxiào.",
+    "translation": "I went to school yesterday."
+  },
+  {
+    "simplified": "今年",
+    "traditional": "今年",
+    "pinyin": "jīn nián",
+    "meaning": "this year",
+    "example": "今年我想去中国。",
+    "example_traditional": "今年我想去中國。",
+    "example_pinyin": "Jīn nián wǒ xiǎng qù Zhōng guó.",
+    "translation": "This year I want to go to China."
+  },
+  {
+    "simplified": "多",
+    "traditional": "多",
+    "pinyin": "duō",
+    "meaning": "many; much; too many; in excess; (after a numeral) ... odd",
+    "example": "我有很多书。",
+    "example_traditional": "我有很多書。",
+    "example_pinyin": "Wǒ yǒu hěn duō shū.",
+    "translation": "I have a lot of books."
+  },
+  {
+    "simplified": "大",
+    "traditional": "大",
+    "pinyin": "dà",
+    "meaning": "big; large",
+    "example": "这个房间很大。",
+    "example_traditional": "這個房間很大。",
+    "example_pinyin": "Zhège fángjiān hěn dà.",
+    "translation": "This room is very big."
+  },
+  {
+    "simplified": "会",
+    "traditional": "會",
+    "pinyin": "huì",
+    "meaning": "can; to have the skill; to know how to; to be likely to; to be sure to; to meet; to get together",
+    "example": "我会说汉语。",
+    "example_traditional": "我會說漢語。",
+    "example_pinyin": "Wǒ huì shuō Hànyǔ.",
+    "translation": "I can speak Chinese."
+  },
+  {
+    "simplified": "说",
+    "traditional": "說",
+    "pinyin": "shuō",
+    "meaning": "to speak; to say",
+    "example": "我会说中文。",
+    "example_traditional": "我會說中文。",
+    "example_pinyin": "Wǒ huì shuō Zhōngwén.",
+    "translation": "I can speak Chinese."
+  },
+  {
+    "simplified": "妈妈",
+    "traditional": "媽媽",
+    "pinyin": "mā ma",
+    "meaning": "mama; mommy; mother",
+    "example": "妈妈做的饭很好吃。",
+    "example_traditional": "媽媽做的飯很好吃。",
+    "example_pinyin": "Mā ma zuò de fàn hěn hǎo chī.",
+    "translation": "The food Mom cooks is delicious."
+  },
+  {
+    "simplified": "菜",
+    "traditional": "菜",
+    "pinyin": "cài",
+    "meaning": "dish (type of food); vegetable; cuisine",
+    "example": "这个菜很好吃。",
+    "example_traditional": "這個菜很好吃。",
+    "example_pinyin": "Zhè ge cài hěn hǎo chī.",
+    "translation": "This dish is very tasty."
+  },
+  {
+    "simplified": "很",
+    "traditional": "很",
+    "pinyin": "hěn",
+    "meaning": "(adverb of degree); quite; very",
+    "example": "今天很热。",
+    "example_traditional": "今天很熱。",
+    "example_pinyin": "Jīntiān hěn rè.",
+    "translation": "It is very hot today."
+  },
+  {
+    "simplified": "好吃",
+    "traditional": "好吃",
+    "pinyin": "hǎo chī",
+    "meaning": "tasty; delicious",
+    "example": "这个菜很好吃。",
+    "example_traditional": "這個菜很好吃。",
+    "example_pinyin": "Zhège cài hěn hǎochī.",
+    "translation": "This dish is very tasty."
+  },
+  {
+    "simplified": "做",
+    "traditional": "做",
+    "pinyin": "zuò",
+    "meaning": "to make; to produce; to write; to compose; to do; to engage in; to hold (a party etc)",
+    "example": "妈妈在做饭。",
+    "example_traditional": "媽媽在做飯。",
+    "example_pinyin": "Mā ma zài zuò fàn.",
+    "translation": "Mom is cooking."
+  },
+  {
+    "simplified": "写",
+    "traditional": "寫",
+    "pinyin": "xiě",
+    "meaning": "to write",
+    "example": "请写你的名字。",
+    "example_traditional": "請寫你的名字。",
+    "example_pinyin": "Qǐng xiě nǐ de míngzi.",
+    "translation": "Please write your name."
+  },
+  {
+    "simplified": "汉字",
+    "traditional": "漢字",
+    "pinyin": "hàn zì",
+    "meaning": "Chinese character; Japanese: kanji; Korean: hanja",
+    "example": "这个汉字我不认识。",
+    "example_traditional": "這個漢字我不認識。",
+    "example_pinyin": "Zhège hànzì wǒ bù rènshi.",
+    "translation": "I don't know this Chinese character."
+  },
+  {
+    "simplified": "字",
+    "traditional": "字",
+    "pinyin": "zì",
+    "meaning": "letter; symbol; character",
+    "example": "这个字很难。",
+    "example_traditional": "這個字很難。",
+    "example_pinyin": "Zhè ge zì hěn nán.",
+    "translation": "This character is hard."
+  },
+  {
+    "simplified": "怎么",
+    "traditional": "怎麼",
+    "pinyin": "zěn me",
+    "meaning": "how?; what?; why?",
+    "example": "你怎么去学校？",
+    "example_traditional": "你怎麼去學校？",
+    "example_pinyin": "Nǐ zěnme qù xuéxiào?",
+    "translation": "How do you get to school?"
+  },
+  {
+    "simplified": "读",
+    "traditional": "讀",
+    "pinyin": "dú",
+    "meaning": "to read; to study",
+    "example": "我在读书。",
+    "example_traditional": "我在讀書。",
+    "example_pinyin": "Wǒ zài dú shū.",
+    "translation": "I am reading."
+  },
+  {
+    "simplified": "请",
+    "traditional": "請",
+    "pinyin": "qǐng",
+    "meaning": "please; to invite",
+    "example": "请坐。",
+    "example_traditional": "請坐。",
+    "example_pinyin": "Qǐng zuò.",
+    "translation": "Please sit down."
+  },
+  {
+    "simplified": "问",
+    "traditional": "問",
+    "pinyin": "wèn",
+    "meaning": "to ask; to inquire",
+    "example": "我想问你一件事。",
+    "example_traditional": "我想問你一件事。",
+    "example_pinyin": "Wǒ xiǎng wèn nǐ yí jiàn shì.",
+    "translation": "I want to ask you about something."
+  },
+  {
+    "simplified": "今天",
+    "traditional": "今天",
+    "pinyin": "jīntiān",
+    "meaning": "today",
+    "example": "今天我很忙。",
+    "example_traditional": "今天我很忙。",
+    "example_pinyin": "Jīntiān wǒ hěn máng.",
+    "translation": "I am busy today."
+  },
+  {
+    "simplified": "号",
+    "traditional": "號",
+    "pinyin": "hào",
+    "meaning": "day of the month; number",
+    "example": "那孩子在大声号。",
+    "example_traditional": "那孩子在大聲號。",
+    "example_pinyin": "Nà hái zi zài dà shēng háo.",
+    "translation": "That child is wailing loudly."
+  },
+  {
+    "simplified": "月",
+    "traditional": "月",
+    "pinyin": "yuè",
+    "meaning": "moon; month; monthly",
+    "example": "下个月我去北京。",
+    "example_traditional": "下個月我去北京。",
+    "example_pinyin": "Xià ge yuè wǒ qù Běijīng.",
+    "translation": "Next month I'm going to Beijing."
+  },
+  {
+    "simplified": "星期",
+    "traditional": "星期",
+    "pinyin": "xīng qī",
+    "meaning": "week; day of the week; Sunday",
+    "example": "下星期我去北京。",
+    "example_traditional": "下星期我去北京。",
+    "example_pinyin": "Xià xīng qī wǒ qù Běi jīng.",
+    "translation": "I am going to Beijing next week."
+  },
+  {
+    "simplified": "昨天",
+    "traditional": "昨天",
+    "pinyin": "zuó tiān",
+    "meaning": "yesterday",
+    "example": "昨天下雨了。",
+    "example_traditional": "昨天下雨了。",
+    "example_pinyin": "Zuó tiān xià yǔ le.",
+    "translation": "It rained yesterday."
+  },
+  {
+    "simplified": "明天",
+    "traditional": "明天",
+    "pinyin": "míngtiān",
+    "meaning": "tomorrow",
+    "example": "明天见！",
+    "example_traditional": "明天見！",
+    "example_pinyin": "Míngtiān jiàn!",
+    "translation": "See you tomorrow!"
+  },
+  {
+    "simplified": "去",
+    "traditional": "去",
+    "pinyin": "qù",
+    "meaning": "to go",
+    "example": "我去学校。",
+    "example_traditional": "我去學校。",
+    "example_pinyin": "Wǒ qù xuéxiào.",
+    "translation": "I am going to school."
+  },
+  {
+    "simplified": "学校",
+    "traditional": "學校",
+    "pinyin": "xué xiào",
+    "meaning": "school",
+    "example": "我们学校有很多学生。",
+    "example_traditional": "我們學校有很多學生。",
+    "example_pinyin": "Wǒmen xuéxiào yǒu hěn duō xuésheng.",
+    "translation": "Our school has many students."
+  },
+  {
+    "simplified": "看",
+    "traditional": "看",
+    "pinyin": "kàn",
+    "meaning": "to look; to watch; to read",
+    "example": "我喜欢看书。",
+    "example_traditional": "我喜歡看書。",
+    "example_pinyin": "Wǒ xǐhuan kàn shū.",
+    "translation": "I like reading books."
+  },
+  {
+    "simplified": "书",
+    "traditional": "書",
+    "pinyin": "shū",
+    "meaning": "book",
+    "example": "这本书很好。",
+    "example_traditional": "這本書很好。",
+    "example_pinyin": "Zhè běn shū hěn hǎo.",
+    "translation": "This book is very good."
+  },
+  {
+    "simplified": "想",
+    "traditional": "想",
+    "pinyin": "xiǎng",
+    "meaning": "to think (about); to think of; to devise; to think (that); to believe (that)",
+    "example": "我想我的妈妈。",
+    "example_traditional": "我想我的媽媽。",
+    "example_pinyin": "Wǒ xiǎng wǒ de mā ma.",
+    "translation": "I think about my mom."
+  },
+  {
+    "simplified": "喝",
+    "traditional": "喝",
+    "pinyin": "hē",
+    "meaning": "to drink",
+    "example": "你喝茶吗？",
+    "example_traditional": "你喝茶嗎？",
+    "example_pinyin": "Nǐ hē chá ma?",
+    "translation": "Do you drink tea?"
+  },
+  {
+    "simplified": "茶",
+    "traditional": "茶",
+    "pinyin": "chá",
+    "meaning": "tea",
+    "example": "我喜欢喝茶。",
+    "example_traditional": "我喜歡喝茶。",
+    "example_pinyin": "Wǒ xǐhuan hē chá.",
+    "translation": "I like drinking tea."
+  },
+  {
+    "simplified": "吃",
+    "traditional": "吃",
+    "pinyin": "chī",
+    "meaning": "to eat",
+    "example": "我们吃饭吧。",
+    "example_traditional": "我們吃飯吧。",
+    "example_pinyin": "Wǒmen chī fàn ba.",
+    "translation": "Let’s eat."
+  },
+  {
+    "simplified": "米饭",
+    "traditional": "米飯",
+    "pinyin": "mǐ fàn",
+    "meaning": "(cooked) rice",
+    "example": "我想吃米饭。",
+    "example_traditional": "我想吃米飯。",
+    "example_pinyin": "Wǒ xiǎng chī mǐfàn.",
+    "translation": "I want to eat rice."
+  },
+  {
+    "simplified": "下午",
+    "traditional": "下午",
+    "pinyin": "xià wǔ",
+    "meaning": "afternoon; p.m.",
+    "example": "我下午去买东西。",
+    "example_traditional": "我下午去買東西。",
+    "example_pinyin": "Wǒ xià wǔ qù mǎi dōngxi.",
+    "translation": "I'm going shopping this afternoon."
+  },
+  {
+    "simplified": "商店",
+    "traditional": "商店",
+    "pinyin": "shāng diàn",
+    "meaning": "store; shop",
+    "example": "商店在前面。",
+    "example_traditional": "商店在前面。",
+    "example_pinyin": "Shāngdiàn zài qiánmiàn.",
+    "translation": "The store is up ahead."
+  },
+  {
+    "simplified": "买",
+    "traditional": "買",
+    "pinyin": "mǎi",
+    "meaning": "to buy; to purchase",
+    "example": "我要买水。",
+    "example_traditional": "我要買水。",
+    "example_pinyin": "Wǒ yào mǎi shuǐ.",
+    "translation": "I want to buy water."
+  },
+  {
+    "simplified": "个",
+    "traditional": "個",
+    "pinyin": "gè",
+    "meaning": "(general measure word); individual",
+    "example": "我有两个苹果。",
+    "example_traditional": "我有兩個蘋果。",
+    "example_pinyin": "Wǒ yǒu liǎng gè píngguǒ.",
+    "translation": "I have two apples."
+  },
+  {
+    "simplified": "杯子",
+    "traditional": "杯子",
+    "pinyin": "bēi zi",
+    "meaning": "cup; glass",
+    "example": "这个杯子是我的。",
+    "example_traditional": "這個杯子是我的。",
+    "example_pinyin": "Zhège bēizi shì wǒ de.",
+    "translation": "This cup is mine."
+  },
+  {
+    "simplified": "这",
+    "traditional": "這",
+    "pinyin": "zhè",
+    "meaning": "(pronoun) this; these; (bound form) this; the (followed by a noun); (bound form) this; these (followed by a classifier) (in this sense, commonly pr. [zhèi], esp. in Beijing)",
+    "example": "这是一本书。",
+    "example_traditional": "這是一本書。",
+    "example_pinyin": "Zhè shì yì běn shū.",
+    "translation": "This is a book."
+  },
+  {
+    "simplified": "多少",
+    "traditional": "多少",
+    "pinyin": "duōshao",
+    "meaning": "how much; how many",
+    "example": "这个多少钱？",
+    "example_traditional": "這個多少錢？",
+    "example_pinyin": "Zhège duōshao qián?",
+    "translation": "How much is this?"
+  },
+  {
+    "simplified": "钱",
+    "traditional": "錢",
+    "pinyin": "qián",
+    "meaning": "coin; money; unit of weight, one tenth of a tael 两",
+    "example": "我的钱在桌子上。",
+    "example_traditional": "我的錢在桌子上。",
+    "example_pinyin": "Wǒ de qián zài zhuō zi shàng.",
+    "translation": "My money is on the table."
+  },
+  {
+    "simplified": "块",
+    "traditional": "塊",
+    "pinyin": "kuài",
+    "meaning": "lump; chunk; piece; classifier for pieces of cloth, cake, soap etc; (coll.) classifier for money and currency units",
+    "example": "这个面包五块。",
+    "example_traditional": "這個麵包五塊。",
+    "example_pinyin": "Zhè ge miàn bāo wǔ kuài.",
+    "translation": "This bread is five yuan."
+  },
+  {
+    "simplified": "那",
+    "traditional": "那",
+    "pinyin": "nà",
+    "meaning": "that; those; then",
+    "example": "那是我的书。",
+    "example_traditional": "那是我的書。",
+    "example_pinyin": "Nà shì wǒ de shū.",
+    "translation": "That is my book."
+  },
+  {
+    "simplified": "小",
+    "traditional": "小",
+    "pinyin": "xiǎo",
+    "meaning": "small; little",
+    "example": "这只猫很小。",
+    "example_traditional": "這隻貓很小。",
+    "example_pinyin": "Zhè zhī māo hěn xiǎo.",
+    "translation": "This cat is very small."
+  },
+  {
+    "simplified": "猫",
+    "traditional": "貓",
+    "pinyin": "māo",
+    "meaning": "cat",
+    "example": "我家有一只猫。",
+    "example_traditional": "我家有一隻貓。",
+    "example_pinyin": "Wǒ jiā yǒu yī zhī māo.",
+    "translation": "My family has a cat."
+  },
+  {
+    "simplified": "在",
+    "traditional": "在",
+    "pinyin": "zài",
+    "meaning": "to exist; to be alive; (of sb or sth) to be (located) at; (used before a verb to indicate an action in progress)",
+    "example": "我的朋友在北京。",
+    "example_traditional": "我的朋友在北京。",
+    "example_pinyin": "Wǒ de péngyou zài Běijīng.",
+    "translation": "My friend is in Beijing."
+  },
+  {
+    "simplified": "那儿",
+    "traditional": "那兒",
+    "pinyin": "nà r",
+    "meaning": "there",
+    "example": "他在那儿。",
+    "example_traditional": "他在那兒。",
+    "example_pinyin": "Tā zài nàr.",
+    "translation": "He is over there."
+  },
+  {
+    "simplified": "狗",
+    "traditional": "狗",
+    "pinyin": "gǒu",
+    "meaning": "dog",
+    "example": "这是我的狗。",
+    "example_traditional": "這是我的狗。",
+    "example_pinyin": "Zhè shì wǒ de gǒu.",
+    "translation": "This is my dog."
+  },
+  {
+    "simplified": "椅子",
+    "traditional": "椅子",
+    "pinyin": "yǐzi",
+    "meaning": "chair",
+    "example": "椅子上有一本书。",
+    "example_traditional": "椅子上有一本書。",
+    "example_pinyin": "Yǐzi shàng yǒu yī běn shū.",
+    "translation": "There is a book on the chair."
+  },
+  {
+    "simplified": "下面",
+    "traditional": "下面",
+    "pinyin": "xiàmiàn",
+    "meaning": "under; below",
+    "example": "猫在桌子下面。",
+    "example_traditional": "貓在桌子下面。",
+    "example_pinyin": "Māo zài zhuōzi xiàmiàn.",
+    "translation": "The cat is under the table."
+  },
+  {
+    "simplified": "哪儿",
+    "traditional": "哪兒",
+    "pinyin": "nǎ r",
+    "meaning": "where?; wherever; anywhere; somewhere; (used in rhetorical questions) how can ...?; how could ...?",
+    "example": "你去哪儿？",
+    "example_traditional": "你去哪兒？",
+    "example_pinyin": "Nǐ qù nǎr?",
+    "translation": "Where are you going?"
+  },
+  {
+    "simplified": "工作",
+    "traditional": "工作",
+    "pinyin": "gōng zuò",
+    "meaning": "to work; (of a machine) to operate; job",
+    "example": "我在学校工作。",
+    "example_traditional": "我在學校工作。",
+    "example_pinyin": "Wǒ zài xué xiào gōng zuò.",
+    "translation": "I work at a school."
+  },
+  {
+    "simplified": "儿子",
+    "traditional": "兒子",
+    "pinyin": "ér zi",
+    "meaning": "son",
+    "example": "他的儿子叫小明。",
+    "example_traditional": "他的兒子叫小明。",
+    "example_pinyin": "Tā de ér zi jiào Xiǎo Míng.",
+    "translation": "His son is called Xiaoming."
+  },
+  {
+    "simplified": "医院",
+    "traditional": "醫院",
+    "pinyin": "yī yuàn",
+    "meaning": "hospital",
+    "example": "我妈妈在医院工作。",
+    "example_traditional": "我媽媽在醫院工作。",
+    "example_pinyin": "Wǒ mā ma zài yī yuàn gōng zuò.",
+    "translation": "My mother works at a hospital."
+  },
+  {
+    "simplified": "医生",
+    "traditional": "醫生",
+    "pinyin": "yī shēng",
+    "meaning": "doctor",
+    "example": "她的妈妈是医生。",
+    "example_traditional": "她的媽媽是醫生。",
+    "example_pinyin": "Tā de mā ma shì yī shēng.",
+    "translation": "Her mother is a doctor."
+  },
+  {
+    "simplified": "爸爸",
+    "traditional": "爸爸",
+    "pinyin": "bà ba",
+    "meaning": "(coll.) father; dad",
+    "example": "我爸爸是老师。",
+    "example_traditional": "我爸爸是老師。",
+    "example_pinyin": "Wǒ bà ba shì lǎo shī.",
+    "translation": "My dad is a teacher."
+  },
+  {
+    "simplified": "桌子",
+    "traditional": "桌子",
+    "pinyin": "zhuō zi",
+    "meaning": "table; desk",
+    "example": "桌子上有一个电脑。",
+    "example_traditional": "桌子上有一個電腦。",
+    "example_pinyin": "Zhuōzi shàng yǒu yī gè diànnǎo.",
+    "translation": "There is a computer on the table."
+  },
+  {
+    "simplified": "上",
+    "traditional": "上",
+    "pinyin": "shàng",
+    "meaning": "on; above",
+    "example": "汉语的上声很难。",
+    "example_traditional": "漢語的上聲很難。",
+    "example_pinyin": "Hànyǔ de shǎngshēng hěn nán.",
+    "translation": "The third tone in Chinese is hard."
+  },
+  {
+    "simplified": "电脑",
+    "traditional": "電腦",
+    "pinyin": "diàn nǎo",
+    "meaning": "computer",
+    "example": "我的电脑在桌子上。",
+    "example_traditional": "我的電腦在桌子上。",
+    "example_pinyin": "Wǒ de diàn nǎo zài zhuō zi shàng.",
+    "translation": "My computer is on the desk."
+  },
+  {
+    "simplified": "和",
+    "traditional": "和",
+    "pinyin": "hé",
+    "meaning": "and; with",
+    "example": "我和朋友一起吃饭。",
+    "example_traditional": "我咊朋友一起吃飯。",
+    "example_pinyin": "Wǒ hé péngyou yìqǐ chīfàn.",
+    "translation": "I eat together with my friend."
+  },
+  {
+    "simplified": "本",
+    "traditional": "本",
+    "pinyin": "běn",
+    "meaning": "(measure word for books); this",
+    "example": "这本书很好。",
+    "example_traditional": "這本書很好。",
+    "example_pinyin": "Zhè běn shū hěn hǎo.",
+    "translation": "This book is very good."
+  },
+  {
+    "simplified": "里",
+    "traditional": "裡",
+    "pinyin": "lǐ",
+    "meaning": "inside; in",
+    "example": "我在家里看书。",
+    "example_traditional": "我在家裏看書。",
+    "example_pinyin": "Wǒ zài jiā lǐ kàn shū.",
+    "translation": "I read books at home."
+  },
+  {
+    "simplified": "前面",
+    "traditional": "前面",
+    "pinyin": "qiánmiàn",
+    "meaning": "in front; ahead",
+    "example": "医院在前面。",
+    "example_traditional": "醫院在前面。",
+    "example_pinyin": "Yīyuàn zài qiánmiàn.",
+    "translation": "The hospital is up ahead."
+  },
+  {
+    "simplified": "后面",
+    "traditional": "後面",
+    "pinyin": "hòumiàn",
+    "meaning": "behind; at the back",
+    "example": "我家在学校后面。",
+    "example_traditional": "我家在學校後面。",
+    "example_pinyin": "Wǒ jiā zài xuéxiào hòumiàn.",
+    "translation": "My home is behind the school."
+  },
+  {
+    "simplified": "这儿",
+    "traditional": "這兒",
+    "pinyin": "zhè r",
+    "meaning": "here",
+    "example": "请坐这儿。",
+    "example_traditional": "請坐這兒。",
+    "example_pinyin": "Qǐng zuò zhèr.",
+    "translation": "Please sit here."
+  },
+  {
+    "simplified": "没有",
+    "traditional": "沒有",
+    "pinyin": "méi yǒu",
+    "meaning": "haven't; hasn't; doesn't exist",
+    "example": "我家没有车。",
+    "example_traditional": "我家沒有車。",
+    "example_pinyin": "Wǒ jiā méi yǒu chē.",
+    "translation": "My family doesn't have a car."
+  },
+  {
+    "simplified": "能",
+    "traditional": "能",
+    "pinyin": "néng",
+    "meaning": "can; to be able to; might possibly",
+    "example": "我能说中文。",
+    "example_traditional": "我能說中文。",
+    "example_pinyin": "Wǒ néng shuō zhōng wén.",
+    "translation": "I can speak Chinese."
+  },
+  {
+    "simplified": "坐",
+    "traditional": "坐",
+    "pinyin": "zuò",
+    "meaning": "to sit; to take a seat; to take (a bus, airplane etc)",
+    "example": "请坐在这里。",
+    "example_traditional": "請坐在這裡。",
+    "example_pinyin": "Qǐng zuò zài zhèlǐ.",
+    "translation": "Please sit here."
+  },
+  {
+    "simplified": "现在",
+    "traditional": "現在",
+    "pinyin": "xiàn zài",
+    "meaning": "now; at present; at the moment",
+    "example": "我现在在家。",
+    "example_traditional": "我現在在家。",
+    "example_pinyin": "Wǒ xiànzài zài jiā.",
+    "translation": "I am at home right now."
+  },
+  {
+    "simplified": "点",
+    "traditional": "點",
+    "pinyin": "diǎn",
+    "meaning": "point; dot; drop",
+    "example": "纸上有两个点。",
+    "example_traditional": "紙上有兩個點。",
+    "example_pinyin": "Zhǐ shàng yǒu liǎng ge diǎn.",
+    "translation": "There are two dots on the paper."
+  },
+  {
+    "simplified": "分",
+    "traditional": "分",
+    "pinyin": "fēn",
+    "meaning": "to divide; to separate; to distribute; to allocate; to distinguish (good and bad)",
+    "example": "我们来分苹果吧。",
+    "example_traditional": "我們來分蘋果吧。",
+    "example_pinyin": "Wǒmen lái fēn píngguǒ ba.",
+    "translation": "Let's divide up the apples."
+  },
+  {
+    "simplified": "中午",
+    "traditional": "中午",
+    "pinyin": "zhōng wǔ",
+    "meaning": "noon; midday",
+    "example": "中午我们一起吃饭。",
+    "example_traditional": "中午我們一起吃飯。",
+    "example_pinyin": "Zhōngwǔ wǒmen yīqǐ chīfàn.",
+    "translation": "We eat together at noon."
+  },
+  {
+    "simplified": "吃饭",
+    "traditional": "吃飯",
+    "pinyin": "chī fàn",
+    "meaning": "to have a meal; to eat; to make a living",
+    "example": "我们在家吃饭。",
+    "example_traditional": "我們在家吃飯。",
+    "example_pinyin": "Wǒ men zài jiā chī fàn.",
+    "translation": "We eat at home."
+  },
+  {
+    "simplified": "时候",
+    "traditional": "時候",
+    "pinyin": "shí hou",
+    "meaning": "time; length of time; moment",
+    "example": "你什么时候回家？",
+    "example_traditional": "你什麼時候回家？",
+    "example_pinyin": "Nǐ shén me shí hou huí jiā?",
+    "translation": "When are you going home?"
+  },
+  {
+    "simplified": "回",
+    "traditional": "回",
+    "pinyin": "huí",
+    "meaning": "to circle; to go back; to turn around",
+    "example": "我要回家。",
+    "example_traditional": "我要回家。",
+    "example_pinyin": "Wǒ yào huí jiā.",
+    "translation": "I want to go back home."
+  },
+  {
+    "simplified": "我们",
+    "traditional": "我們",
+    "pinyin": "wǒ men",
+    "meaning": "we; us; ourselves",
+    "example": "我们都是学生。",
+    "example_traditional": "我們都是學生。",
+    "example_pinyin": "Wǒmen dōu shì xuésheng.",
+    "translation": "We are all students."
+  },
+  {
+    "simplified": "电影",
+    "traditional": "電影",
+    "pinyin": "diàn yǐng",
+    "meaning": "movie; film",
+    "example": "我喜欢中国电影。",
+    "example_traditional": "我喜歡中國電影。",
+    "example_pinyin": "Wǒ xǐ huan Zhōng guó diàn yǐng.",
+    "translation": "I like Chinese movies."
+  },
+  {
+    "simplified": "住",
+    "traditional": "住",
+    "pinyin": "zhù",
+    "meaning": "to live; to dwell; to stay",
+    "example": "我住在北京。",
+    "example_traditional": "我住在北京。",
+    "example_pinyin": "Wǒ zhù zài Běijīng.",
+    "translation": "I live in Beijing."
+  },
+  {
+    "simplified": "前",
+    "traditional": "前",
+    "pinyin": "qián",
+    "meaning": "front; forward; ahead",
+    "example": "请往前走。",
+    "example_traditional": "請往前走。",
+    "example_pinyin": "Qǐng wǎng qián zǒu.",
+    "translation": "Please walk forward."
+  },
+  {
+    "simplified": "北京",
+    "traditional": "北京",
+    "pinyin": "Běi jīng",
+    "meaning": "Beijing, capital of the People's Republic of China",
+    "example": "我住在北京。",
+    "example_traditional": "我住在北京。",
+    "example_pinyin": "Wǒ zhù zài Běijīng.",
+    "translation": "I live in Beijing."
+  },
+  {
+    "simplified": "天气",
+    "traditional": "天氣",
+    "pinyin": "tiān qì",
+    "meaning": "weather",
+    "example": "今天天气很好。",
+    "example_traditional": "今天天氣很好。",
+    "example_pinyin": "Jīn tiān tiān qì hěn hǎo.",
+    "translation": "The weather is very good today."
+  },
+  {
+    "simplified": "怎么样",
+    "traditional": "怎麼樣",
+    "pinyin": "zěnmeyàng",
+    "meaning": "how; how about",
+    "example": "今天天气怎么样？",
+    "example_traditional": "今天天氣怎麼樣？",
+    "example_pinyin": "Jīntiān tiānqì zěnmeyàng?",
+    "translation": "How is the weather today?"
+  },
+  {
+    "simplified": "太",
+    "traditional": "太",
+    "pinyin": "tài",
+    "meaning": "highest; greatest; too (much)",
+    "example": "今天太热了。",
+    "example_traditional": "今天太熱了。",
+    "example_pinyin": "Jīntiān tài rè le.",
+    "translation": "It is too hot today."
+  },
+  {
+    "simplified": "热",
+    "traditional": "熱",
+    "pinyin": "rè",
+    "meaning": "to warm up; to heat up; hot (of weather)",
+    "example": "今天天气很热。",
+    "example_traditional": "今天天氣很熱。",
+    "example_pinyin": "Jīn tiān tiān qì hěn rè.",
+    "translation": "The weather is very hot today."
+  },
+  {
+    "simplified": "冷",
+    "traditional": "冷",
+    "pinyin": "lěng",
+    "meaning": "cold",
+    "example": "今天很冷。",
+    "example_traditional": "今天很冷。",
+    "example_pinyin": "Jīntiān hěn lěng.",
+    "translation": "It's very cold today."
+  },
+  {
+    "simplified": "下雨",
+    "traditional": "下雨",
+    "pinyin": "xià yǔ",
+    "meaning": "to rain",
+    "example": "今天下雨了。",
+    "example_traditional": "今天下雨了。",
+    "example_pinyin": "Jīntiān xià yǔ le.",
+    "translation": "It is raining today."
+  },
+  {
+    "simplified": "小姐",
+    "traditional": "小姐",
+    "pinyin": "xiǎo jie",
+    "meaning": "young lady; miss; (slang) prostitute",
+    "example": "王小姐是我的老师。",
+    "example_traditional": "王小姐是我的老師。",
+    "example_pinyin": "Wáng xiǎo jie shì wǒ de lǎoshī.",
+    "translation": "Miss Wang is my teacher."
+  },
+  {
+    "simplified": "来",
+    "traditional": "來",
+    "pinyin": "lái",
+    "meaning": "to come",
+    "example": "请进来。",
+    "example_traditional": "請進來。",
+    "example_pinyin": "Qǐng jìn lái.",
+    "translation": "Please come in."
+  },
+  {
+    "simplified": "身体",
+    "traditional": "身體",
+    "pinyin": "shēn tǐ",
+    "meaning": "the body; one's health; in person",
+    "example": "他的身体很好。",
+    "example_traditional": "他的身體很好。",
+    "example_pinyin": "Tā de shēn tǐ hěn hǎo.",
+    "translation": "His health is very good."
+  },
+  {
+    "simplified": "爱",
+    "traditional": "愛",
+    "pinyin": "ài",
+    "meaning": "to love; to be fond of; to like; affection; to be inclined (to do sth); to tend to (happen)",
+    "example": "我爱妈妈。",
+    "example_traditional": "我愛媽媽。",
+    "example_pinyin": "Wǒ ài māma.",
+    "translation": "I love my mom."
+  },
+  {
+    "simplified": "些",
+    "traditional": "些",
+    "pinyin": "xiē",
+    "meaning": "some; a few",
+    "example": "我买了一些水果。",
+    "example_traditional": "我買了一些水果。",
+    "example_pinyin": "Wǒ mǎi le yīxiē shuǐguǒ.",
+    "translation": "I bought some fruit."
+  },
+  {
+    "simplified": "水果",
+    "traditional": "水果",
+    "pinyin": "shuǐ guǒ",
+    "meaning": "fruit",
+    "example": "我喜欢吃水果。",
+    "example_traditional": "我喜歡吃水果。",
+    "example_pinyin": "Wǒ xǐhuan chī shuǐguǒ.",
+    "translation": "I like eating fruit."
+  },
+  {
+    "simplified": "水",
+    "traditional": "水",
+    "pinyin": "shuǐ",
+    "meaning": "water",
+    "example": "我想喝水。",
+    "example_traditional": "我想喝水。",
+    "example_pinyin": "Wǒ xiǎng hē shuǐ.",
+    "translation": "I would like some water."
+  },
+  {
+    "simplified": "喂",
+    "traditional": "喂",
+    "pinyin": "wèi",
+    "meaning": "hello (on the phone)",
+    "example": "喂，你好！",
+    "example_traditional": "喂，你好！",
+    "example_pinyin": "Wèi, nǐ hǎo!",
+    "translation": "Hello! (on the phone)"
+  },
+  {
+    "simplified": "也",
+    "traditional": "也",
+    "pinyin": "yě",
+    "meaning": "(adverb) also; both ... and ... (before predicates only); (literary) particle having functions similar to 啊",
+    "example": "我也是学生。",
+    "example_traditional": "我也是學生。",
+    "example_pinyin": "Wǒ yě shì xuéshēng.",
+    "translation": "I am also a student."
+  },
+  {
+    "simplified": "学习",
+    "traditional": "學習",
+    "pinyin": "xué xí",
+    "meaning": "to learn; to study",
+    "example": "我每天学习中文。",
+    "example_traditional": "我每天學習中文。",
+    "example_pinyin": "Wǒ měitiān xué xí zhōngwén.",
+    "translation": "I study Chinese every day."
+  },
+  {
+    "simplified": "上午",
+    "traditional": "上午",
+    "pinyin": "shàng wǔ",
+    "meaning": "morning",
+    "example": "上午我有课。",
+    "example_traditional": "上午我有課。",
+    "example_pinyin": "Shàng wǔ wǒ yǒu kè.",
+    "translation": "I have class in the morning."
+  },
+  {
+    "simplified": "睡觉",
+    "traditional": "睡覺",
+    "pinyin": "shuì jiào",
+    "meaning": "to go to bed; to sleep",
+    "example": "我十点睡觉。",
+    "example_traditional": "我十點睡覺。",
+    "example_pinyin": "Wǒ shí diǎn shuì jiào.",
+    "translation": "I go to bed at ten o'clock."
+  },
+  {
+    "simplified": "电视",
+    "traditional": "電視",
+    "pinyin": "diàn shì",
+    "meaning": "television; TV",
+    "example": "爸爸在看电视。",
+    "example_traditional": "爸爸在看電視。",
+    "example_pinyin": "Bàba zài kàn diàn shì.",
+    "translation": "Dad is watching TV."
+  },
+  {
+    "simplified": "喜欢",
+    "traditional": "喜歡",
+    "pinyin": "xǐhuan",
+    "meaning": "to like",
+    "example": "我喜欢这里。",
+    "example_traditional": "我喜歡這裡。",
+    "example_pinyin": "Wǒ xǐhuan zhèlǐ.",
+    "translation": "I like it here."
+  },
+  {
+    "simplified": "给",
+    "traditional": "給",
+    "pinyin": "gěi",
+    "meaning": "to; for; for the benefit of",
+    "example": "这本书是给你的。",
+    "example_traditional": "這本書是給你的。",
+    "example_pinyin": "Zhè běn shū shì gěi nǐ de.",
+    "translation": "This book is for you."
+  },
+  {
+    "simplified": "打电话",
+    "traditional": "打電話",
+    "pinyin": "dǎ diàn huà",
+    "meaning": "to make a telephone call",
+    "example": "我给妈妈打电话。",
+    "example_traditional": "我給媽媽打電話。",
+    "example_pinyin": "Wǒ gěi mā ma dǎ diàn huà.",
+    "translation": "I am calling my mom."
+  },
+  {
+    "simplified": "吧",
+    "traditional": "吧",
+    "pinyin": "ba",
+    "meaning": "(particle for suggestion or request)",
+    "example": "我们走吧！",
+    "example_traditional": "我們走吧！",
+    "example_pinyin": "Wǒmen zǒu ba!",
+    "translation": "Let's go!"
+  },
+  {
+    "simplified": "东西",
+    "traditional": "東西",
+    "pinyin": "dōngxi",
+    "meaning": "thing; stuff",
+    "example": "这是什么东西？",
+    "example_traditional": "這是什麼東西？",
+    "example_pinyin": "Zhè shì shénme dōngxi?",
+    "translation": "What is this thing?"
+  },
+  {
+    "simplified": "一点儿",
+    "traditional": "一點兒",
+    "pinyin": "yī diǎn r",
+    "meaning": "erhua variant of 一点; a bit; a little bit; (used in negative expressions) (not) the least bit",
+    "example": "我会说一点儿汉语。",
+    "example_traditional": "我會說一點兒漢語。",
+    "example_pinyin": "Wǒ huì shuō yīdiǎnr Hànyǔ.",
+    "translation": "I can speak a little Chinese."
+  },
+  {
+    "simplified": "苹果",
+    "traditional": "蘋果",
+    "pinyin": "píngguǒ",
+    "meaning": "apple",
+    "example": "我想吃一个苹果。",
+    "example_traditional": "我想吃一個蘋果。",
+    "example_pinyin": "Wǒ xiǎng chī yī gè píngguǒ.",
+    "translation": "I want to eat an apple."
+  },
+  {
+    "simplified": "看见",
+    "traditional": "看見",
+    "pinyin": "kàn jiàn",
+    "meaning": "to see; to catch sight of",
+    "example": "我看见小明了。",
+    "example_traditional": "我看見小明了。",
+    "example_pinyin": "Wǒ kàn jiàn Xiǎo Míng le.",
+    "translation": "I saw Xiao Ming."
+  },
+  {
+    "simplified": "先生",
+    "traditional": "先生",
+    "pinyin": "xiān sheng",
+    "meaning": "teacher; gentleman; sir; mister (Mr.); husband",
+    "example": "王先生是我的老师。",
+    "example_traditional": "王先生是我的老師。",
+    "example_pinyin": "Wáng xiān sheng shì wǒ de lǎo shī.",
+    "translation": "Mr. Wang is my teacher."
+  },
+  {
+    "simplified": "开",
+    "traditional": "開",
+    "pinyin": "kāi",
+    "meaning": "to open (transitive or intransitive); (of ships, vehicles, troops etc) to start; to turn on; to put in operation; to operate; to run",
+    "example": "请开门。",
+    "example_traditional": "請開門。",
+    "example_pinyin": "Qǐng kāi mén.",
+    "translation": "Please open the door."
+  },
+  {
+    "simplified": "车",
+    "traditional": "車",
+    "pinyin": "chē",
+    "meaning": "car; vehicle; machine",
+    "example": "我们坐车去学校。",
+    "example_traditional": "我們坐車去學校。",
+    "example_pinyin": "Wǒmen zuò chē qù xuéxiào.",
+    "translation": "We're going to school by car."
+  },
+  {
+    "simplified": "回来",
+    "traditional": "回來",
+    "pinyin": "huí lai",
+    "meaning": "to return; to come back",
+    "example": "我晚上回来。",
+    "example_traditional": "我晚上回來。",
+    "example_pinyin": "Wǒ wǎnshang huí lai.",
+    "translation": "I will come back in the evening."
+  },
+  {
+    "simplified": "分钟",
+    "traditional": "分鐘",
+    "pinyin": "fēnzhōng",
+    "meaning": "minute",
+    "example": "十分钟后见。",
+    "example_traditional": "十分鐘後見。",
+    "example_pinyin": "Shí fēnzhōng hòu jiàn.",
+    "translation": "See you in ten minutes."
+  },
+  {
+    "simplified": "后",
+    "traditional": "後",
+    "pinyin": "hòu",
+    "meaning": "after; behind; back",
+    "example": "我在他后面。",
+    "example_traditional": "我在他後面。",
+    "example_pinyin": "Wǒ zài tā hòumiàn.",
+    "translation": "I am behind him."
+  },
+  {
+    "simplified": "衣服",
+    "traditional": "衣服",
+    "pinyin": "yī fu",
+    "meaning": "clothes",
+    "example": "我的衣服在椅子上。",
+    "example_traditional": "我的衣服在椅子上。",
+    "example_pinyin": "Wǒ de yī fu zài yǐ zi shàng.",
+    "translation": "My clothes are on the chair."
+  },
+  {
+    "simplified": "漂亮",
+    "traditional": "漂亮",
+    "pinyin": "piàoliang",
+    "meaning": "pretty; beautiful",
+    "example": "她很漂亮。",
+    "example_traditional": "她很漂亮。",
+    "example_pinyin": "Tā hěn piàoliang.",
+    "translation": "She is very pretty."
+  },
+  {
+    "simplified": "啊",
+    "traditional": "啊",
+    "pinyin": "a",
+    "meaning": "sentence-final particle; ah",
+    "example": "啊，你来了！",
+    "example_traditional": "啊，你來了！",
+    "example_pinyin": "A, nǐ lái le!",
+    "translation": "Ah, you're here!"
+  },
+  {
+    "simplified": "少",
+    "traditional": "少",
+    "pinyin": "shǎo",
+    "meaning": "few; less; to lack",
+    "example": "水太少了。",
+    "example_traditional": "水太少了。",
+    "example_pinyin": "Shuǐ tài shǎo le.",
+    "translation": "There's too little water."
+  },
+  {
+    "simplified": "不少",
+    "traditional": "不少",
+    "pinyin": "bù shǎo",
+    "meaning": "quite a few; many",
+    "example": "这儿有不少人。",
+    "example_traditional": "這兒有不少人。",
+    "example_pinyin": "Zhèr yǒu bù shǎo rén.",
+    "translation": "There are quite a few people here."
+  },
+  {
+    "simplified": "这些",
+    "traditional": "這些",
+    "pinyin": "zhè xiē",
+    "meaning": "these",
+    "example": "这些书是我的。",
+    "example_traditional": "這些書是我的。",
+    "example_pinyin": "Zhèxiē shū shì wǒ de.",
+    "translation": "These books are mine."
+  },
+  {
+    "simplified": "都",
+    "traditional": "都",
+    "pinyin": "dōu",
+    "meaning": "all; both; entirely; (used for emphasis) even; already",
+    "example": "我们都是学生。",
+    "example_traditional": "我們都是學生。",
+    "example_pinyin": "Wǒmen dōu shì xuéshēng.",
+    "translation": "We are all students."
+  },
+  {
+    "simplified": "认识",
+    "traditional": "認識",
+    "pinyin": "rèn shi",
+    "meaning": "to know; to recognize; to be familiar with",
+    "example": "我认识她。",
+    "example_traditional": "我認識她。",
+    "example_pinyin": "Wǒ rèn shi tā.",
+    "translation": "I know her."
+  },
+  {
+    "simplified": "年",
+    "traditional": "年",
+    "pinyin": "nián",
+    "meaning": "year",
+    "example": "我在北京住了两年。",
+    "example_traditional": "我在北京住了兩年。",
+    "example_pinyin": "Wǒ zài Běijīng zhù le liǎng nián.",
+    "translation": "I lived in Beijing for two years."
+  },
+  {
+    "simplified": "大学",
+    "traditional": "大學",
+    "pinyin": "dà xué",
+    "meaning": "university; college",
+    "example": "我在大学工作。",
+    "example_traditional": "我在大學工作。",
+    "example_pinyin": "Wǒ zài dà xué gōng zuò.",
+    "translation": "I work at a university."
+  },
+  {
+    "simplified": "饭店",
+    "traditional": "飯店",
+    "pinyin": "fàn diàn",
+    "meaning": "restaurant; hotel",
+    "example": "我们在饭店吃饭。",
+    "example_traditional": "我們在飯店吃飯。",
+    "example_pinyin": "Wǒmen zài fàndiàn chīfàn.",
+    "translation": "We eat at the restaurant."
+  },
+  {
+    "simplified": "出租车",
+    "traditional": "出租車",
+    "pinyin": "chūzūchē",
+    "meaning": "taxi",
+    "example": "我们坐出租车去。",
+    "example_traditional": "我們坐出租車去。",
+    "example_pinyin": "Wǒmen zuò chūzūchē qù.",
+    "translation": "We'll go by taxi."
+  },
+  {
+    "simplified": "一起",
+    "traditional": "一起",
+    "pinyin": "yī qǐ",
+    "meaning": "in the same place; together; with",
+    "example": "我们一起去学校。",
+    "example_traditional": "我們一起去學校。",
+    "example_pinyin": "Wǒmen yī qǐ qù xuéxiào.",
+    "translation": "We go to school together."
+  },
+  {
+    "simplified": "高兴",
+    "traditional": "高興",
+    "pinyin": "gāo xìng",
+    "meaning": "happy; glad; willing (to do sth)",
+    "example": "今天我很高兴。",
+    "example_traditional": "今天我很高興。",
+    "example_pinyin": "Jīn tiān wǒ hěn gāo xìng.",
+    "translation": "I'm very happy today."
+  },
+  {
+    "simplified": "听",
+    "traditional": "聽",
+    "pinyin": "tīng",
+    "meaning": "to listen",
+    "example": "我在听音乐。",
+    "example_traditional": "我在聽音樂。",
+    "example_pinyin": "Wǒ zài tīng yīnyuè.",
+    "translation": "I am listening to music."
+  },
+  {
+    "simplified": "飞机",
+    "traditional": "飛機",
+    "pinyin": "fēi jī",
+    "meaning": "airplane",
+    "example": "我们坐飞机去上海。",
+    "example_traditional": "我們坐飛機去上海。",
+    "example_pinyin": "Wǒ men zuò fēi jī qù Shànghǎi.",
+    "translation": "We're taking a plane to Shanghai."
+  }
+]

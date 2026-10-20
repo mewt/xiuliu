@@ -43,7 +43,9 @@ fn first_run_prints_a_word_and_learning_is_persistent_and_idempotent() {
     let sandbox = Sandbox::new();
     let today = sandbox.run(&["today"]);
     assert!(today.status.success());
-    assert!(String::from_utf8_lossy(&today.stdout).contains("你好"));
+    let today_text = String::from_utf8_lossy(&today.stdout);
+    assert!(today_text.contains("你  nǐ"));
+    assert!(today_text.contains("Lesson 1/15 · Word 1/6"));
     let stats = sandbox.run(&["stats"]);
     assert!(String::from_utf8_lossy(&stats.stdout).contains("0 / "));
     for _ in 0..2 {
@@ -71,7 +73,7 @@ fn traditional_mode_and_calendar_rollover_work_with_existing_progress() {
     assert!(output.status.success());
     let text = String::from_utf8_lossy(&output.stdout);
     assert!(text.contains("謝謝"));
-    assert!(text.contains("Lesson 2/"));
+    assert!(text.contains("Lesson 2/15 · Word 1/4"));
 }
 
 #[test]
@@ -132,20 +134,10 @@ fn migration_keeps_a_backup_and_preserves_legacy_completions() {
     assert_eq!(value["version"], 2);
     assert!(value["learned"].get("你好").is_some());
     assert!(sandbox.run(&["learn"]).status.success());
-    assert!(String::from_utf8_lossy(&sandbox.run(&["stats"]).stdout).contains("20 XP"));
-}
-
-#[test]
-fn failed_vocabulary_import_does_not_change_progress_or_cache() {
-    let sandbox = Sandbox::new();
-    assert!(sandbox.run(&["learn"]).status.success());
-    let progress = fs::read(sandbox.0.join("progress.json")).unwrap();
-    let source = sandbox.0.join("invalid.json");
-    fs::write(&source, "[]").unwrap();
-    let output = sandbox.run(&["update", "--from", source.to_str().unwrap()]);
-    assert!(!output.status.success());
-    assert_eq!(fs::read(sandbox.0.join("progress.json")).unwrap(), progress);
-    assert!(!sandbox.0.join("vocabulary.json").exists());
+    let migrated_stats = sandbox.run(&["stats"]);
+    let migrated_text = String::from_utf8_lossy(&migrated_stats.stdout);
+    assert!(migrated_text.contains("1 / 166 words learned"));
+    assert!(migrated_text.contains("0 XP"));
 }
 
 #[test]

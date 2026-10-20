@@ -3,8 +3,9 @@ use serde_json::{Value, json};
 use std::{
     collections::HashMap,
     fs,
+    hash::{Hash, Hasher},
     io::{self, Read},
-    path::Path,
+    path::{Path, PathBuf},
     sync::{
         Arc,
         atomic::{AtomicU64, Ordering},
@@ -19,6 +20,7 @@ pub struct Config {
     base_url: String,
     model: String,
     voice: String,
+    cache_dir: Option<PathBuf>,
 }
 
 pub fn voice_id(value: &str) -> io::Result<&'static str> {
@@ -90,6 +92,7 @@ impl Config {
                 .into(),
             model: get("MIMO_MODEL", "mimo-v2.5-tts"),
             voice: voice_id(voice_override.unwrap_or(&get("MIMO_VOICE", "冰糖")))?.into(),
+            cache_dir: None,
         };
         if config.key.trim().is_empty() {
             return Err(io::Error::other(
@@ -113,6 +116,13 @@ impl Config {
             ));
         }
         Ok(config)
+    }
+
+    /// Persist generated audio here so each clip is fetched once, then reused
+    /// across sessions and offline.
+    pub fn with_cache_dir(mut self, dir: PathBuf) -> Self {
+        self.cache_dir = Some(dir);
+        self
     }
 
     fn request(&self, text: &str, pinyin: &str, slow: bool) -> Value {
@@ -185,13 +195,58 @@ fn decode_audio(bytes: &[u8]) -> io::Result<Vec<u8>> {
 
 pub struct Reply {
     pub id: u64,
-    pub audio: io::Result<Vec<u8>>,
+    // Path to the cached WAV on disk; it is kept, not deleted after playback.
+    pub audio: io::Result<PathBuf>,
 }
 pub struct Worker {
     requests: SyncSender<(u64, String, String, bool)>,
     pub replies: Receiver<Reply>,
     generation: Arc<AtomicU64>,
 }
+
+fn digest(body: &str) -> String {
+    let mut hasher = std::collections::hash_map::DefaultHasher::new();
+    body.hash(&mut hasher);
+    // Include length so distinct bodies cannot alias on a 64-bit hash alone.
+    format!("{:016x}{:x}", hasher.finish(), body.len())
+}
+
+// Reuse a saved clip when we have one; otherwise fetch it and persist it.
+fn resolve(
+    config: &Config,
+    body: &str,
+    cache: &mut HashMap<String, PathBuf>,
+    fetch: &mut impl FnMut(&Config, &str) -> io::Result<Vec<u8>>,
+) -> io::Result<PathBuf> {
+    if let Some(path) = cache.get(body) {
+        if path.exists() {
+            return Ok(path.clone());
+        }
+    }
+    let name = format!("mimo-{}.wav", digest(body));
+    let path = match &config.cache_dir {
+        Some(dir) => dir.join(name),
+        None => std::env::temp_dir().join(format!("xiuliu-{name}")),
+    };
+    if path.exists() {
+        cache.insert(body.to_owned(), path.clone());
+        return Ok(path);
+    }
+    let bytes = fetch(config, body)?;
+    if let Some(parent) = path.parent() {
+        fs::create_dir_all(parent)?;
+    }
+    // Write to a sibling file, then rename, so a reader never sees a partial clip.
+    let partial = path.with_extension("part");
+    fs::write(&partial, &bytes)?;
+    fs::rename(&partial, &path)?;
+    if cache.len() >= 256 {
+        cache.clear();
+    }
+    cache.insert(body.to_owned(), path.clone());
+    Ok(path)
+}
+
 impl Worker {
     pub fn new(config: Config) -> Self {
         Self::spawn(config, Config::fetch)
@@ -205,23 +260,14 @@ impl Worker {
         let generation = Arc::new(AtomicU64::new(0));
         let current = generation.clone();
         std::thread::spawn(move || {
-            // Session-only cache: avoids repeated API calls without storing credentials.
-            let mut cache: HashMap<String, Vec<u8>> = HashMap::new();
+            // Maps a request to its saved clip so we neither refetch nor rehash it.
+            let mut cache: HashMap<String, PathBuf> = HashMap::new();
             while let Ok((id, text, pinyin, slow)) = incoming.recv() {
                 if current.load(Ordering::SeqCst) != id {
                     continue;
                 }
                 let body = config.request(&text, &pinyin, slow).to_string();
-                let audio = cache
-                    .get(&body)
-                    .cloned()
-                    .map_or_else(|| fetch(&config, &body), Ok);
-                if let Ok(bytes) = &audio {
-                    if cache.len() >= 8 {
-                        cache.clear();
-                    }
-                    cache.insert(body, bytes.clone());
-                }
+                let audio = resolve(&config, &body, &mut cache, &mut fetch);
                 if current.load(Ordering::SeqCst) == id
                     && outgoing.send(Reply { id, audio }).is_err()
                 {
@@ -255,6 +301,18 @@ impl Drop for Worker {
 #[cfg(test)]
 mod tests {
     use super::*;
+    fn temp_cache(tag: &str) -> PathBuf {
+        let dir = std::env::temp_dir().join(format!(
+            "xiuliu-test-{tag}-{}-{}",
+            std::process::id(),
+            std::time::SystemTime::now()
+                .duration_since(std::time::UNIX_EPOCH)
+                .unwrap()
+                .as_nanos()
+        ));
+        let _ = fs::remove_dir_all(&dir);
+        dir
+    }
     #[test]
     fn listening_word_sends_ting_with_male_voice_and_keeps_hints_out_of_spoken_text() {
         let word = crate::course::bundled()
@@ -268,6 +326,7 @@ mod tests {
             base_url: "https://example.invalid".into(),
             model: "mimo-v2.5-tts".into(),
             voice: voice_id("male").unwrap().into(),
+            cache_dir: Some(temp_cache("ting")),
         };
         let (sent, received) = mpsc::channel();
         let worker = Worker::spawn(config, move |_, body| {
@@ -303,6 +362,7 @@ mod tests {
             base_url: "https://example.invalid".into(),
             model: "mimo-v2.5-tts".into(),
             voice: "冰糖".into(),
+            cache_dir: Some(temp_cache("cancel")),
         };
         let (started_tx, started_rx) = mpsc::channel();
         let (release_tx, release_rx) = mpsc::channel();
@@ -321,7 +381,7 @@ mod tests {
         release_tx.send(()).unwrap();
         let reply = worker.replies.recv_timeout(Duration::from_secs(2)).unwrap();
         assert_eq!(reply.id, current);
-        assert_eq!(reply.audio.unwrap(), vec![1, 2, 3]);
+        assert_eq!(fs::read(reply.audio.unwrap()).unwrap(), vec![1, 2, 3]);
         assert_eq!(calls.load(Ordering::SeqCst), 1);
         assert!(worker.replies.try_recv().is_err());
     }
@@ -346,6 +406,7 @@ mod tests {
             base_url: "https://example.invalid".into(),
             model: "mimo-v2.5-tts".into(),
             voice: "冰糖".into(),
+            cache_dir: None,
         };
         let normal = config.request("你好！", "nǐ hǎo", false);
         assert_eq!(normal["messages"][1]["content"], "你好！");
